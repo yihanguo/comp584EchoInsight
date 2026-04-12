@@ -1,0 +1,7 @@
+dataset,rows_saved,text_non_null,label_non_null,avg_text_len,output_csv
+amazon_polarity,10000,10000,10000,412.0675,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\amazon_polarity\sample_10k.csv
+Ha1200/amazon-reviews-sentiment-analysis,4915,4914,4915,267.69298067141403,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\Ha1200_amazon-reviews-sentiment-analysis\sample_10k.csv
+SetFit/amazon_reviews_multi_en,10000,10000,10000,171.8586,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\SetFit_amazon_reviews_multi_en\sample_10k.csv
+juliensimon/amazon-shoe-reviews,10000,10000,10000,175.1701,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\juliensimon_amazon-shoe-reviews\sample_10k.csv
+saattrupdan/womens-clothing-ecommerce-reviews,10000,10000,10000,308.6849,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\saattrupdan_womens-clothing-ecommerce-reviews\sample_10k.csv
+m-ric/amazon_product_reviews_datafiniti,6000,6000,6000,137.6415,d:\code\hk\584 nlp hk\project\dataset\ecommerce_candidates\m-ric_amazon_product_reviews_datafiniti\sample_10k.csv

@@ -5,7 +5,9 @@ This folder contains a lightweight prototype of the three-layer EchoInsight work
 ## What's in this folder
 
 - `config/feature_catalog.json`: predefined feature sets used to initialize the classification layer.
-- `data/amazon_reviews_2023_electronics_sample_5k.csv`: local demo input file used by the default runner path in this branch.
+- `data/amazon_reviews_2023_electronics_sample_5k.csv`: the main 5k review CSV used by the default runner path in this branch.
+- `data/amazon_reviews_2023_electronics_sample_5k.parquet`: parquet version of the same 5k sample.
+- `data/`: additional dataset notes, exploratory notebooks, and smaller supporting samples used during data selection and prototyping.
 - `src/echoinsight/`: main, classification, and validation layer logic.
 - `run_echoinsight.py`: entry point for running the pipeline locally.
 - `results/`: preliminary outputs from a local pipeline run.
@@ -76,14 +78,21 @@ The run writes:
 
 ## Notes on the bundled data
 
-The original full source CSV used during development was not present in this workspace when this branch was prepared.
-To keep the branch runnable for collaborators, `data/amazon_reviews_2023_electronics_sample_5k.csv` in this branch is a reconstructed demo dataset built from the 100 review previews captured in `results/review_diagnostics.json`.
+This branch now includes the actual `amazon_reviews_2023_electronics_sample_5k.csv` file from the project workspace, so the default run command uses the real 5k sample instead of a reconstructed placeholder.
 
-That means:
+The branch also includes smaller supporting data assets that were useful during dataset exploration, including:
 
-- the branch is self-contained and easy to test immediately;
-- reruns will exercise the full pipeline successfully;
-- the bundled demo data is smaller and preview-truncated, so it should be treated as a reproducible test fixture rather than the original full 5k review file.
+- `data/amazon_polarity_small/train_10k.csv`
+- `data/ecommerce_candidates/*/sample_10k.csv`
+- `data/data.md`
+- exploratory notebooks and lightweight analysis scripts
+
+Two larger raw files from the Desktop project were intentionally not added to this GitHub branch because they are too large for a practical standard git workflow:
+
+- `data/ratings_Electronics (1).csv` at about `233 MB`
+- `data/amazon_polarity_small/test_full.csv` at about `167 MB`
+
+If needed later, those larger files are better shared through cloud storage, Git LFS, or a dataset hosting service rather than a normal repository commit.
 
 ## Current prototype scope
 
