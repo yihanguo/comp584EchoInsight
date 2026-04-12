@@ -1,0 +1,72 @@
+{
+  "prototype_scope": "three-layer pipeline before backflow thresholding",
+  "reviews_processed": 100,
+  "reviews_with_confirmed_features": 52,
+  "average_preliminary_overall_score": 0.243,
+  "top_features": [
+    {
+      "feature": "performance_quality",
+      "confirmed_reviews": 18,
+      "sentiment_breakdown": {
+        "positive": 15,
+        "mixed": 2,
+        "negative": 1
+      }
+    },
+    {
+      "feature": "ease_of_use",
+      "confirmed_reviews": 15,
+      "sentiment_breakdown": {
+        "positive": 15
+      }
+    },
+    {
+      "feature": "value_for_money",
+      "confirmed_reviews": 13,
+      "sentiment_breakdown": {
+        "positive": 12,
+        "negative": 1
+      }
+    },
+    {
+      "feature": "design_comfort",
+      "confirmed_reviews": 11,
+      "sentiment_breakdown": {
+        "positive": 10,
+        "mixed": 1
+      }
+    },
+    {
+      "feature": "connectivity_compatibility",
+      "confirmed_reviews": 6,
+      "sentiment_breakdown": {
+        "positive": 5,
+        "negative": 1
+      }
+    },
+    {
+      "feature": "durability_reliability",
+      "confirmed_reviews": 5,
+      "sentiment_breakdown": {
+        "negative": 2,
+        "mixed": 1,
+        "positive": 2
+      }
+    },
+    {
+      "feature": "battery_life",
+      "confirmed_reviews": 4,
+      "sentiment_breakdown": {
+        "positive": 4
+      }
+    },
+    {
+      "feature": "packaging_shipping",
+      "confirmed_reviews": 3,
+      "sentiment_breakdown": {
+        "negative": 2,
+        "positive": 1
+      }
+    }
+  ]
+}

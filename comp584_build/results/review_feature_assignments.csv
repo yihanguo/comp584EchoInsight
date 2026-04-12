@@ -1,0 +1,101 @@
+review_id,rating,title,validated_features,bundle_confidence,coverage_score,coherence_score,preliminary_overall_score
+0,3.0,Smells like gasoline! Going back!,,0.0,0.0,0.0,0.0
+1,1.0,Didn’t work at all lenses loose/broken.,packaging_shipping|durability_reliability,0.3712,0.8,0.8799,0.623
+2,5.0,Excellent!,design_comfort,0.2927,0.1481,0.7524,0.3341
+3,5.0,Great laptop backpack!,design_comfort|ease_of_use,0.2984,0.1509,0.8544,0.358
+4,5.0,Best Headphones in the Fifties price range!,value_for_money,0.2012,0.1379,0.7204,0.2829
+5,5.0,Great Fan! I’m a FAN!,performance_quality|connectivity_compatibility|battery_life,0.254,0.7143,0.9389,0.5521
+6,5.0,solid sound for the price,value_for_money,0.1805,0.1111,0.7132,0.2627
+7,5.0,Love the headphones - great range,design_comfort,0.2964,0.092,0.7537,0.3163
+8,5.0,Five Stars,value_for_money,0.1883,0.8,0.7159,0.5079
+9,5.0,BUY THIS THANG,,0.0,0.0,0.0,0.0
+10,1.0,Not sure why this has good reviews. My devices had a hard time connecting,connectivity_compatibility,0.2986,0.2581,0.7545,0.3756
+11,3.0,Works but corners crack,performance_quality|durability_reliability,0.3396,0.8889,0.8688,0.6377
+12,5.0,legit,,0.0,0.0,0.0,0.0
+13,3.0,marginal sound quality,performance_quality,0.2189,0.2105,0.7266,0.3175
+14,5.0,Five Stars,,0.0,0.0,0.0,0.0
+15,5.0,... stronger WIFI to my upstairs level & it works great! Great value for the price,value_for_money|performance_quality|connectivity_compatibility,0.3474,1.0,0.9716,0.7006
+16,5.0,My kids love the wi fi streaming options,,0.0,0.0,0.0,0.0
+17,5.0,Love Otterbox cases,,0.0,0.0,0.0,0.0
+18,5.0,Five Stars,performance_quality,0.2028,0.5,0.721,0.4105
+19,4.0,Four Stars,,0.0,0.0,0.0,0.0
+20,5.0,NO GLUE JUST SCREWS,design_comfort,0.2916,0.2105,0.7521,0.3553
+21,5.0,Good choice,performance_quality,0.2903,0.8889,0.7516,0.5921
+22,5.0,Good alarm clock,,0.0,0.0,0.0,0.0
+23,5.0,Works great!,performance_quality|battery_life,0.2574,1.0,0.8401,0.6338
+24,5.0,Great for music/podcasts and receiving calls,,0.0,0.0,0.0,0.0
+25,5.0,Nice lightweight sleeve,,0.0,0.0,0.0,0.0
+26,5.0,better than I expected!,design_comfort,0.275,0.7273,0.7463,0.5275
+27,4.0,Did anyone use this for a recessed TV mount?,,0.0,0.0,0.0,0.0
+28,5.0,Don't know why I didn't get one of these years ...,,0.0,0.0,0.0,0.0
+29,5.0,Great portable monitor,,0.0,0.0,0.0,0.0
+30,5.0,All rounder!,performance_quality|design_comfort,0.1818,0.4706,0.8136,0.4092
+31,5.0,"Great, simple, strong",design_comfort,0.288,0.8,0.7508,0.5598
+32,5.0,A great device to make any headphone wireless,ease_of_use,0.3099,0.3478,0.7585,0.4129
+33,5.0,Big hit at lunch,value_for_money,0.3272,0.3636,0.7645,0.4274
+34,5.0,Easy and plentiful,ease_of_use,0.1875,0.1538,0.7156,0.2813
+35,5.0,Great RAM,,0.0,0.0,0.0,0.0
+36,4.0,good and cheap,,0.0,0.0,0.0,0.0
+37,5.0,Does what it is meant to do,ease_of_use,0.1871,0.1143,0.7155,0.2673
+38,5.0,Works great with my Samsung Galaxy Pro S5e,performance_quality,0.3202,1.0,0.7621,0.6465
+39,5.0,At first seemed DOA.,connectivity_compatibility,0.2895,0.4211,0.7513,0.4279
+40,5.0,Protects my power supply from small screws,,0.0,0.0,0.0,0.0
+41,5.0,5 stars but be careful that you get what you paid for,,0.0,0.0,0.0,0.0
+42,5.0,Cute for photos!,,0.0,0.0,0.0,0.0
+43,1.0,Arrived damaged,packaging_shipping,0.5522,1.0,0.8433,0.7671
+44,5.0,Great,performance_quality|battery_life,0.1905,1.0,0.8167,0.5991
+45,5.0,As good as advertised,,0.0,0.0,0.0,0.0
+46,5.0,Good cord,,0.0,0.0,0.0,0.0
+47,5.0,Great cover and protection,,0.0,0.0,0.0,0.0
+48,1.0,Don’t buy this product,durability_reliability,0.2018,0.2105,0.7206,0.3086
+49,2.0,Disappointed,,0.0,0.0,0.0,0.0
+50,5.0,Five Stars,ease_of_use|performance_quality,0.3117,1.0,0.8591,0.6621
+51,2.0,Very Disappointing,performance_quality,0.3151,1.0,0.7603,0.6439
+52,5.0,Great headsets,performance_quality|design_comfort,0.2543,1.0,0.839,0.6322
+53,5.0,Great Case,design_comfort,0.3001,0.4,0.755,0.4261
+54,5.0,Great Product,ease_of_use,0.3612,0.6154,0.7764,0.5332
+55,5.0,Great Product,ease_of_use,0.3443,1.0,0.7705,0.659
+56,4.0,Worthy Purchase!,packaging_shipping|performance_quality,0.2791,0.32,0.8477,0.4071
+57,2.0,This thing has a mind of its own…..,,0.0,0.0,0.0,0.0
+58,5.0,Easy connect,ease_of_use|connectivity_compatibility,0.2294,0.6154,0.8303,0.4847
+59,1.0,Junk,value_for_money,0.3253,0.3077,0.7639,0.4068
+60,5.0,Good purchase,performance_quality,0.297,0.6154,0.754,0.4998
+61,5.0,Happy with purchase,performance_quality,0.2927,1.0,0.7524,0.6322
+62,4.0,"Big,sturdy and easy zippers",ease_of_use|durability_reliability,0.1934,0.4706,0.8177,0.4153
+63,5.0,Five Stars,,0.0,0.0,0.0,0.0
+64,5.0,Five Stars,,0.0,0.0,0.0,0.0
+65,5.0,Great quality and fit!,performance_quality|design_comfort|battery_life|durability_reliability,0.3022,0.4516,0.9558,0.4852
+66,3.0,"Decent, but the design is flawed.",design_comfort,0.1824,0.093,0.7138,0.2574
+67,5.0,Five Stars,,0.0,0.0,0.0,0.0
+68,2.0,Flimsy stamd,,0.0,0.0,0.0,0.0
+69,2.0,Manufacturers defect and terrible customer support.,,0.0,0.0,0.0,0.0
+70,5.0,Very nice! I love my new larger screen Kindle,,0.0,0.0,0.0,0.0
+71,5.0,Love it! It fits my Chromebook perfectly,,0.0,0.0,0.0,0.0
+72,1.0,Horrible. It did not amplify anything,,0.0,0.0,0.0,0.0
+73,5.0,Great quality and more stations than bunny ears,performance_quality|ease_of_use|value_for_money,0.2937,0.6316,0.9528,0.5438
+74,5.0,Excited to swim with these!!!,,0.0,0.0,0.0,0.0
+75,5.0,Easy to install,ease_of_use,0.4052,0.4706,0.7918,0.5054
+76,5.0,Recommended,,0.0,0.0,0.0,0.0
+77,5.0,Dot,,0.0,0.0,0.0,0.0
+78,5.0,Double Din Car Stereo Android 9.0 Quad Core 7 Inch HD,value_for_money,0.3155,0.1951,0.7604,0.3624
+79,3.0,Carxtc Double Din Install Car Stereo Dash Kit for a Aftermarket Radio,,0.0,0.0,0.0,0.0
+80,4.0,ASURION 3 Year Portable Electronic Accident Protection Plan with Tech Support  $20-29.99,,0.0,0.0,0.0,0.0
+81,4.0,ASURION 2 Year Portable Electronic Accident Protection Plan with Tech Support $150-174.99,,0.0,0.0,0.0,0.0
+82,5.0,TOTO A6 Double Din Android Car Navigation Stereo with Dual Bluetooth - Standard A6Y2710SB,ease_of_use|connectivity_compatibility,0.3075,0.2286,0.8576,0.3899
+83,4.0,Double Din Car Stereo GPS Navigation for Car 6.2 Inch Touch Screen,,0.0,0.0,0.0,0.0
+84,4.0,"Dual Electronics XDVD276BT 6.2"" LCD Touch Screen Double Din",ease_of_use,0.3071,0.2857,0.7575,0.3897
+85,4.0,good product at a decent price,value_for_money,0.2072,0.4444,0.7225,0.3933
+86,4.0,assemble as instructed,,0.0,0.0,0.0,0.0
+87,4.0,use as intended,,0.0,0.0,0.0,0.0
+88,4.0,good product at a decent price,value_for_money,0.1979,0.2222,0.7193,0.3107
+89,5.0,good product at a decent price,value_for_money,0.1963,0.1667,0.7187,0.2904
+90,5.0,good product at a decent price,ease_of_use|value_for_money,0.2718,0.7059,0.8451,0.5384
+91,5.0,good product at a decent price,ease_of_use|value_for_money,0.2631,0.7059,0.8421,0.5338
+92,3.0,supernight bluetooth keyboard,,0.0,0.0,0.0,0.0
+93,3.0,Dual dash cam,,0.0,0.0,0.0,0.0
+94,5.0,Wavlink,,0.0,0.0,0.0,0.0
+95,5.0,16g cork usb,,0.0,0.0,0.0,0.0
+96,5.0,Five Stars,,0.0,0.0,0.0,0.0
+97,5.0,Five Stars,,0.0,0.0,0.0,0.0
+98,5.0,Five Stars,,0.0,0.0,0.0,0.0
+99,4.0,Four Stars,,0.0,0.0,0.0,0.0
