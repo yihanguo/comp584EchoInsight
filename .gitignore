@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local datasets and notebooks can be large; keep them out of GitHub.
+data/
+
+# Generated trial outputs and GLM/API run artifacts.
+results/
+results_*/
+results*/
+config/*backup*.json
+
+# Local editor/history caches.
+.history/
