@@ -11,5 +11,17 @@ results_*/
 results*/
 config/*backup*.json
 
+# Local credentials and API key files.
+info.md
+api/info*.md
+**/info.md
+**/api/info*.md
+
 # Local editor/history caches.
 .history/
+.claude/
+**/.claude/
+
+# NFS/editor temporary files.
+.nfs*
+**/.nfs*
