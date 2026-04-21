@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local datasets and generated outputs.
+data/
+results/
+results_*/
+results*/
+results_v2/
+
+# Local credentials and API key files.
+info.md
+api/info*.md
+
+# Local editor/history caches and NFS temporary files.
+.claude/
+.nfs*
+**/.nfs*
+

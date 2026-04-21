@@ -1,0 +1,1157 @@
+[
+  {
+    "name": "ambient_mode_artifacts",
+    "description": "Audible imperfections like crackling or static when using transparency or ambient modes during movement.",
+    "seed_keywords": [
+      "crackling",
+      "static",
+      "wind",
+      "shifting",
+      "ambient"
+    ],
+    "positive_keywords": [
+      "clear",
+      "natural",
+      "smooth"
+    ],
+    "negative_keywords": [
+      "crackling",
+      "static",
+      "wind noise",
+      "shifting",
+      "artifacts"
+    ]
+  },
+  {
+    "name": "anatomical_compatibility",
+    "description": "Suitability of the product design for specific physical traits like ear canal shape or head size.",
+    "seed_keywords": [
+      "anatomy",
+      "ear canal",
+      "shape",
+      "petite",
+      "woman",
+      "ears"
+    ],
+    "positive_keywords": [
+      "fits well",
+      "ergonomic",
+      "secure",
+      "adapted"
+    ],
+    "negative_keywords": [
+      "small ears",
+      "falls out",
+      "uncomfortable",
+      "not for everyone"
+    ]
+  },
+  {
+    "name": "audio_features",
+    "description": "Mentions of specific audio technologies like Dolby Atmos, transparency mode, or sound profiles.",
+    "seed_keywords": [
+      "dolby",
+      "atmos",
+      "transparency",
+      "sound profile",
+      "features"
+    ],
+    "positive_keywords": [
+      "killer",
+      "amazing",
+      "immersive",
+      "clear"
+    ],
+    "negative_keywords": [
+      "not that good",
+      "disappointing",
+      "weak"
+    ]
+  },
+  {
+    "name": "audio_fidelity",
+    "description": "Specific aspects of sound quality such as bass, soundstage, and clarity.",
+    "seed_keywords": [
+      "sound quality",
+      "bass",
+      "soundstage",
+      "audio"
+    ],
+    "positive_keywords": [
+      "crisp",
+      "rich sound",
+      "deep bass",
+      "clear audio"
+    ],
+    "negative_keywords": [
+      "tinny",
+      "muffled",
+      "lack of bass"
+    ]
+  },
+  {
+    "name": "audio_performance_expectation",
+    "description": "User's subjective evaluation of sound quality relative to their expectations or hype.",
+    "seed_keywords": [
+      "sound",
+      "average",
+      "expecting",
+      "special",
+      "quality"
+    ],
+    "positive_keywords": [
+      "amazing",
+      "exceeded expectations",
+      "incredible",
+      "rich"
+    ],
+    "negative_keywords": [
+      "average",
+      "nothing special",
+      "expecting more",
+      "underwhelming"
+    ]
+  },
+  {
+    "name": "battery_life_comparison",
+    "description": "Comparing the battery performance to previous models or competitors.",
+    "seed_keywords": [
+      "battery life",
+      "original airpods",
+      "lasts longer",
+      "comparison"
+    ],
+    "positive_keywords": [
+      "improved",
+      "longer",
+      "better",
+      "upgrade"
+    ],
+    "negative_keywords": [
+      "shorter",
+      "worse",
+      "disappointing",
+      "degraded"
+    ]
+  },
+  {
+    "name": "broad_product_appeal",
+    "description": "The product's ability to satisfy a wide range of needs or preferences without specific feature focus.",
+    "seed_keywords": [
+      "everything",
+      "all",
+      "universal",
+      "versatile",
+      "general"
+    ],
+    "positive_keywords": [
+      "everything",
+      "all",
+      "universal",
+      "versatile",
+      "general",
+      "complete"
+    ],
+    "negative_keywords": [
+      "specific",
+      "niche",
+      "limited",
+      "particular",
+      "only"
+    ]
+  },
+  {
+    "name": "bud_defect_malfunction",
+    "description": "Reports of specific hardware failures where one or both earbuds fail to turn on, connect, or charge.",
+    "seed_keywords": [
+      "right pod",
+      "left earbud",
+      "wont turn on",
+      "connect",
+      "dead"
+    ],
+    "positive_keywords": [],
+    "negative_keywords": [
+      "defective",
+      "broken",
+      "malfunction",
+      "arrived broken",
+      "failure"
+    ]
+  },
+  {
+    "name": "build_consistency",
+    "description": "Relates to the uniformity of physical construction quality across individual units of the same product.",
+    "seed_keywords": [
+      "consistency",
+      "unit variation",
+      "sample",
+      "copy",
+      "batch"
+    ],
+    "positive_keywords": [
+      "consistent",
+      "uniform",
+      "solid",
+      "reliable",
+      "standard"
+    ],
+    "negative_keywords": [
+      "loose",
+      "stiff",
+      "rough",
+      "wobbly",
+      "defective"
+    ]
+  },
+  {
+    "name": "call_quality",
+    "description": "Clarity of voice transmission and microphone performance during calls.",
+    "seed_keywords": [
+      "microphone",
+      "calls",
+      "voice",
+      "zoom"
+    ],
+    "positive_keywords": [
+      "clear calls",
+      "can hear me",
+      "great mic"
+    ],
+    "negative_keywords": [
+      "muffled voice",
+      "can't hear",
+      "bad mic"
+    ]
+  },
+  {
+    "name": "charging_accessories",
+    "description": "Inclusion and type of charging bricks, cables, and power adapters.",
+    "seed_keywords": [
+      "charger",
+      "cable",
+      "lightning port",
+      "power brick",
+      "no charger"
+    ],
+    "positive_keywords": [
+      "included",
+      "fast charging",
+      "wireless",
+      "convenient"
+    ],
+    "negative_keywords": [
+      "missing charger",
+      "no cable",
+      "proprietary",
+      "extra cost"
+    ]
+  },
+  {
+    "name": "charging_power",
+    "description": "Feedback on the charging case power or charging strength.",
+    "seed_keywords": [
+      "charger",
+      "holder",
+      "stronger"
+    ],
+    "positive_keywords": [],
+    "negative_keywords": [
+      "charger could be stronger",
+      "charging power"
+    ]
+  },
+  {
+    "name": "charging_speed",
+    "description": "How quickly the device charges and the convenience of power management.",
+    "seed_keywords": [
+      "charging",
+      "charge time",
+      "fast charging",
+      "power"
+    ],
+    "positive_keywords": [
+      "lightning fast",
+      "quick charge",
+      "charges fast"
+    ],
+    "negative_keywords": [
+      "slow charging",
+      "takes long to charge"
+    ]
+  },
+  {
+    "name": "control_scheme_usability",
+    "description": "Ease of use and intuitiveness of the physical or touch-based controls for playback and settings.",
+    "seed_keywords": [
+      "tap",
+      "controls",
+      "adjustments",
+      "skip",
+      "button",
+      "touch"
+    ],
+    "positive_keywords": [
+      "easy",
+      "intuitive",
+      "responsive",
+      "convenient",
+      "simple"
+    ],
+    "negative_keywords": [
+      "difficult",
+      "confusing",
+      "unresponsive",
+      "complicated",
+      "hard"
+    ]
+  },
+  {
+    "name": "daily_usage_pattern",
+    "description": "Indicates high frequency of use as part of everyday routine.",
+    "seed_keywords": [
+      "daily",
+      "all the time",
+      "use them"
+    ],
+    "positive_keywords": [
+      "daily",
+      "everyday",
+      "constantly",
+      "always",
+      "frequently"
+    ],
+    "negative_keywords": [
+      "rarely",
+      "occasionally",
+      "seldom",
+      "never"
+    ]
+  },
+  {
+    "name": "device_ecosystem",
+    "description": "Mentions of integration with other devices, specifically the advantage of using with iPhone or Apple products.",
+    "seed_keywords": [
+      "iphone",
+      "apple",
+      "ecosystem",
+      "integration"
+    ],
+    "positive_keywords": [
+      "iphone user",
+      "best option",
+      "apple"
+    ],
+    "negative_keywords": []
+  },
+  {
+    "name": "discreet_design_aesthetics",
+    "description": "The ability of the product to remain hidden or unobtrusive due to size or color.",
+    "seed_keywords": [
+      "small",
+      "conceal",
+      "hide",
+      "hair",
+      "notice"
+    ],
+    "positive_keywords": [
+      "invisible",
+      "subtle",
+      "compact",
+      "low profile",
+      "discreet"
+    ],
+    "negative_keywords": [
+      "bulky",
+      "stick out",
+      "obvious",
+      "large",
+      "flashy"
+    ]
+  },
+  {
+    "name": "ear_tip_sizing_variety",
+    "description": "Availability and effectiveness of different ear tip sizes for various ear anatomies.",
+    "seed_keywords": [
+      "tips",
+      "sizes",
+      "small",
+      "large",
+      "fit test",
+      "seal"
+    ],
+    "positive_keywords": [
+      "included",
+      "variety",
+      "options",
+      "customizable",
+      "perfect fit"
+    ],
+    "negative_keywords": [
+      "one size",
+      "too big",
+      "too small",
+      "loose",
+      "tight",
+      "innards"
+    ]
+  },
+  {
+    "name": "feature_reliability",
+    "description": "Consistency of specific features like noise cancellation or transparency mode operating without interruption or error.",
+    "seed_keywords": [
+      "feature",
+      "mode",
+      "turn off",
+      "automatically",
+      "stop",
+      "glitch"
+    ],
+    "positive_keywords": [
+      "consistent",
+      "reliable",
+      "stable",
+      "seamless",
+      "flawless"
+    ],
+    "negative_keywords": [
+      "disappointing",
+      "problem",
+      "turn off",
+      "automatically",
+      "glitchy"
+    ]
+  },
+  {
+    "name": "form_factor_comparison",
+    "description": "Comparisons regarding the physical size and shape relative to previous models or competitors.",
+    "seed_keywords": [
+      "smaller",
+      "bigger",
+      "size",
+      "fit",
+      "regular"
+    ],
+    "positive_keywords": [
+      "compact",
+      "lightweight",
+      "sleek",
+      "improved",
+      "better"
+    ],
+    "negative_keywords": [
+      "bulky",
+      "heavy",
+      "clunky",
+      "worse",
+      "regret"
+    ]
+  },
+  {
+    "name": "gift_purchase",
+    "description": "Context where the item was bought for someone else (family members, partners) and their reception of it.",
+    "seed_keywords": [
+      "bought for",
+      "gift",
+      "son",
+      "kid",
+      "wife",
+      "better half"
+    ],
+    "positive_keywords": [
+      "loves them",
+      "enjoy",
+      "never without"
+    ],
+    "negative_keywords": []
+  },
+  {
+    "name": "gym_workout_use",
+    "description": "Experiences specifically related to using the product during exercise, running, or gym sessions.",
+    "seed_keywords": [
+      "gym",
+      "workout",
+      "running",
+      "exercise",
+      "treadmill"
+    ],
+    "positive_keywords": [
+      "silent workout",
+      "drowned out",
+      "stable",
+      "sweat"
+    ],
+    "negative_keywords": [
+      "fall out",
+      "slip",
+      "hassle",
+      "adjust"
+    ]
+  },
+  {
+    "name": "leisure_usage_enjoyment",
+    "description": "Satisfaction derived from using the product during downtime or casual activities like listening to podcasts or music.",
+    "seed_keywords": [
+      "leisure",
+      "downtime",
+      "casual",
+      "relaxing",
+      "fav podcast",
+      "music"
+    ],
+    "positive_keywords": [
+      "love",
+      "nice",
+      "enjoy",
+      "chill",
+      "unwind",
+      "great for nothing to do"
+    ],
+    "negative_keywords": [
+      "boring",
+      "dull",
+      "uninspiring",
+      "lack of fun"
+    ]
+  },
+  {
+    "name": "long_term_satisfaction",
+    "description": "Reflects sustained positive user experience over extended periods of ownership.",
+    "seed_keywords": [
+      "year",
+      "daily",
+      "again",
+      "love"
+    ],
+    "positive_keywords": [
+      "love",
+      "daily",
+      "again",
+      "year",
+      "always"
+    ],
+    "negative_keywords": [
+      "hate",
+      "rarely",
+      "never",
+      "broke",
+      "failed"
+    ]
+  },
+  {
+    "name": "loss_prevention_mechanisms",
+    "description": "Features or lack thereof regarding tracking, finding, or securing the earbuds to prevent loss.",
+    "seed_keywords": [
+      "lost",
+      "find my",
+      "tracking",
+      "case"
+    ],
+    "positive_keywords": [
+      "find my iphone",
+      "precise location",
+      "alerts"
+    ],
+    "negative_keywords": [
+      "lost one",
+      "cannot find",
+      "no tracking"
+    ]
+  },
+  {
+    "name": "media_type_suitability",
+    "description": "Describes how well the audio device performs for specific categories of content like music, movies, or podcasts.",
+    "seed_keywords": [
+      "movies",
+      "music",
+      "podcasts",
+      "talks",
+      "content"
+    ],
+    "positive_keywords": [
+      "immersive",
+      "cinematic",
+      "clear vocals",
+      "dynamic",
+      "engaging"
+    ],
+    "negative_keywords": [
+      "lacking",
+      "underwhelming",
+      "flat",
+      "boring",
+      "dull"
+    ]
+  },
+  {
+    "name": "noise_cancellation",
+    "description": "Effectiveness of active noise cancellation features and isolation from background noise.",
+    "seed_keywords": [
+      "noise canceling",
+      "noise cancellation",
+      "isolation",
+      "quiet"
+    ],
+    "positive_keywords": [
+      "blocks out noise",
+      "great cancellation",
+      "silence",
+      "works well"
+    ],
+    "negative_keywords": [
+      "doesn't block",
+      "still hear",
+      "poor isolation"
+    ]
+  },
+  {
+    "name": "physical_ergonomics",
+    "description": "Ease of handling, inserting, and removing the earbuds physically.",
+    "seed_keywords": [
+      "drop",
+      "put in",
+      "pull out",
+      "handling",
+      "buttons"
+    ],
+    "positive_keywords": [
+      "easy",
+      "simple",
+      "smooth",
+      "accessible"
+    ],
+    "negative_keywords": [
+      "fiddly",
+      "difficult",
+      "slippery",
+      "hard to grab"
+    ]
+  },
+  {
+    "name": "product_authenticity",
+    "description": "Concerns regarding whether the product is genuine, new, or refurbished.",
+    "seed_keywords": [
+      "refurbished",
+      "fake",
+      "real",
+      "authentic"
+    ],
+    "positive_keywords": [
+      "genuine",
+      "brand new",
+      "legit"
+    ],
+    "negative_keywords": [
+      "fake",
+      "knock off",
+      "used",
+      "damaged"
+    ]
+  },
+  {
+    "name": "product_comparison",
+    "description": "Comparisons between the AirPods and other brands or models (e.g., Bose, Galaxy Buds, Beats, standard AirPods).",
+    "seed_keywords": [
+      "better than",
+      "vs",
+      "compared to",
+      "upgrade",
+      "bose",
+      "galaxy"
+    ],
+    "positive_keywords": [
+      "improvement",
+      "superior",
+      "step up",
+      "beat"
+    ],
+    "negative_keywords": [
+      "step down",
+      "worse",
+      "inferior",
+      "marginal"
+    ]
+  },
+  {
+    "name": "product_defect_concerns",
+    "description": "Addresses suspicions or concerns about receiving a defective unit versus general product performance.",
+    "seed_keywords": [
+      "defect",
+      "dud",
+      "faulty",
+      "quality control",
+      "lemon"
+    ],
+    "positive_keywords": [
+      "perfect",
+      "flawless",
+      "consistent"
+    ],
+    "negative_keywords": [
+      "defective",
+      "unlucky",
+      "inconsistent",
+      "problematic"
+    ]
+  },
+  {
+    "name": "product_satisfaction",
+    "description": "General expressions of delight, love, or high praise for the product.",
+    "seed_keywords": [
+      "love it",
+      "amazing",
+      "fantastic",
+      "outstanding",
+      "great product"
+    ],
+    "positive_keywords": [
+      "love",
+      "amazing",
+      "fantastic",
+      "outstanding",
+      "great",
+      "best",
+      "incredible",
+      "a+"
+    ],
+    "negative_keywords": []
+  },
+  {
+    "name": "repeat_purchase_intent",
+    "description": "Expresses strong likelihood to buy the same product again.",
+    "seed_keywords": [
+      "getting again",
+      "buy again",
+      "replace"
+    ],
+    "positive_keywords": [
+      "again",
+      "replace",
+      "rebuy",
+      "stick with",
+      "loyal"
+    ],
+    "negative_keywords": [
+      "switch",
+      "different",
+      "avoid",
+      "never again"
+    ]
+  },
+  {
+    "name": "replacement_part_availability",
+    "description": "The ease or difficulty of purchasing individual units to replace a lost or broken earbud.",
+    "seed_keywords": [
+      "replacement",
+      "buy one",
+      "single unit",
+      "spare"
+    ],
+    "positive_keywords": [
+      "easy replacement",
+      "buy single",
+      "available"
+    ],
+    "negative_keywords": [
+      "must buy pair",
+      "no replacement",
+      "expensive"
+    ]
+  },
+  {
+    "name": "return_refund_experience",
+    "description": "Experiences related to returning the product or receiving refunds.",
+    "seed_keywords": [
+      "returned the product",
+      "refund",
+      "return"
+    ],
+    "positive_keywords": [],
+    "negative_keywords": [
+      "returned",
+      "refund",
+      "did not refund",
+      "keep these",
+      "had to return"
+    ]
+  },
+  {
+    "name": "seal_quality_impact",
+    "description": "How the quality of the ear seal affects the performance of features like noise cancellation.",
+    "seed_keywords": [
+      "seal",
+      "isolation",
+      "noise cancelling",
+      "fit"
+    ],
+    "positive_keywords": [
+      "tight seal",
+      "blocks noise",
+      "immersive",
+      "secure"
+    ],
+    "negative_keywords": [
+      "poor seal",
+      "no noise cancellation",
+      "leaking sound",
+      "loose"
+    ]
+  },
+  {
+    "name": "single_bud_functionality",
+    "description": "The ability to use one AirPod independently while the other is charging or missing.",
+    "seed_keywords": [
+      "one ear",
+      "single bud",
+      "mono audio",
+      "lost one"
+    ],
+    "positive_keywords": [
+      "works alone",
+      "single mode",
+      "independent use"
+    ],
+    "negative_keywords": [
+      "only one works",
+      "missing ear",
+      "unbalanced"
+    ]
+  },
+  {
+    "name": "situational_awareness_risk",
+    "description": "Safety concerns caused by noise cancellation blocking important environmental sounds like alarms or traffic.",
+    "seed_keywords": [
+      "dangerous",
+      "doorbell",
+      "gas leak",
+      "bike",
+      "awareness"
+    ],
+    "positive_keywords": [
+      "safe",
+      "aware",
+      "alert"
+    ],
+    "negative_keywords": [
+      "dangerous",
+      "missed",
+      "blocked",
+      "unsafe",
+      "risk"
+    ]
+  },
+  {
+    "name": "software_automation",
+    "description": "Behavior of automatic features like Siri prompts, location tracking, and app suggestions.",
+    "seed_keywords": [
+      "siri",
+      "notifications",
+      "automatic",
+      "prompts",
+      "location"
+    ],
+    "positive_keywords": [
+      "helpful",
+      "intuitive",
+      "smart",
+      "hands-free"
+    ],
+    "negative_keywords": [
+      "annoying",
+      "intrusive",
+      "malware",
+      "popups"
+    ]
+  },
+  {
+    "name": "spatial_audio",
+    "description": "Performance of surround sound and immersive audio features.",
+    "seed_keywords": [
+      "spatial audio",
+      "surround sound",
+      "immersive",
+      "head tracking"
+    ],
+    "positive_keywords": [
+      "amazing",
+      "realistic",
+      "theater-like",
+      "3d sound"
+    ],
+    "negative_keywords": [
+      "gimmicky",
+      "unrealistic",
+      "glitchy",
+      "doesn't work"
+    ]
+  },
+  {
+    "name": "sweat_resistance_discomfort",
+    "description": "Issues with the earbuds becoming slippery, gross, or uncomfortable due to sweat accumulation.",
+    "seed_keywords": [
+      "sweat",
+      "slippery",
+      "gross",
+      "slimey",
+      "wet"
+    ],
+    "positive_keywords": [
+      "dry",
+      "grip",
+      "secure",
+      "fresh"
+    ],
+    "negative_keywords": [
+      "slippery",
+      "slimey",
+      "gross",
+      "sweat",
+      "uncomfortable"
+    ]
+  },
+  {
+    "name": "thermal_comfort",
+    "description": "Comments regarding the temperature of the device during wear, specifically comparing to over-ear headphones.",
+    "seed_keywords": [
+      "hot",
+      "sweaty",
+      "cool",
+      "temperature"
+    ],
+    "positive_keywords": [
+      "cool"
+    ],
+    "negative_keywords": [
+      "hot",
+      "sweaty"
+    ]
+  },
+  {
+    "name": "third_party_accessories",
+    "description": "Need for or experience with non-Apple accessories to improve comfort or fit.",
+    "seed_keywords": [
+      "amazon",
+      "accessories",
+      "earplugs",
+      "comfy",
+      "aftermarket"
+    ],
+    "positive_keywords": [
+      "better",
+      "comfy",
+      "solution",
+      "alternative"
+    ],
+    "negative_keywords": [
+      "had to buy",
+      "extra cost",
+      "searching",
+      "replacement"
+    ]
+  },
+  {
+    "name": "third_party_value_proposition",
+    "description": "The perceived value and savings when purchasing from a non-official or third-party seller.",
+    "seed_keywords": [
+      "saved",
+      "money",
+      "price",
+      "cost",
+      "seller"
+    ],
+    "positive_keywords": [
+      "cheap",
+      "bargain",
+      "deal",
+      "affordable",
+      "worth it"
+    ],
+    "negative_keywords": [
+      "expensive",
+      "overpriced",
+      "scam",
+      "fake",
+      "waste"
+    ]
+  },
+  {
+    "name": "transparency_mode",
+    "description": "Feedback on the transparency mode feature which allows users to hear their surroundings while wearing the earbuds.",
+    "seed_keywords": [
+      "transparency",
+      "transparency mode",
+      "hear surroundings"
+    ],
+    "positive_keywords": [
+      "best part",
+      "love",
+      "amazing"
+    ],
+    "negative_keywords": []
+  },
+  {
+    "name": "troubleshooting_experience",
+    "description": "Covers the user's attempts to resolve technical issues, including steps taken and outcomes.",
+    "seed_keywords": [
+      "troubleshooting",
+      "fix",
+      "resolve",
+      "pairing",
+      "reset"
+    ],
+    "positive_keywords": [
+      "easy",
+      "resolved",
+      "helpful",
+      "successful"
+    ],
+    "negative_keywords": [
+      "unsuccessful",
+      "no avail",
+      "frustrating",
+      "failed"
+    ]
+  },
+  {
+    "name": "upgrade_value",
+    "description": "Perceived value and differences when upgrading from older AirPods models.",
+    "seed_keywords": [
+      "upgrade",
+      "replacement",
+      "gen 2",
+      "original",
+      "difference"
+    ],
+    "positive_keywords": [
+      "worth it",
+      "improvement",
+      "step up",
+      "better"
+    ],
+    "negative_keywords": [
+      "not worth it",
+      "no difference",
+      "barely noticeable",
+      "waste of money"
+    ]
+  },
+  {
+    "name": "usage_mobility_restriction",
+    "description": "Limitations on where or how the product can be used due to fit or functionality.",
+    "seed_keywords": [
+      "use in my house",
+      "fall out",
+      "restrictions",
+      "mobility"
+    ],
+    "positive_keywords": [
+      "anywhere",
+      "on the go",
+      "active use",
+      "versatile"
+    ],
+    "negative_keywords": [
+      "limited",
+      "indoor only",
+      "stationary",
+      "restricted"
+    ]
+  },
+  {
+    "name": "user_engagement_curiosity",
+    "description": "The user's interest in exploring and learning the full capabilities of the device over time.",
+    "seed_keywords": [
+      "getting to know",
+      "learning",
+      "exploring",
+      "features",
+      "discovery"
+    ],
+    "positive_keywords": [
+      "still getting to know",
+      "excited to learn",
+      "figuring it out",
+      "discovering features"
+    ],
+    "negative_keywords": [
+      "confusing",
+      "hard to learn",
+      "frustrating",
+      "steep learning curve"
+    ]
+  },
+  {
+    "name": "user_group_feedback",
+    "description": "Reviews that summarize the opinions of multiple users or family members rather than a single individual.",
+    "seed_keywords": [
+      "people",
+      "family",
+      "kids",
+      "everyone",
+      "they"
+    ],
+    "positive_keywords": [
+      "people",
+      "family",
+      "kids",
+      "everyone",
+      "they",
+      "all",
+      "group"
+    ],
+    "negative_keywords": [
+      "argue",
+      "fight",
+      "disagree",
+      "mixed",
+      "varied"
+    ]
+  },
+  {
+    "name": "volume_output",
+    "description": "Pertains to the loudness or perceived volume level of the audio output, including whether it meets user expectations.",
+    "seed_keywords": [
+      "volume",
+      "loudness",
+      "output",
+      "sound level"
+    ],
+    "positive_keywords": [
+      "loud",
+      "sufficient",
+      "powerful",
+      "adequate"
+    ],
+    "negative_keywords": [
+      "low",
+      "quiet",
+      "underwhelming",
+      "weak"
+    ]
+  },
+  {
+    "name": "water_resistance_utility",
+    "description": "The utility and performance of the device's water-resistant capabilities during use.",
+    "seed_keywords": [
+      "water",
+      "resistant",
+      "sweat",
+      "rain",
+      "moisture"
+    ],
+    "positive_keywords": [
+      "protected",
+      "safe",
+      "durable",
+      "reliable",
+      "workout"
+    ],
+    "negative_keywords": [
+      "damage",
+      "rust",
+      "short",
+      "fail",
+      "void"
+    ]
+  }
+]

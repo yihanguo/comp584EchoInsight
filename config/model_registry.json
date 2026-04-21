@@ -1,0 +1,77 @@
+{
+  "_comment": "Model registry for EchoInsight V2. Two routes: ModelScope inference, or GLM BigModel inference.",
+  "_policy": "Thinking/reasoning mode is DISABLED for all models. Classification and validation tasks need fast JSON output, not chain-of-thought. Never enable thinking in this pipeline.",
+  "models": {
+    "qwen3.5-35b": {
+      "model": "Qwen/Qwen3.5-35B-A3B",
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 10,
+      "request_delay": 3.0,
+      "timeout": 60.0,
+      "notes": "ModelScope Qwen3.5 MoE. Subject to free-tier rate limits."
+    },
+    "deepseek-v3": {
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 10,
+      "request_delay": 3.0,
+      "timeout": 60.0,
+      "notes": "ModelScope DeepSeek-V3.2."
+    },
+    "qwen3-32b": {
+      "model": "Qwen/Qwen3-32B",
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 10,
+      "request_delay": 3.0,
+      "timeout": 60.0,
+      "notes": "ModelScope Qwen3-32B dense."
+    },
+    "glm-4.7-flash": {
+      "model": "ZhipuAI/GLM-4.7-Flash",
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 20,
+      "request_delay": 3.0,
+      "timeout": 60.0,
+      "notes": "GLM-4.7-Flash via ModelScope."
+    },
+    "deepseek-r1-7b": {
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "base_url": "https://api-inference.modelscope.cn/v1",
+      "disable_thinking": true,
+      "extra_body": {"enable_thinking": false},
+      "rpm": 15,
+      "request_delay": 4.0,
+      "timeout": 90.0,
+      "notes": "DeepSeek-R1 distilled 7B via ModelScope. Uses enable_thinking=false to suppress chain-of-thought."
+    },
+    "glm-bigmodel": {
+      "model": "glm-4-flash",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 30,
+      "request_delay": 1.0,
+      "timeout": 45.0,
+      "notes": "BigModel.cn (Zhipu) GLM-4-Flash. Requires a separate BigModel apikey via --info."
+    },
+    "glm-4.7-volcengine": {
+      "model": "glm-4-7-251222",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 60,
+      "request_delay": 1.0,
+      "timeout": 120.0,
+      "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/info_volcengine.md. Verified reachable."
+    }
+  },
+  "default": "deepseek-r1-7b"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "battery_life",
+    "description": "How long the product lasts on a charge or with regular use.",
+    "seed_keywords": ["battery", "charge", "charging", "power", "recharge", "drain", "lasting", "hours"],
+    "positive_keywords": ["long battery", "battery lasts", "holds charge", "great battery", "charges quickly", "powerful battery"],
+    "negative_keywords": ["battery dies", "won't charge", "stopped charging", "dead battery", "drains fast", "short battery", "battery issue"]
+  },
+  {
+    "name": "durability_reliability",
+    "description": "Whether the product feels reliable, sturdy, and keeps working over time.",
+    "seed_keywords": ["broke", "broken", "durable", "sturdy", "fragile", "reliable", "defective", "lasted"],
+    "positive_keywords": ["well made", "works perfectly", "still working", "very durable", "feels sturdy"],
+    "negative_keywords": ["broke after", "stopped working", "fell apart", "defective", "cheaply made", "not durable"]
+  },
+  {
+    "name": "ease_of_use",
+    "description": "How easy the product is to set up, learn, and use.",
+    "seed_keywords": ["easy", "simple", "setup", "instructions", "install", "user-friendly", "complicated", "confusing"],
+    "positive_keywords": ["easy to use", "easy to set up", "plug and play", "clear instructions", "user friendly"],
+    "negative_keywords": ["hard to use", "difficult to set up", "confusing instructions", "complicated", "not intuitive"]
+  },
+  {
+    "name": "connectivity_compatibility",
+    "description": "Whether the product connects correctly and works with devices or platforms.",
+    "seed_keywords": ["bluetooth", "wifi", "connection", "connect", "pair", "paired", "compatible", "usb"],
+    "positive_keywords": ["connected immediately", "pairs easily", "works with my", "stable connection", "compatible with"],
+    "negative_keywords": ["won't connect", "keeps disconnecting", "pairing issue", "not compatible", "connection drops"]
+  },
+  {
+    "name": "performance_quality",
+    "description": "How well the product performs its core function, including speed and output quality.",
+    "seed_keywords": ["performance", "fast", "slow", "quality", "works", "lag", "accurate", "responsive"],
+    "positive_keywords": ["works great", "excellent quality", "very responsive", "fast and reliable", "high performance"],
+    "negative_keywords": ["poor performance", "very slow", "laggy", "doesn't work well", "low quality"]
+  },
+  {
+    "name": "value_for_money",
+    "description": "Whether the customer believes the product is worth its price.",
+    "seed_keywords": ["price", "worth", "value", "expensive", "cheap", "cost", "money"],
+    "positive_keywords": ["great value", "worth the price", "good for the money", "excellent deal"],
+    "negative_keywords": ["not worth", "too expensive", "waste of money", "overpriced"]
+  },
+  {
+    "name": "packaging_shipping",
+    "description": "How the product was packaged, delivered, and whether shipping caused problems.",
+    "seed_keywords": ["shipping", "delivery", "package", "packaging", "arrived", "box", "damaged"],
+    "positive_keywords": ["arrived on time", "well packaged", "packaged nicely", "fast shipping"],
+    "negative_keywords": ["arrived damaged", "poor packaging", "late delivery", "damaged in shipping", "box was crushed"]
+  },
+  {
+    "name": "design_comfort",
+    "description": "How the product looks, feels, and fits during use.",
+    "seed_keywords": ["design", "comfortable", "comfort", "fit", "look", "style", "size", "heavy"],
+    "positive_keywords": ["looks great", "comfortable to wear", "fits well", "sleek design", "nice size"],
+    "negative_keywords": ["uncomfortable", "poor design", "too bulky", "bad fit", "looks cheap"]
+  }
+]
