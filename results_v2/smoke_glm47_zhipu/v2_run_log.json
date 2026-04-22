@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 2,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "timestamp": "2026-04-21T22:22:37"
+  },
+  "initial_catalog": [
+    {
+      "name": "noise_cancellation",
+      "description": "The ability of the product to reduce background noise.",
+      "examples": [
+        "the noise cancellation is amazing"
+      ]
+    },
+    {
+      "name": "product_reliability",
+      "description": "The product functions correctly without issues over time.",
+      "examples": [
+        "so far no issues",
+        "they work great"
+      ]
+    },
+    {
+      "name": "model_version_accuracy",
+      "description": "The specific generation or version of the product components received.",
+      "examples": [
+        "The actual air pods are the 2nd generation model but the charging case is the first generation case"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 2,
+      "sample_size_init": 3
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "22947",
+        "59942",
+        "52085"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 3,
+      "features": [
+        "noise_cancellation",
+        "product_reliability",
+        "model_version_accuracy"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 67.13
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 3,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 21.33
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "1",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 10.13
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 99.1,
+      "reviews_processed": 2
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 10,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "validation_temperature": 0.0,
+    "classify_workers": 3,
+    "max_validation_iters": 2,
+    "timestamp": "2026-04-22T00:21:52"
+  },
+  "initial_catalog": [
+    {
+      "name": "ear_fit_stability",
+      "description": "The ability of the product to stay securely in the ears during use.",
+      "examples": [
+        "Kept falling from my ears"
+      ]
+    },
+    {
+      "name": "general_satisfaction",
+      "description": "Overall positive sentiment about the product.",
+      "examples": [
+        "Bueno",
+        "Muy lindo"
+      ]
+    },
+    {
+      "name": "aesthetic_design",
+      "description": "The visual appeal or look of the product.",
+      "examples": [
+        "Muy lindo"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 10,
+      "sample_size_init": 3,
+      "classify_workers": 3,
+      "max_validation_iters": 2
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "21329",
+        "18239",
+        "19226"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 3,
+      "features": [
+        "ear_fit_stability",
+        "general_satisfaction",
+        "aesthetic_design"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 5.59
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 9.15
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "1",
+      "features_classified": 10,
+      "relevant_count": 9,
+      "positive_count": 8,
+      "negative_count": 0,
+      "neutral_count": 1,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": false,
+      "validation_iterations_used": 2,
+      "dynamic_features_added": [
+        "adjustability",
+        "video_chat_performance",
+        "comfort",
+        "improvement_over_previous_version",
+        "sound_quality",
+        "noise_cancellation",
+        "battery_life"
+      ],
+      "elapsed_seconds": 33.76
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "2",
+      "features_classified": 3,
+      "relevant_count": 2,
+      "positive_count": 2,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 6.78
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "3",
+      "features_classified": 5,
+      "relevant_count": 4,
+      "positive_count": 3,
+      "negative_count": 1,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 2,
+      "dynamic_features_added": [
+        "sound_quality",
+        "noise_cancellation"
+      ],
+      "elapsed_seconds": 21.25
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "4",
+      "features_classified": 5,
+      "relevant_count": 3,
+      "positive_count": 0,
+      "negative_count": 3,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 2,
+      "dynamic_features_added": [
+        "condition",
+        "functionality"
+      ],
+      "elapsed_seconds": 26.16
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "5",
+      "features_classified": 3,
+      "relevant_count": 2,
+      "positive_count": 1,
+      "negative_count": 1,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 6.83
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "6",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 8.04
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "7",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 8.15
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "8",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 7.83
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "9",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 6.61
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 140.5,
+      "reviews_processed": 10
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "sound_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review praises the product generally but does not mention audio performance or clarity."
+      },
+      "accessibility": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention accessibility or accommodations for specific needs."
+      },
+      "warranty_validation": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention warranty or authenticity verification."
+      },
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the battery life or any related aspects."
+      },
+      "ergonomics": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention the physical design or comfort of the device."
+      }
+    }
+  }
+]

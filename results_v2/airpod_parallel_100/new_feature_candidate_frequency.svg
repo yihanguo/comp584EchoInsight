@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="732" viewBox="0 0 900 732">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">New Feature Candidate Frequency</text>
+<text x="40" y="56" class="subtitle">MasterAgent candidates proposed after validation failure.</text>
+<text x="216" y="94" text-anchor="end" class="label">microphone_quality</text>
+<rect x="230" y="78" width="590.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="828.0" y="92" class="small">3</text>
+<text x="216" y="124" text-anchor="end" class="label">ambient_mode</text>
+<rect x="230" y="108" width="393.3" height="18" rx="2" fill="#8b5a2b"/>
+<text x="631.3" y="122" class="small">2</text>
+<text x="216" y="154" text-anchor="end" class="label">alignment_ease</text>
+<rect x="230" y="138" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="152" class="small">1</text>
+<text x="216" y="184" text-anchor="end" class="label">app_integration</text>
+<rect x="230" y="168" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="182" class="small">1</text>
+<text x="216" y="214" text-anchor="end" class="label">authenticity</text>
+<rect x="230" y="198" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="212" class="small">1</text>
+<text x="216" y="244" text-anchor="end" class="label">auto_pause</text>
+<rect x="230" y="228" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="242" class="small">1</text>
+<text x="216" y="274" text-anchor="end" class="label">backward_compatibility</text>
+<rect x="230" y="258" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="272" class="small">1</text>
+<text x="216" y="304" text-anchor="end" class="label">charging_method</text>
+<rect x="230" y="288" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="302" class="small">1</text>
+<text x="216" y="334" text-anchor="end" class="label">control_intuitiveness</text>
+<rect x="230" y="318" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="332" class="small">1</text>
+<text x="216" y="364" text-anchor="end" class="label">control_scheme</text>
+<rect x="230" y="348" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="362" class="small">1</text>
+<text x="216" y="394" text-anchor="end" class="label">defect_resistance</text>
+<rect x="230" y="378" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="392" class="small">1</text>
+<text x="216" y="424" text-anchor="end" class="label">device_switching</text>
+<rect x="230" y="408" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="422" class="small">1</text>
+<text x="216" y="454" text-anchor="end" class="label">ergonomics</text>
+<rect x="230" y="438" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="452" class="small">1</text>
+<text x="216" y="484" text-anchor="end" class="label">feature_reliability</text>
+<rect x="230" y="468" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="482" class="small">1</text>
+<text x="216" y="514" text-anchor="end" class="label">find_device_feature</text>
+<rect x="230" y="498" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="512" class="small">1</text>
+<text x="216" y="544" text-anchor="end" class="label">fit_and_stability</text>
+<rect x="230" y="528" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="542" class="small">1</text>
+<text x="216" y="574" text-anchor="end" class="label">fit_during_activity</text>
+<rect x="230" y="558" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="572" class="small">1</text>
+<text x="216" y="604" text-anchor="end" class="label">fit_stability</text>
+<rect x="230" y="588" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="602" class="small">1</text>
+<text x="216" y="634" text-anchor="end" class="label">logistics</text>
+<rect x="230" y="618" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="632" class="small">1</text>
+<text x="216" y="664" text-anchor="end" class="label">noise_level</text>
+<rect x="230" y="648" width="196.7" height="18" rx="2" fill="#8b5a2b"/>
+<text x="434.7" y="662" class="small">1</text>
+</svg>

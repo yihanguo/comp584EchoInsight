@@ -1,0 +1,39 @@
+[
+  {
+    "name": "sound_quality",
+    "description": "The audio output performance and clarity of the device.",
+    "examples": [
+      "sounds like im in a fishtank",
+      "Great sound"
+    ]
+  },
+  {
+    "name": "microphone_quality",
+    "description": "The clarity and performance of the input audio captured by the device.",
+    "examples": [
+      "sounding like that one kid in the lobby who has music blasting through their mic with the worst quality ever"
+    ]
+  },
+  {
+    "name": "initial_charge_state",
+    "description": "The battery level of the product upon first use.",
+    "examples": [
+      "They come charged all the way when you get them"
+    ]
+  },
+  {
+    "name": "physical_fit",
+    "description": "How comfortable and secure the device feels when worn.",
+    "examples": [
+      "They feel great in the ear",
+      "They doesn’t fall out of ears"
+    ]
+  },
+  {
+    "name": "charging_speed",
+    "description": "How quickly the device regains battery power.",
+    "examples": [
+      "charges fast"
+    ]
+  }
+]

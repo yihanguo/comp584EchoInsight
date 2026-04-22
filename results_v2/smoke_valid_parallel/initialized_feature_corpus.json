@@ -1,0 +1,24 @@
+[
+  {
+    "name": "ear_fit_stability",
+    "description": "The ability of the product to stay securely in the ears during use.",
+    "examples": [
+      "Kept falling from my ears"
+    ]
+  },
+  {
+    "name": "general_satisfaction",
+    "description": "Overall positive sentiment about the product.",
+    "examples": [
+      "Bueno",
+      "Muy lindo"
+    ]
+  },
+  {
+    "name": "aesthetic_design",
+    "description": "The visual appeal or look of the product.",
+    "examples": [
+      "Muy lindo"
+    ]
+  }
+]

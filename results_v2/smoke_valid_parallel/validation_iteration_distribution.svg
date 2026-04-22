@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="192" viewBox="0 0 900 192">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">Validation Iteration Distribution</text>
+<text x="40" y="56" class="subtitle">How many validation passes each review needed.</text>
+<text x="216" y="94" text-anchor="end" class="label">1</text>
+<rect x="230" y="78" width="590.0" height="18" rx="2" fill="#7c6f2b"/>
+<text x="828.0" y="92" class="small">7</text>
+<text x="216" y="124" text-anchor="end" class="label">2</text>
+<rect x="230" y="108" width="252.9" height="18" rx="2" fill="#7c6f2b"/>
+<text x="490.9" y="122" class="small">3</text>
+</svg>

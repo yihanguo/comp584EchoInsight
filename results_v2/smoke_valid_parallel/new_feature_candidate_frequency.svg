@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="432" viewBox="0 0 900 432">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">New Feature Candidate Frequency</text>
+<text x="40" y="56" class="subtitle">MasterAgent candidates proposed after validation failure.</text>
+<text x="216" y="94" text-anchor="end" class="label">noise_cancellation</text>
+<rect x="230" y="78" width="590.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="828.0" y="92" class="small">2</text>
+<text x="216" y="124" text-anchor="end" class="label">sound_quality</text>
+<rect x="230" y="108" width="590.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="828.0" y="122" class="small">2</text>
+<text x="216" y="154" text-anchor="end" class="label">adjustability</text>
+<rect x="230" y="138" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="152" class="small">1</text>
+<text x="216" y="184" text-anchor="end" class="label">battery_life</text>
+<rect x="230" y="168" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="182" class="small">1</text>
+<text x="216" y="214" text-anchor="end" class="label">comfort</text>
+<rect x="230" y="198" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="212" class="small">1</text>
+<text x="216" y="244" text-anchor="end" class="label">condition</text>
+<rect x="230" y="228" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="242" class="small">1</text>
+<text x="216" y="274" text-anchor="end" class="label">ear_fit_stability</text>
+<rect x="230" y="258" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="272" class="small">1</text>
+<text x="216" y="304" text-anchor="end" class="label">functionality</text>
+<rect x="230" y="288" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="302" class="small">1</text>
+<text x="216" y="334" text-anchor="end" class="label">improvement_over_previous_version</text>
+<rect x="230" y="318" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="332" class="small">1</text>
+<text x="216" y="364" text-anchor="end" class="label">video_chat_performance</text>
+<rect x="230" y="348" width="295.0" height="18" rx="2" fill="#8b5a2b"/>
+<text x="533.0" y="362" class="small">1</text>
+</svg>

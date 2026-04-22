@@ -1,0 +1,19 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "sound_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention audio clarity or performance."
+      },
+      "ease_of_use": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention the simplicity or intuitiveness of operating the product."
+      }
+    }
+  }
+]

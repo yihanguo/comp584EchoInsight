@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 10,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "classify_workers": 3,
+    "timestamp": "2026-04-21T23:52:19"
+  },
+  "initial_catalog": [
+    {
+      "name": "speaker_reliability",
+      "description": "The functionality and longevity of the speaker component.",
+      "examples": [
+        "The speaker on one has already gone out."
+      ]
+    },
+    {
+      "name": "return_policy_limitations",
+      "description": "Restrictions or issues related to returning the product.",
+      "examples": [
+        "I can’t return these now."
+      ]
+    },
+    {
+      "name": "overall_satisfaction",
+      "description": "General positive sentiment about the product.",
+      "examples": [
+        "I love them",
+        "Amazing product",
+        "one of the best acquisitions in years"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 10,
+      "sample_size_init": 3,
+      "classify_workers": 3
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "67659",
+        "54397",
+        "20076"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 3,
+      "features": [
+        "speaker_reliability",
+        "return_policy_limitations",
+        "overall_satisfaction"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 3.37
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 5.68
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "1",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 6.98
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "2",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 9.57
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "3",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 7.58
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "4",
+      "features_classified": 3,
+      "relevant_count": 2,
+      "positive_count": 0,
+      "negative_count": 2,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 36.3
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "5",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 16.72
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "6",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 5.46
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "7",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 36.58
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "8",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 15.67
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "9",
+      "features_classified": 3,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 4.67
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 149.0,
+      "reviews_processed": 10
+    }
+  ]
+}

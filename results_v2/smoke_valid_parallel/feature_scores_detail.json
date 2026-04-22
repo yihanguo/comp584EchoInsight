@@ -1,0 +1,298 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention how the product fits or stays in the ears."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "These are so amazing",
+        "reason": "The review expresses strong overall satisfaction with the product."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": ": The review praises the product generally but does not specifically mention its visual appeal or look."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "fit better in the ears",
+        "reason": "The reviewer explicitly states that the product fits better in the ears compared to a previous model, indicating a positive sentiment regarding stability."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "The sound quality is amazing. I love the noise cancellation, and I also like that I can adjust it if I need to. I video chat several hours a day and I only have to charge the case every few days. These feel so much better and fit better in the ears than the first AirPods.",
+        "reason": "The review expresses strong positive sentiment about multiple aspects of the product, indicating overall satisfaction."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on sound quality, noise cancellation, battery life, and fit, with no mention of visual appeal."
+      },
+      "adjustability": {
+        "is_relevant": true,
+        "score": 0.5,
+        "evidence_span": "I also like that I can adjust it if I need to",
+        "reason": "The user explicitly mentions liking the ability to adjust the noise cancellation settings."
+      },
+      "video_chat_performance": {
+        "is_relevant": true,
+        "score": 0.0,
+        "evidence_span": "The sound quality is amazing. I video chat several hours a day",
+        "reason": "The review mentions video chatting and sound quality, but does not explicitly evaluate the performance during the call."
+      },
+      "comfort": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "These feel so much better and fit better in the ears than the first AirPods.",
+        "reason": "The review explicitly compares the fit and feel favorably to a previous model, indicating positive sentiment regarding physical comfort."
+      },
+      "improvement_over_previous_version": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "These feel so much better and fit better in the ears than the first AirPods.",
+        "reason": "The review explicitly compares the current model favorably to the first AirPods regarding fit and feel."
+      },
+      "sound_quality": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "The sound quality is amazing.",
+        "reason": "The review explicitly praises the sound quality with the word 'amazing', indicating a strong positive sentiment."
+      },
+      "noise_cancellation": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I love the noise cancellation",
+        "reason": "The user explicitly expresses love for the noise cancellation feature."
+      },
+      "battery_life": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I only have to charge the case every few days",
+        "reason": "The user expresses satisfaction with the infrequent charging frequency."
+      }
+    }
+  },
+  {
+    "review_id": "2",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "stays in the ears well",
+        "reason": "The review explicitly states that the product stays in the ears well, indicating positive sentiment regarding stability."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Good and works really well",
+        "reason": "The review expresses clear overall satisfaction with the product's performance."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on functionality and fit, not visual appeal."
+      }
+    }
+  },
+  {
+    "review_id": "3",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "the only issue I have with them is they fall out easily no matter what size ear tip I use",
+        "reason": "The reviewer explicitly states that the earbuds fall out easily, indicating poor stability."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 0.5,
+        "evidence_span": "I love the sound quality. The bass comes across very clear as if you’re in a room listening to a high-quality stereo. The noise cancellation is the best that I’ve experienced.",
+        "reason": "The review expresses strong positive sentiment towards specific aspects of the product, indicating overall satisfaction despite a minor usability issue."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on sound quality, noise cancellation, and fit issues, with no mention of the product's visual appeal or design."
+      },
+      "sound_quality": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I love the sound quality. The bass comes across very clear as if you’re in a room listening to a high-quality stereo.",
+        "reason": "The review explicitly praises the sound quality and bass clarity with strong positive language."
+      },
+      "noise_cancellation": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "The noise cancellation is the best that I’ve experienced. You have the option of either blocking everything out or allowing some noise to come in so that you can be aware in your environment.",
+        "reason": "The review explicitly praises the noise cancellation as the best experienced and highlights the useful option to adjust transparency modes."
+      }
+    }
+  },
+  {
+    "review_id": "4",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the product's condition and functionality, not how well it stays in the ears."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "Really disappointed.",
+        "reason": "The review explicitly states disappointment with the product, indicating strong negative overall sentiment."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on functionality and condition, not visual appeal."
+      },
+      "condition": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "These Airpods were clearly used.",
+        "reason": "The customer explicitly states the product was used, which directly relates to its condition."
+      },
+      "functionality": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "These didn't work at all. Well, one did. But only one.",
+        "reason": "The review explicitly states that the product failed to work properly, with only one of the two AirPods functioning."
+      }
+    }
+  },
+  {
+    "review_id": "5",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": true,
+        "score": -0.5,
+        "evidence_span": "hard to keep in my ear sometimes",
+        "reason": "The user explicitly mentions difficulty keeping the product in their ear, indicating a negative sentiment regarding stability."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 0.5,
+        "evidence_span": "Great",
+        "reason": "The review starts with 'Great', indicating overall positive sentiment despite a minor usability issue."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses fit and comfort, not visual appeal."
+      }
+    }
+  },
+  {
+    "review_id": "6",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention how the product fits or stays in the ears."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Worked very well!",
+        "reason": "The phrase 'Worked very well!' indicates a strong positive sentiment regarding the product's overall performance."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on entertainment value and functionality, not visual appeal."
+      }
+    }
+  },
+  {
+    "review_id": "7",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention how well the earbuds stay in the ears."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Perfect earbuds",
+        "reason": "The word 'Perfect' indicates strong overall positive sentiment."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the visual appearance or design of the product."
+      }
+    }
+  },
+  {
+    "review_id": "8",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention how the product fits or stays in the ears."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "love them as well. Good sound quality and usefulness.",
+        "reason": "The reviewer explicitly states they 'love them' and praises the product's quality and utility."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality and usefulness but does not mention the visual appeal or look of the product."
+      }
+    }
+  },
+  {
+    "review_id": "9",
+    "features": {
+      "ear_fit_stability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the product's fit or stability."
+      },
+      "general_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "loves this",
+        "reason": "The review expresses strong positive sentiment about the product."
+      },
+      "aesthetic_design": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the visual appeal or look of the product."
+      }
+    }
+  }
+]

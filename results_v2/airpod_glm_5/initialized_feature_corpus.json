@@ -1,0 +1,30 @@
+[
+  {
+    "name": "battery_life",
+    "description": "Duration of power for operation or calls.",
+    "examples": [
+      "The battery life for calls is less than advertised"
+    ]
+  },
+  {
+    "name": "case_charging_capacity",
+    "description": "Ability of the case to hold additional charges.",
+    "examples": [
+      "the case holds a fair number of charges"
+    ]
+  },
+  {
+    "name": "sound_quality",
+    "description": "Overall audio performance and output.",
+    "examples": [
+      "I love the sound these have"
+    ]
+  },
+  {
+    "name": "device_pairing",
+    "description": "Ease and success of connecting to other devices.",
+    "examples": [
+      "how well they pair with my iphone"
+    ]
+  }
+]

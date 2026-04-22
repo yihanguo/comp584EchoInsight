@@ -1,0 +1,59 @@
+{
+  "total_reviews": 10,
+  "initial_catalog_size": 3,
+  "dynamic_new_feature_candidates_count": 10,
+  "dynamic_new_feature_candidates": [
+    "adjustability",
+    "battery_life",
+    "comfort",
+    "condition",
+    "ear_fit_stability",
+    "functionality",
+    "improvement_over_previous_version",
+    "noise_cancellation",
+    "sound_quality",
+    "video_chat_performance"
+  ],
+  "dynamic_features_added_count": 9,
+  "dynamic_features_added": [
+    "adjustability",
+    "battery_life",
+    "comfort",
+    "condition",
+    "functionality",
+    "improvement_over_previous_version",
+    "noise_cancellation",
+    "sound_quality",
+    "video_chat_performance"
+  ],
+  "validation_enabled": true,
+  "validation_pass_rate": 0.9,
+  "validation_pass_count": 9,
+  "validation_fail_count": 1,
+  "avg_validation_iterations": 1.3,
+  "avg_validation_seconds_per_review": 5.24,
+  "common_missing_feature_candidates": [
+    {
+      "name": "battery_life",
+      "count": 1
+    },
+    {
+      "name": "noise_cancellation",
+      "count": 1
+    },
+    {
+      "name": "sound_quality",
+      "count": 1
+    }
+  ],
+  "avg_relevant_features_per_review": 2.5,
+  "avg_features_per_review": 4.1,
+  "positive_assignment_count": 19,
+  "negative_assignment_count": 5,
+  "neutral_assignment_count": 1,
+  "classify_error_count": 0,
+  "avg_classify_seconds_per_review": 13.46,
+  "avg_classify_seconds_per_feature": 3.566,
+  "classify_workers": 3,
+  "elapsed_seconds": 140.5
+}

@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 5,
+    "sample_size_init": 2,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "timestamp": "2026-04-21T22:27:08"
+  },
+  "initial_catalog": [
+    {
+      "name": "battery_life",
+      "description": "Duration of power for operation or calls.",
+      "examples": [
+        "The battery life for calls is less than advertised"
+      ]
+    },
+    {
+      "name": "case_charging_capacity",
+      "description": "Ability of the case to hold additional charges.",
+      "examples": [
+        "the case holds a fair number of charges"
+      ]
+    },
+    {
+      "name": "sound_quality",
+      "description": "Overall audio performance and output.",
+      "examples": [
+        "I love the sound these have"
+      ]
+    },
+    {
+      "name": "device_pairing",
+      "description": "Ease and success of connecting to other devices.",
+      "examples": [
+        "how well they pair with my iphone"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 5,
+      "sample_size_init": 2
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "57789",
+        "69905"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 4,
+      "features": [
+        "battery_life",
+        "case_charging_capacity",
+        "sound_quality",
+        "device_pairing"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 42.97
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 4,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 116.37
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "1",
+      "features_classified": 4,
+      "relevant_count": 3,
+      "positive_count": 3,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 23.45
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "2",
+      "features_classified": 4,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 16.79
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "3",
+      "features_classified": 4,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 13.17
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "4",
+      "features_classified": 4,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 15.11
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 228.3,
+      "reviews_processed": 5
+    }
+  ]
+}

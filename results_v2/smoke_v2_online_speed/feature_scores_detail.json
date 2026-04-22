@@ -1,0 +1,21 @@
+[
+  {
+    "review_id": "0",
+    "review_text": "These are so amazing I will proble buy another pair.",
+    "rating": 4.0,
+    "features": {
+      "wireless_connectivity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about wireless connectivity."
+      },
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about the device's battery life."
+      }
+    }
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 1,
+    "sample_size_init": 1,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "validation_temperature": 0.0,
+    "classify_workers": 1,
+    "max_validation_iters": 2,
+    "timestamp": "2026-04-22T00:16:03"
+  },
+  "initial_catalog": [
+    {
+      "name": "workout_suitability",
+      "description": "Suitable for use during physical exercise.",
+      "examples": [
+        "Love these when working out."
+      ]
+    },
+    {
+      "name": "device_compatibility",
+      "description": "Compatible with specific devices or smartwatches.",
+      "examples": [
+        "Just what I needed to use with my new Iwatch."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 1,
+      "sample_size_init": 1,
+      "classify_workers": 1,
+      "max_validation_iters": 2
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "34932"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 2,
+      "features": [
+        "workout_suitability",
+        "device_compatibility"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 4.44
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 2,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 1,
+      "validation_pass": true,
+      "validation_iterations_used": 1,
+      "dynamic_features_added": [],
+      "elapsed_seconds": 10.13
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 15.0,
+      "reviews_processed": 1
+    }
+  ]
+}

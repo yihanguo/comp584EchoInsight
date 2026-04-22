@@ -1,0 +1,4 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+noise_cancellation,initial,1,1,0,0,1.0,1.0,1.0,50.0
+model_version_accuracy,initial,0,0,0,0,0.0,0.0,0.0,0.0
+product_reliability,initial,0,0,0,0,0.0,0.0,0.0,0.0

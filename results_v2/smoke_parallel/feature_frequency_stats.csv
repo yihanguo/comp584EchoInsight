@@ -1,0 +1,4 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+overall_satisfaction,initial,10,9,1,0,0.71,7.1,9.1,100.0
+speaker_reliability,initial,1,0,1,0,-1.0,-1.0,1.0,10.0
+return_policy_limitations,initial,0,0,0,0,0.0,0.0,0.0,0.0

@@ -1,0 +1,6 @@
+agent,calls,avg_seconds,total_seconds,max_seconds
+Review total,1,10.13,10.13,10.13
+ClassifyAgent total per review,1,5.99,5.99,5.99
+ClassifyAgent per feature,1,3.0,3.0,3.0
+ValidationAgent per review,1,4.13,4.13,4.13
+MasterAgent dynamic per review,1,0.0,0.0,0.0

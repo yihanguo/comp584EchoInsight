@@ -1,0 +1,126 @@
+[
+  {
+    "name": "sound_quality",
+    "description": "The audio performance and clarity of the device.",
+    "examples": [
+      "Sound quality",
+      "The sound goes out after a week"
+    ]
+  },
+  {
+    "name": "charging_ease",
+    "description": "The convenience and reliability of the charging process.",
+    "examples": [
+      "charging ease",
+      "right AirPod doesn’t charge at all"
+    ]
+  },
+  {
+    "name": "battery_life",
+    "description": "The duration the device holds a charge.",
+    "examples": [
+      "when it does it does within 20 minutes"
+    ]
+  },
+  {
+    "name": "volume_limit",
+    "description": "The maximum loudness capability of the device.",
+    "examples": [
+      "turn the volume up a bit more",
+      "You can't play music too loud"
+    ]
+  },
+  {
+    "name": "functionality",
+    "description": "The general operational performance and features.",
+    "examples": [
+      "functionality",
+      "Don’t work"
+    ]
+  },
+  {
+    "name": "aesthetics",
+    "description": "The visual appearance and design of the product.",
+    "examples": [
+      "looks"
+    ]
+  },
+  {
+    "name": "general_satisfaction",
+    "description": "Overall positive sentiment or enjoyment of the product.",
+    "examples": [
+      "My Daughter loves tgem",
+      "they work great"
+    ]
+  },
+  {
+    "name": "daily_usage",
+    "description": "Frequency and consistency of product use.",
+    "examples": [
+      "i use my airpods everyday",
+      "I use AirPods for practically all my personal and business calls"
+    ]
+  },
+  {
+    "name": "connection_stability",
+    "description": "Reliability of the wireless link to the device.",
+    "examples": [
+      "AirPods (gen 1) used to lose connection to the iPhone during the calls",
+      "hold the connection to the iPhone more reliably"
+    ]
+  },
+  {
+    "name": "wireless_capability",
+    "description": "Freedom of movement without wires.",
+    "examples": [
+      "I like the ear buds because of the wireless capability"
+    ]
+  },
+  {
+    "name": "noise_cancellation",
+    "description": "Ability to block external sounds.",
+    "examples": [
+      "Noise cancellation not as what is described"
+    ]
+  },
+  {
+    "name": "comfort",
+    "description": "The physical ease and ergonomics of wearing the device.",
+    "examples": [
+      "comfortable to the ear",
+      "they are the ONLY over-ear headphones I can wear all day"
+    ]
+  },
+  {
+    "name": "device_integration",
+    "description": "How seamlessly the product connects and works with other devices.",
+    "examples": [
+      "integrate as flawlessly with my Apple devices",
+      "Excellent apple integration"
+    ]
+  },
+  {
+    "name": "build_quality",
+    "description": "The construction quality, materials, and durability of the hardware.",
+    "examples": [
+      "extremely well constructed",
+      "fit/finish/materials"
+    ]
+  },
+  {
+    "name": "convenience",
+    "description": "The ease of use and practicality in daily situations.",
+    "examples": [
+      "Very convenient",
+      "take seamless calls from"
+    ]
+  },
+  {
+    "name": "replaceable_parts",
+    "description": "The availability of modular or consumable components that can be swapped.",
+    "examples": [
+      "modular consumable parts",
+      "magnetically replaceable ear cushions"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-04-21T23:03:37",
+  "total_tasks": 2,
+  "shards": [
+    {
+      "index": 0,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\batch_dryrun_tt\\batch\\batch_input_part000.jsonl",
+      "tasks": 2
+    }
+  ],
+  "task_map_path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\batch_dryrun_tt\\batch\\batch_task_map.json",
+  "model_name": "glm-4-7-251222",
+  "temperature": 0.1,
+  "build_seconds": 0.0,
+  "max_tasks_per_file": 500
+}

@@ -1,0 +1,10 @@
+{
+  "classify_mode": "batch",
+  "batch_dry_run": true,
+  "total_reviews": 1,
+  "initial_catalog_size": 2,
+  "total_tasks": 2,
+  "shards": 1,
+  "batch_dir": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\batch_dryrun_tt\\batch",
+  "elapsed_seconds": 4.9
+}

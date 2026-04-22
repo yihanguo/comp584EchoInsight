@@ -1,0 +1,48 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "noise_cancellation": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention noise cancellation or any related functionality."
+      },
+      "product_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention the product's function or reliability over time."
+      },
+      "model_version_accuracy": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the specific generation or version of the product."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "noise_cancellation": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I love the noise cancellation",
+        "reason": "The reviewer explicitly states they love the noise cancellation feature."
+      },
+      "product_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, fit, and battery life, but does not mention the product's reliability or long-term functionality."
+      },
+      "model_version_accuracy": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review compares the product to the 'first AirPods' but does not discuss the specific generation or version of the product components received."
+      }
+    }
+  }
+]

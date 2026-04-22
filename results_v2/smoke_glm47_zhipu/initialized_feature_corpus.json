@@ -1,0 +1,24 @@
+[
+  {
+    "name": "noise_cancellation",
+    "description": "The ability of the product to reduce background noise.",
+    "examples": [
+      "the noise cancellation is amazing"
+    ]
+  },
+  {
+    "name": "product_reliability",
+    "description": "The product functions correctly without issues over time.",
+    "examples": [
+      "so far no issues",
+      "they work great"
+    ]
+  },
+  {
+    "name": "model_version_accuracy",
+    "description": "The specific generation or version of the product components received.",
+    "examples": [
+      "The actual air pods are the 2nd generation model but the charging case is the first generation case"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "non-essential_feature": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "I don’t have enough money to buy a new one.",
+        "reason": "The customer implies that the touch screen issue is not an essential feature, as they cannot afford a new one."
+      }
+    }
+  }
+]

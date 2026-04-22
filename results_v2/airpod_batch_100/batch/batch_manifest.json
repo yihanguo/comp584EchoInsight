@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-04-21T23:15:27",
+  "total_tasks": 50,
+  "shards": [
+    {
+      "index": 0,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part000.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 1,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part001.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 2,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part002.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 3,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part003.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 4,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part004.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 5,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part005.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 6,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part006.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 7,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part007.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 8,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part008.jsonl",
+      "tasks": 5
+    },
+    {
+      "index": 9,
+      "path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_input_part009.jsonl",
+      "tasks": 5
+    }
+  ],
+  "task_map_path": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch\\batch_task_map.json",
+  "model_name": "glm-4-7-251222",
+  "temperature": 0.1,
+  "build_seconds": 0.01,
+  "max_tasks_per_file": 5
+}

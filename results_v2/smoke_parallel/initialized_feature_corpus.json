@@ -1,0 +1,25 @@
+[
+  {
+    "name": "speaker_reliability",
+    "description": "The functionality and longevity of the speaker component.",
+    "examples": [
+      "The speaker on one has already gone out."
+    ]
+  },
+  {
+    "name": "return_policy_limitations",
+    "description": "Restrictions or issues related to returning the product.",
+    "examples": [
+      "I can’t return these now."
+    ]
+  },
+  {
+    "name": "overall_satisfaction",
+    "description": "General positive sentiment about the product.",
+    "examples": [
+      "I love them",
+      "Amazing product",
+      "one of the best acquisitions in years"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+user_satisfaction,initial,1,1,0,0,1.0,1.0,1.0,100.0
+audio_quality,initial,0,0,0,0,0.0,0.0,0.0,0.0
+battery_life,initial,0,0,0,0,0.0,0.0,0.0,0.0
+connectivity,initial,0,0,0,0,0.0,0.0,0.0,0.0
+utility_for_calls,initial,0,0,0,0,0.0,0.0,0.0,0.0

@@ -1,0 +1,13 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+general_satisfaction,initial,10,9,1,0,0.7,7.0,9.0,100.0
+ear_fit_stability,initial,4,2,2,0,0.125,0.5,3.5,40.0
+noise_cancellation,dynamic,2,2,0,0,1.0,2.0,2.0,20.0
+sound_quality,dynamic,2,2,0,0,1.0,2.0,2.0,20.0
+adjustability,dynamic,1,1,0,0,0.5,0.5,0.5,10.0
+battery_life,dynamic,1,1,0,0,1.0,1.0,1.0,10.0
+comfort,dynamic,1,1,0,0,1.0,1.0,1.0,10.0
+condition,dynamic,1,0,1,0,-1.0,-1.0,1.0,10.0
+functionality,dynamic,1,0,1,0,-1.0,-1.0,1.0,10.0
+improvement_over_previous_version,dynamic,1,1,0,0,1.0,1.0,1.0,10.0
+video_chat_performance,dynamic,1,0,0,1,0.0,0.0,0.0,10.0
+aesthetic_design,initial,0,0,0,0,0.0,0.0,0.0,0.0

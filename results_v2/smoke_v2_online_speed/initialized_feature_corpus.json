@@ -1,0 +1,16 @@
+[
+  {
+    "name": "wireless_connectivity",
+    "description": "The ability of the device to connect and function without physical wires.",
+    "examples": [
+      "These are the best earphones wireless Bluetooth earbuds that I have ever tried"
+    ]
+  },
+  {
+    "name": "battery_life",
+    "description": "The duration the device can operate on a single charge.",
+    "examples": [
+      "Battery life is fantastic"
+    ]
+  }
+]

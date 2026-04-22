@@ -1,0 +1,17 @@
+[
+  {
+    "name": "cross_device_compatibility",
+    "description": "The product functions correctly with various devices or operating systems.",
+    "examples": [
+      "works with everything flawlessly iPad,iMac, Mac Pro and of course your iPhone"
+    ]
+  },
+  {
+    "name": "noise_cancellation",
+    "description": "The ability to reduce or block ambient background noise.",
+    "examples": [
+      "Noise cancellation is exceptional also",
+      "I can't hear my teammates in the backround"
+    ]
+  }
+]

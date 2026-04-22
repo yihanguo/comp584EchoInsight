@@ -1,0 +1,202 @@
+{
+  "review_id=0|feature=sound_quality": {
+    "review_id": "0",
+    "feature": "sound_quality"
+  },
+  "review_id=0|feature=microphone_quality": {
+    "review_id": "0",
+    "feature": "microphone_quality"
+  },
+  "review_id=0|feature=initial_charge_state": {
+    "review_id": "0",
+    "feature": "initial_charge_state"
+  },
+  "review_id=0|feature=physical_fit": {
+    "review_id": "0",
+    "feature": "physical_fit"
+  },
+  "review_id=0|feature=charging_speed": {
+    "review_id": "0",
+    "feature": "charging_speed"
+  },
+  "review_id=1|feature=sound_quality": {
+    "review_id": "1",
+    "feature": "sound_quality"
+  },
+  "review_id=1|feature=microphone_quality": {
+    "review_id": "1",
+    "feature": "microphone_quality"
+  },
+  "review_id=1|feature=initial_charge_state": {
+    "review_id": "1",
+    "feature": "initial_charge_state"
+  },
+  "review_id=1|feature=physical_fit": {
+    "review_id": "1",
+    "feature": "physical_fit"
+  },
+  "review_id=1|feature=charging_speed": {
+    "review_id": "1",
+    "feature": "charging_speed"
+  },
+  "review_id=2|feature=sound_quality": {
+    "review_id": "2",
+    "feature": "sound_quality"
+  },
+  "review_id=2|feature=microphone_quality": {
+    "review_id": "2",
+    "feature": "microphone_quality"
+  },
+  "review_id=2|feature=initial_charge_state": {
+    "review_id": "2",
+    "feature": "initial_charge_state"
+  },
+  "review_id=2|feature=physical_fit": {
+    "review_id": "2",
+    "feature": "physical_fit"
+  },
+  "review_id=2|feature=charging_speed": {
+    "review_id": "2",
+    "feature": "charging_speed"
+  },
+  "review_id=3|feature=sound_quality": {
+    "review_id": "3",
+    "feature": "sound_quality"
+  },
+  "review_id=3|feature=microphone_quality": {
+    "review_id": "3",
+    "feature": "microphone_quality"
+  },
+  "review_id=3|feature=initial_charge_state": {
+    "review_id": "3",
+    "feature": "initial_charge_state"
+  },
+  "review_id=3|feature=physical_fit": {
+    "review_id": "3",
+    "feature": "physical_fit"
+  },
+  "review_id=3|feature=charging_speed": {
+    "review_id": "3",
+    "feature": "charging_speed"
+  },
+  "review_id=4|feature=sound_quality": {
+    "review_id": "4",
+    "feature": "sound_quality"
+  },
+  "review_id=4|feature=microphone_quality": {
+    "review_id": "4",
+    "feature": "microphone_quality"
+  },
+  "review_id=4|feature=initial_charge_state": {
+    "review_id": "4",
+    "feature": "initial_charge_state"
+  },
+  "review_id=4|feature=physical_fit": {
+    "review_id": "4",
+    "feature": "physical_fit"
+  },
+  "review_id=4|feature=charging_speed": {
+    "review_id": "4",
+    "feature": "charging_speed"
+  },
+  "review_id=5|feature=sound_quality": {
+    "review_id": "5",
+    "feature": "sound_quality"
+  },
+  "review_id=5|feature=microphone_quality": {
+    "review_id": "5",
+    "feature": "microphone_quality"
+  },
+  "review_id=5|feature=initial_charge_state": {
+    "review_id": "5",
+    "feature": "initial_charge_state"
+  },
+  "review_id=5|feature=physical_fit": {
+    "review_id": "5",
+    "feature": "physical_fit"
+  },
+  "review_id=5|feature=charging_speed": {
+    "review_id": "5",
+    "feature": "charging_speed"
+  },
+  "review_id=6|feature=sound_quality": {
+    "review_id": "6",
+    "feature": "sound_quality"
+  },
+  "review_id=6|feature=microphone_quality": {
+    "review_id": "6",
+    "feature": "microphone_quality"
+  },
+  "review_id=6|feature=initial_charge_state": {
+    "review_id": "6",
+    "feature": "initial_charge_state"
+  },
+  "review_id=6|feature=physical_fit": {
+    "review_id": "6",
+    "feature": "physical_fit"
+  },
+  "review_id=6|feature=charging_speed": {
+    "review_id": "6",
+    "feature": "charging_speed"
+  },
+  "review_id=7|feature=sound_quality": {
+    "review_id": "7",
+    "feature": "sound_quality"
+  },
+  "review_id=7|feature=microphone_quality": {
+    "review_id": "7",
+    "feature": "microphone_quality"
+  },
+  "review_id=7|feature=initial_charge_state": {
+    "review_id": "7",
+    "feature": "initial_charge_state"
+  },
+  "review_id=7|feature=physical_fit": {
+    "review_id": "7",
+    "feature": "physical_fit"
+  },
+  "review_id=7|feature=charging_speed": {
+    "review_id": "7",
+    "feature": "charging_speed"
+  },
+  "review_id=8|feature=sound_quality": {
+    "review_id": "8",
+    "feature": "sound_quality"
+  },
+  "review_id=8|feature=microphone_quality": {
+    "review_id": "8",
+    "feature": "microphone_quality"
+  },
+  "review_id=8|feature=initial_charge_state": {
+    "review_id": "8",
+    "feature": "initial_charge_state"
+  },
+  "review_id=8|feature=physical_fit": {
+    "review_id": "8",
+    "feature": "physical_fit"
+  },
+  "review_id=8|feature=charging_speed": {
+    "review_id": "8",
+    "feature": "charging_speed"
+  },
+  "review_id=9|feature=sound_quality": {
+    "review_id": "9",
+    "feature": "sound_quality"
+  },
+  "review_id=9|feature=microphone_quality": {
+    "review_id": "9",
+    "feature": "microphone_quality"
+  },
+  "review_id=9|feature=initial_charge_state": {
+    "review_id": "9",
+    "feature": "initial_charge_state"
+  },
+  "review_id=9|feature=physical_fit": {
+    "review_id": "9",
+    "feature": "physical_fit"
+  },
+  "review_id=9|feature=charging_speed": {
+    "review_id": "9",
+    "feature": "charging_speed"
+  }
+}

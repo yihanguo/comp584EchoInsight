@@ -1,0 +1,37 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "user_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "These are so amazing I will proble buy another pair.",
+        "reason": "The user explicitly describes the product as 'amazing' and intends to purchase another, indicating high satisfaction."
+      },
+      "audio_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention sound performance or clarity."
+      },
+      "connectivity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about connecting to other devices."
+      },
+      "utility_for_calls": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention phone calls or call utility."
+      },
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about the battery or how long the device holds a charge."
+      }
+    }
+  }
+]

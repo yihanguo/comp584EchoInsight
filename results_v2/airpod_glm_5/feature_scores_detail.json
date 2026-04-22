@@ -1,0 +1,147 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about the battery life."
+      },
+      "case_charging_capacity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the case or its charging capabilities."
+      },
+      "sound_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention audio performance or sound."
+      },
+      "device_pairing": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention connecting to other devices."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "battery_life": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I only have to charge the case every few days",
+        "reason": "The user expresses satisfaction with the infrequent need to charge, indicating positive sentiment regarding battery duration."
+      },
+      "case_charging_capacity": {
+        "is_relevant": true,
+        "score": 0.8,
+        "evidence_span": "I only have to charge the case every few days",
+        "reason": "The user expresses satisfaction with the infrequent need to charge the case, indicating a positive view of its capacity."
+      },
+      "sound_quality": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "The sound quality is amazing.",
+        "reason": "The review explicitly praises the sound quality with the word 'amazing', indicating strong positive sentiment."
+      },
+      "device_pairing": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, battery life, and fit, but does not mention connecting to other devices."
+      }
+    }
+  },
+  {
+    "review_id": "2",
+    "features": {
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses fit and general performance but does not mention power duration."
+      },
+      "case_charging_capacity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses fit and general performance but does not mention the case or its charging capabilities."
+      },
+      "sound_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on fit and general functionality, not audio performance."
+      },
+      "device_pairing": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses fit and general performance but does not mention connecting to other devices."
+      }
+    }
+  },
+  {
+    "review_id": "3",
+    "features": {
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and fit, but does not mention battery life."
+      },
+      "case_charging_capacity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and fit issues, but does not mention the case or its charging capabilities."
+      },
+      "sound_quality": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "I love the sound quality. The bass comes across very clear as if you’re in a room listening to a high-quality stereo.",
+        "reason": "The user explicitly states they love the sound quality and praises the clarity of the bass."
+      },
+      "device_pairing": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and fit, but does not mention connecting to other devices."
+      }
+    }
+  },
+  {
+    "review_id": "4",
+    "features": {
+      "battery_life": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the product being defective and not working, but does not mention the duration of power or battery life."
+      },
+      "case_charging_capacity": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the condition and functionality of the Airpods themselves, not the charging capacity of the case."
+      },
+      "sound_quality": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on the product being defective and used, not on the audio performance."
+      },
+      "device_pairing": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the physical condition and functionality of the earbuds, not the process of connecting them to other devices."
+      }
+    }
+  }
+]

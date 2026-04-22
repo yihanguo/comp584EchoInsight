@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 1,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "classify_mode": "online",
+    "timestamp": "2026-04-21T23:05:10"
+  },
+  "initial_catalog": [
+    {
+      "name": "wireless_connectivity",
+      "description": "The ability of the device to connect and function without physical wires.",
+      "examples": [
+        "These are the best earphones wireless Bluetooth earbuds that I have ever tried"
+      ]
+    },
+    {
+      "name": "battery_life",
+      "description": "The duration the device can operate on a single charge.",
+      "examples": [
+        "Battery life is fantastic"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 1,
+      "sample_size_init": 3,
+      "classify_mode": "online"
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "38193",
+        "41507",
+        "49098"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 2,
+      "features": [
+        "wireless_connectivity",
+        "battery_life"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 11.38
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 2,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "elapsed_seconds": 5.1
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 16.8,
+      "reviews_processed": 1
+    }
+  ]
+}

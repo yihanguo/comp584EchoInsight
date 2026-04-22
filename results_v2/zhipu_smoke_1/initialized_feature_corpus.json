@@ -1,0 +1,30 @@
+[
+  {
+    "name": "upgrade",
+    "description": "The product is an upgrade from a previous version.",
+    "examples": [
+      "This was purchased as an upgrade from a very old ipad we had"
+    ]
+  },
+  {
+    "name": "sufficient_product",
+    "description": "The product meets the customer's needs.",
+    "examples": [
+      "it's more than enough product for us"
+    ]
+  },
+  {
+    "name": "pleased_with_purchase",
+    "description": "The customer is satisfied with their purchase.",
+    "examples": [
+      "very pleased"
+    ]
+  },
+  {
+    "name": "non-essential_feature",
+    "description": "A feature is not considered essential by the customer.",
+    "examples": [
+      "the lack of a simple power button was no biggie"
+    ]
+  }
+]

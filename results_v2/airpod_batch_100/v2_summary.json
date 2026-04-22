@@ -1,0 +1,10 @@
+{
+  "classify_mode": "batch",
+  "batch_dry_run": true,
+  "total_reviews": 10,
+  "initial_catalog_size": 5,
+  "total_tasks": 50,
+  "shards": 10,
+  "batch_dir": "D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\airpod_batch_100\\batch",
+  "elapsed_seconds": 7.4
+}

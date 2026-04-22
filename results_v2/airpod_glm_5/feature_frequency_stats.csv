@@ -1,0 +1,5 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+sound_quality,initial,2,2,0,0,1.0,2.0,2.0,40.0
+battery_life,initial,1,1,0,0,1.0,1.0,1.0,20.0
+case_charging_capacity,initial,1,1,0,0,0.8,0.8,0.8,20.0
+device_pairing,initial,0,0,0,0,0.0,0.0,0.0,0.0

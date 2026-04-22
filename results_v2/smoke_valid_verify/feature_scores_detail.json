@@ -1,0 +1,19 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "workout_suitability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review praises the product but does not mention physical exercise or workout suitability."
+      },
+      "device_compatibility": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention any devices or smartwatches."
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "user_satisfaction",
+    "description": "Indicates the user's positive emotional response or enjoyment of the product.",
+    "examples": [
+      "My son loves them"
+    ]
+  },
+  {
+    "name": "audio_quality",
+    "description": "Refers to the performance and clarity of the sound produced by the device.",
+    "examples": [
+      "Sound great."
+    ]
+  },
+  {
+    "name": "connectivity",
+    "description": "Describes the ease and reliability of establishing a connection with other devices.",
+    "examples": [
+      "Easy connection"
+    ]
+  },
+  {
+    "name": "utility_for_calls",
+    "description": "Highlights the product's usefulness for making or receiving phone calls.",
+    "examples": [
+      "extremely handy if your job requires lots of conference calls."
+    ]
+  },
+  {
+    "name": "battery_life",
+    "description": "Pertains to the duration the device holds a charge during use.",
+    "examples": [
+      "sometimes it would not let me make it without having to charge it when walking"
+    ]
+  }
+]

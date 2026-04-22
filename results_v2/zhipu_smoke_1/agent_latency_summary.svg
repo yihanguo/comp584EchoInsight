@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="330" viewBox="0 0 840 330">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">Mean Agent Latency</text>
+<text x="40" y="56" class="subtitle">Average wall-clock seconds per agent call from review diagnostics.</text>
+<line x1="180.0" y1="68" x2="180.0" y2="184" class="grid"/>
+<text x="180.0" y="296" text-anchor="middle" class="axis">0.0s</text>
+<line x1="292.0" y1="68" x2="292.0" y2="184" class="grid"/>
+<text x="292.0" y="296" text-anchor="middle" class="axis">2.8s</text>
+<line x1="404.0" y1="68" x2="404.0" y2="184" class="grid"/>
+<text x="404.0" y="296" text-anchor="middle" class="axis">5.7s</text>
+<line x1="516.0" y1="68" x2="516.0" y2="184" class="grid"/>
+<text x="516.0" y="296" text-anchor="middle" class="axis">8.5s</text>
+<line x1="628.0" y1="68" x2="628.0" y2="184" class="grid"/>
+<text x="628.0" y="296" text-anchor="middle" class="axis">11.3s</text>
+<line x1="740.0" y1="68" x2="740.0" y2="184" class="grid"/>
+<text x="740.0" y="296" text-anchor="middle" class="axis">14.1s</text>
+<text x="166" y="106" text-anchor="end" class="label">ClassifyAgent</text>
+<rect x="180" y="84" width="560.0" height="28" rx="2" fill="#2f6f9f"/>
+<text x="750.0" y="103" class="small">14.13s avg, n=1</text>
+<text x="166" y="156" text-anchor="end" class="label">ValidationAgent</text>
+<rect x="180" y="134" width="474.4" height="28" rx="2" fill="#7a4eab"/>
+<text x="664.4" y="153" class="small">11.97s avg, n=1</text>
+</svg>

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "sound_quality",
+    "description": "The audio performance and clarity of the device.",
+    "examples": [
+      "sound quality is fine",
+      "The sound quality is very good"
+    ]
+  },
+  {
+    "name": "accessibility",
+    "description": "How well the product accommodates users with specific needs.",
+    "examples": [
+      "these are perfect for accessibility"
+    ]
+  },
+  {
+    "name": "warranty_validation",
+    "description": "The ability to verify the authenticity and coverage of the product warranty.",
+    "examples": [
+      "I will encourage you to call apple and confirm your applecare warranty",
+      "called Apple, was told this is a 2nd generation device which is great and so my product is real"
+    ]
+  },
+  {
+    "name": "battery_life",
+    "description": "The duration the device can operate on a single charge.",
+    "examples": [
+      "I'm not impressed with the 5 hour battery on one full charge",
+      "The battery life is about 3 hours of continuous use"
+    ]
+  },
+  {
+    "name": "ergonomics",
+    "description": "The physical design and comfort of the device.",
+    "examples": [
+      "The ergonomics are are great"
+    ]
+  }
+]

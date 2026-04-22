@@ -1,0 +1,13 @@
+{
+  "total_reviews": 2,
+  "initial_catalog_size": 3,
+  "dynamic_new_feature_candidates_count": 0,
+  "dynamic_new_feature_candidates": [],
+  "avg_relevant_features_per_review": 0.5,
+  "positive_assignment_count": 1,
+  "negative_assignment_count": 0,
+  "neutral_assignment_count": 0,
+  "avg_classify_seconds_per_review": 15.73,
+  "avg_classify_seconds_per_feature": 5.244,
+  "elapsed_seconds": 99.1
+}

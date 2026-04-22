@@ -1,0 +1,3 @@
+feature,origin,relevant_count,positive_count,negative_count,neutral_count,avg_score_when_relevant,sum_score,sum_abs_score,percentage_relevant
+ease_of_use,initial,0,0,0,0,0.0,0.0,0.0,0.0
+sound_quality,initial,0,0,0,0,0.0,0.0,0.0,0.0

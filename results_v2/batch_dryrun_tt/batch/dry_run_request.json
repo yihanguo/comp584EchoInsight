@@ -1,0 +1,13 @@
+{
+  "DryRun": true,
+  "RequestBody": {
+    "FoundationModel": {
+      "Name": "glm-4-7-251222"
+    },
+    "InputFileTosLocation": "<TOS upload not wired up: would upload D:\\code\\hk\\584 nlp hk\\project\\comp584EchoInsight\\results_v2\\batch_dryrun_tt\\batch\\batch_input_part000.jsonl>",
+    "OutputFileTosLocation": "<TOS output location TBD>",
+    "CompletionWindow": "1d",
+    "DryRun": true
+  },
+  "Status": "NotSubmitted"
+}

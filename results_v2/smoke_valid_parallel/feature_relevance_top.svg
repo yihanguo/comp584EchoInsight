@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="478" viewBox="0 0 1100 478">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">Most Relevant Features</text>
+<text x="40" y="56" class="subtitle">Top 12 features by number of reviews that discuss them.</text>
+<line x1="260.0" y1="72" x2="260.0" y2="432" class="grid"/>
+<text x="260.0" y="454" text-anchor="middle" class="axis">0</text>
+<line x1="414.0" y1="72" x2="414.0" y2="432" class="grid"/>
+<text x="414.0" y="454" text-anchor="middle" class="axis">2</text>
+<line x1="568.0" y1="72" x2="568.0" y2="432" class="grid"/>
+<text x="568.0" y="454" text-anchor="middle" class="axis">4</text>
+<line x1="722.0" y1="72" x2="722.0" y2="432" class="grid"/>
+<text x="722.0" y="454" text-anchor="middle" class="axis">6</text>
+<line x1="876.0" y1="72" x2="876.0" y2="432" class="grid"/>
+<text x="876.0" y="454" text-anchor="middle" class="axis">8</text>
+<line x1="1030.0" y1="72" x2="1030.0" y2="432" class="grid"/>
+<text x="1030.0" y="454" text-anchor="middle" class="axis">10</text>
+<line x1="260" y1="432" x2="1030" y2="432" class="rule"/>
+<text x="246" y="100" text-anchor="end" class="label">general_satisfaction</text>
+<rect x="260" y="84" width="770.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="1038.0" y="98" class="small">10 reviews, avg score +0.70</text>
+<text x="246" y="128" text-anchor="end" class="label">ear_fit_stability</text>
+<rect x="260" y="112" width="308.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="576.0" y="126" class="small">4 reviews, avg score +0.12</text>
+<text x="246" y="156" text-anchor="end" class="label">noise_cancellation</text>
+<rect x="260" y="140" width="154.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="422.0" y="154" class="small">2 reviews, avg score +1.00</text>
+<text x="246" y="184" text-anchor="end" class="label">sound_quality</text>
+<rect x="260" y="168" width="154.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="422.0" y="182" class="small">2 reviews, avg score +1.00</text>
+<text x="246" y="212" text-anchor="end" class="label">adjustability</text>
+<rect x="260" y="196" width="77.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="345.0" y="210" class="small">1 reviews, avg score +0.50</text>
+<text x="246" y="240" text-anchor="end" class="label">battery_life</text>
+<rect x="260" y="224" width="77.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="345.0" y="238" class="small">1 reviews, avg score +1.00</text>
+<text x="246" y="268" text-anchor="end" class="label">comfort</text>
+<rect x="260" y="252" width="77.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="345.0" y="266" class="small">1 reviews, avg score +1.00</text>
+<text x="246" y="296" text-anchor="end" class="label">condition</text>
+<rect x="260" y="280" width="77.0" height="18" rx="2" fill="#c24949"/>
+<text x="345.0" y="294" class="small">1 reviews, avg score -1.00</text>
+<text x="246" y="324" text-anchor="end" class="label">functionality</text>
+<rect x="260" y="308" width="77.0" height="18" rx="2" fill="#c24949"/>
+<text x="345.0" y="322" class="small">1 reviews, avg score -1.00</text>
+<text x="246" y="352" text-anchor="end" class="label">improvement_over_previous_version</text>
+<rect x="260" y="336" width="77.0" height="18" rx="2" fill="#6f8f2f"/>
+<text x="345.0" y="350" class="small">1 reviews, avg score +1.00</text>
+<text x="246" y="380" text-anchor="end" class="label">video_chat_performance</text>
+<rect x="260" y="364" width="77.0" height="18" rx="2" fill="#7b8794"/>
+<text x="345.0" y="378" class="small">1 reviews, avg score +0.00</text>
+<text x="246" y="408" text-anchor="end" class="label">aesthetic_design</text>
+<rect x="260" y="392" width="0.0" height="18" rx="2" fill="#7b8794"/>
+<text x="268.0" y="406" class="small">0 reviews, avg score +0.00</text>
+</svg>

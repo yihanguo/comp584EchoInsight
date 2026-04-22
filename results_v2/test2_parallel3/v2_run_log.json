@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 1,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "classify_workers": 3,
+    "timestamp": "2026-04-21T23:39:20"
+  },
+  "initial_catalog": [
+    {
+      "name": "user_satisfaction",
+      "description": "Indicates the user's positive emotional response or enjoyment of the product.",
+      "examples": [
+        "My son loves them"
+      ]
+    },
+    {
+      "name": "audio_quality",
+      "description": "Refers to the performance and clarity of the sound produced by the device.",
+      "examples": [
+        "Sound great."
+      ]
+    },
+    {
+      "name": "connectivity",
+      "description": "Describes the ease and reliability of establishing a connection with other devices.",
+      "examples": [
+        "Easy connection"
+      ]
+    },
+    {
+      "name": "utility_for_calls",
+      "description": "Highlights the product's usefulness for making or receiving phone calls.",
+      "examples": [
+        "extremely handy if your job requires lots of conference calls."
+      ]
+    },
+    {
+      "name": "battery_life",
+      "description": "Pertains to the duration the device holds a charge during use.",
+      "examples": [
+        "sometimes it would not let me make it without having to charge it when walking"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 1,
+      "sample_size_init": 3,
+      "classify_workers": 3
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "48301",
+        "29841",
+        "23624"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 5,
+      "features": [
+        "user_satisfaction",
+        "audio_quality",
+        "connectivity",
+        "utility_for_calls",
+        "battery_life"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 4.81
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 5,
+      "relevant_count": 1,
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 3,
+      "elapsed_seconds": 5.9
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 11.1,
+      "reviews_processed": 1
+    }
+  ]
+}

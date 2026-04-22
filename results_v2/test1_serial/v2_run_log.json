@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "input_csv": "data/airpod.csv",
+    "max_reviews": 1,
+    "sample_size_init": 3,
+    "classification_temperature": 0.1,
+    "dynamic_temperature": 0.2,
+    "classify_workers": 1,
+    "timestamp": "2026-04-21T23:39:00"
+  },
+  "initial_catalog": [
+    {
+      "name": "sound_quality",
+      "description": "The audio performance and clarity of the device.",
+      "examples": [
+        "sound quality is fine",
+        "The sound quality is very good"
+      ]
+    },
+    {
+      "name": "accessibility",
+      "description": "How well the product accommodates users with specific needs.",
+      "examples": [
+        "these are perfect for accessibility"
+      ]
+    },
+    {
+      "name": "warranty_validation",
+      "description": "The ability to verify the authenticity and coverage of the product warranty.",
+      "examples": [
+        "I will encourage you to call apple and confirm your applecare warranty",
+        "called Apple, was told this is a 2nd generation device which is great and so my product is real"
+      ]
+    },
+    {
+      "name": "battery_life",
+      "description": "The duration the device can operate on a single charge.",
+      "examples": [
+        "I'm not impressed with the 5 hour battery on one full charge",
+        "The battery life is about 3 hours of continuous use"
+      ]
+    },
+    {
+      "name": "ergonomics",
+      "description": "The physical design and comfort of the device.",
+      "examples": [
+        "The ergonomics are are great"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/airpod.csv",
+      "total_reviews_in_file": 70227,
+      "max_reviews": 1,
+      "sample_size_init": 3,
+      "classify_workers": 1
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "32195",
+        "49885",
+        "15070"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 5,
+      "features": [
+        "sound_quality",
+        "accessibility",
+        "warranty_validation",
+        "battery_life",
+        "ergonomics"
+      ],
+      "agent": "MasterAgent",
+      "elapsed_seconds": 5.13
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "features_classified": 5,
+      "relevant_count": 0,
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "error_count": 0,
+      "classify_workers": 1,
+      "elapsed_seconds": 25.12
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 30.7,
+      "reviews_processed": 1
+    }
+  ]
+}

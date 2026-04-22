@@ -1,0 +1,232 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses general satisfaction but does not mention the speaker's functionality or longevity."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review expresses satisfaction with the product and intent to repurchase, but does not mention return policies or restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "These are so amazing I will proble buy another pair.",
+        "reason": "The review expresses strong positive sentiment about the product using the word 'amazing' and indicates intent to repurchase."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and battery life, but does not mention the functionality or longevity of the speaker component."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and battery life, but does not mention return policies or restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "The sound quality is amazing. I love the noise cancellation, and I also like that I can adjust it if I need to. I video chat several hours a day and I only have to charge the case every few days. These feel so much better and fit better in the ears than the first AirPods.",
+        "reason": "The review expresses strong positive sentiment across multiple aspects, indicating high overall satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "2",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on fit and general performance, not the specific functionality or longevity of the speaker component."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses product performance and fit, not return policy restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Good and works really well",
+        "reason": "The review explicitly states the product is 'Good' and 'works really well', indicating strong positive sentiment."
+      }
+    }
+  },
+  {
+    "review_id": "3",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review focuses on sound quality, noise cancellation, and physical fit issues, but does not mention the functionality or longevity of the speaker component."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses sound quality, noise cancellation, and fit issues, but does not mention return policies or restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 0.6,
+        "evidence_span": "I love the sound quality. The bass comes across very clear as if you’re in a room listening to a high-quality stereo. The noise cancellation is the best that I’ve experienced.",
+        "reason": "The review expresses strong positive sentiment towards specific aspects like sound quality and noise cancellation, indicating general satisfaction despite a minor fit issue."
+      }
+    }
+  },
+  {
+    "review_id": "4",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "These didn't work at all. Well, one did. But only one.",
+        "reason": "The customer reports that the audio output failed completely on one side, indicating a critical lack of functionality."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the condition and functionality of the product but does not mention any return policy restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": -1.0,
+        "evidence_span": "Really disappointed.",
+        "reason": "The customer explicitly states they are 'Really disappointed', indicating a strong negative sentiment regarding the overall experience."
+      }
+    }
+  },
+  {
+    "review_id": "5",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses fit and comfort, not speaker functionality or longevity."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the physical fit of the product, not return policy restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 0.5,
+        "evidence_span": "Great",
+        "reason": "The review starts with 'Great', indicating a general positive sentiment about the product."
+      }
+    }
+  },
+  {
+    "review_id": "6",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the product's general utility for entertainment but does not mention the speaker's functionality or longevity."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses the product's entertainment value and does not mention return policies or restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Worked very well!",
+        "reason": "The phrase 'Worked very well!' expresses a strong positive sentiment about the product's performance."
+      }
+    }
+  },
+  {
+    "review_id": "7",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the speaker's functionality or longevity."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about returning the product or any return policy restrictions."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "Perfect earbuds for granddaughter and her work!",
+        "reason": "评论使用'Perfect'一词表达了对产品的强烈正面情感"
+      }
+    }
+  },
+  {
+    "review_id": "8",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review mentions sound quality but does not discuss the functionality or longevity of the speaker component."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review discusses product performance and user experience, not return policies."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "love them as well",
+        "reason": "The reviewer explicitly expresses strong positive emotion towards the product."
+      }
+    }
+  },
+  {
+    "review_id": "9",
+    "features": {
+      "speaker_reliability": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention the speaker or its functionality."
+      },
+      "return_policy_limitations": {
+        "is_relevant": false,
+        "score": 0.0,
+        "evidence_span": "",
+        "reason": "The review does not mention anything about returning the product or return policies."
+      },
+      "overall_satisfaction": {
+        "is_relevant": true,
+        "score": 1.0,
+        "evidence_span": "My granddaughter loves this",
+        "reason": "The review expresses strong positive sentiment regarding the product."
+      }
+    }
+  }
+]

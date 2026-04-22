@@ -1,0 +1,17 @@
+[
+  {
+    "name": "sound_quality",
+    "description": "The clarity, richness, or overall performance of the audio output.",
+    "examples": [
+      "sound is amazing",
+      "Very clear"
+    ]
+  },
+  {
+    "name": "ease_of_use",
+    "description": "How simple and intuitive the product is to operate.",
+    "examples": [
+      "easy to use"
+    ]
+  }
+]

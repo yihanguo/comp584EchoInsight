@@ -1,0 +1,16 @@
+[
+  {
+    "name": "workout_suitability",
+    "description": "Suitable for use during physical exercise.",
+    "examples": [
+      "Love these when working out."
+    ]
+  },
+  {
+    "name": "device_compatibility",
+    "description": "Compatible with specific devices or smartwatches.",
+    "examples": [
+      "Just what I needed to use with my new Iwatch."
+    ]
+  }
+]
