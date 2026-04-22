@@ -125,6 +125,8 @@ class EchoInsightV2Pipeline:
         self.classify_workers = max(1, int(classify_workers))
         self.max_validation_iters = max(1, int(max_validation_iters))
         self._csv_path = str(csv_path)
+        self.initial_feature_catalog_size = 0
+        self.initial_feature_catalog: list[dict] = []
 
         self.out_dir = Path(output_root) / run_name
         self.out_dir.mkdir(parents=True, exist_ok=True)
@@ -165,6 +167,8 @@ class EchoInsightV2Pipeline:
         feature_catalog = deduped[: self.max_features]
         if len(deduped) > self.max_features:
             self._progress(f"Feature catalog capped at {self.max_features} (extracted {len(deduped)})")
+        self.initial_feature_catalog_size = len(feature_catalog)
+        self.initial_feature_catalog = [dict(f) for f in feature_catalog]
         self.master.feature_catalog = feature_catalog
         self._log("init_catalog_built", {
             "feature_count": len(feature_catalog),
@@ -178,10 +182,9 @@ class EchoInsightV2Pipeline:
         batch = reviews[: self.max_reviews]
         review_records: list[dict] = []
         total_batch = len(batch)
-        total_features = len(feature_catalog)
-        total_pairs = total_batch * total_features
+        total_pairs_planned = total_batch * len(feature_catalog)
         self._progress(
-            f"Classify plan: {total_batch} reviews x {total_features} features = {total_pairs} pairs "
+            f"Classify plan: {total_batch} reviews x {len(feature_catalog)} initial features = {total_pairs_planned} pairs "
             f"({'serial' if self.classify_workers <= 1 else f'parallel workers={self.classify_workers}'})"
         )
 
@@ -202,7 +205,7 @@ class EchoInsightV2Pipeline:
             diag = record["diagnostics"]
 
             rate = pairs_done / max(time.perf_counter() - run_start, 1e-6)
-            remaining = max(total_pairs - pairs_done, 0)
+            remaining = max(total_pairs_planned - pairs_done, 0)
             eta_s = remaining / rate if rate > 0 else 0.0
             err_n = len(diag.get("classify_errors", []))
             self._progress(
@@ -220,6 +223,7 @@ class EchoInsightV2Pipeline:
 
             # refresh outputs after every record
             self._export_feature_map(review_records, feature_catalog)
+            self._save_json("final_feature_catalog.json", feature_catalog)
             self._save_json("feature_scores_detail.json", [
                 {"review_id": r["review_id"], "features": r["features"]}
                 for r in review_records
@@ -231,15 +235,16 @@ class EchoInsightV2Pipeline:
         self._log("run_complete", {"elapsed_seconds": elapsed, "reviews_processed": len(review_records)})
 
         self._save_json("v2_run_log.json", self._build_run_log(feature_catalog))
+        self._save_json("final_feature_catalog.json", feature_catalog)
         summary = self._build_summary(feature_catalog, review_records, elapsed)
         self._save_json("v2_summary.json", summary)
         self._write_report(feature_catalog, review_records, summary)
         self._progress(f"Saved {diag_path.name} ({len(review_records)} records)")
 
-        if total_pairs:
-            avg_pair = elapsed / total_pairs
+        if pairs_done:
+            avg_pair = elapsed / pairs_done
             self._progress(
-                f"Wall-clock rate: {total_pairs} pairs in {elapsed}s "
+                f"Wall-clock rate: {pairs_done} pairs in {elapsed}s "
                 f"= {1.0 / avg_pair:.2f} pair/s (avg {avg_pair:.2f}s per pair, workers={self.classify_workers})"
             )
         self._progress(f"Done. Results in {self.out_dir}")
@@ -273,7 +278,6 @@ class EchoInsightV2Pipeline:
         new_feature_candidates: list[str] = []
         dynamic_features_added: list[str] = []
         dynamic_errors: list[str] = []
-        all_features_for_review = list(feature_catalog)
         master_received_failure = False
 
         for iteration in range(1, self.max_validation_iters + 1):
@@ -288,7 +292,7 @@ class EchoInsightV2Pipeline:
             except Exception as exc:
                 validation_result = {
                     "pass": None,
-                    "missing_features": [],
+                    "suggest_feature": None,
                     "reason": f"validation error: {exc}",
                     "confidence": 0.0,
                 }
@@ -297,7 +301,7 @@ class EchoInsightV2Pipeline:
             validation_iteration = {
                 "iteration": iteration,
                 "pass": validation_result.get("pass"),
-                "missing_features": validation_result.get("missing_features", []),
+                "suggest_feature": validation_result.get("suggest_feature"),
                 "reason": validation_result.get("reason", ""),
                 "confidence": validation_result.get("confidence", 0.0),
                 "elapsed_seconds": validation_seconds,
@@ -309,33 +313,36 @@ class EchoInsightV2Pipeline:
                 break
 
             master_received_failure = True
-            self._progress(f"  validation failed r{review_index}/{total_reviews} id={rid}; asking MasterAgent for missing features")
+            self._progress(f"  validation failed r{review_index}/{total_reviews} id={rid}; asking MasterAgent for one suggested feature")
             master_t0 = time.perf_counter()
             try:
                 candidates = self.master.generate_dynamic_features(
                     review,
                     validation_result,
-                    all_features_for_review,
+                    feature_catalog,
                 )
             except Exception as exc:
                 candidates = []
                 dynamic_errors.append(str(exc))
             master_dynamic_seconds_total += round(time.perf_counter() - master_t0, 2)
-            accepted = self._filter_new_features(candidates, all_features_for_review)
+            accepted = self._filter_new_features(candidates, feature_catalog)[:1]
             candidate_names = [str(c.get("name", "")).strip() for c in candidates if str(c.get("name", "")).strip()]
-            new_feature_candidates.extend(candidate_names)
+            new_feature_candidates.extend(candidate_names[:1])
 
             if not accepted:
                 break
 
             names = [str(f.get("name", "")).strip() for f in accepted]
             dynamic_features_added.extend(names)
-            self._progress(f"  MasterAgent proposed {len(accepted)} new features for id={rid}: {', '.join(names)}")
+            feature_catalog.extend(accepted)
+            self.master.feature_catalog = feature_catalog
+            self._progress(
+                f"  MasterAgent added {len(accepted)} global features for id={rid}: {', '.join(names)}"
+            )
             dynamic_t0 = time.perf_counter()
             dynamic_items = self._classify_features(review, accepted, review_index, total_reviews)
             classify_seconds += round(time.perf_counter() - dynamic_t0, 2)
             self._merge_classify_items(features_result, dynamic_items, per_feature_seconds, classify_errors)
-            all_features_for_review.extend(accepted)
 
         review_seconds = round(time.perf_counter() - review_t0, 2)
 
@@ -343,6 +350,14 @@ class EchoInsightV2Pipeline:
         positive = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] > 0]
         negative = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] < 0]
         neutral = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] == 0.0]
+        last_suggest_feature = next(
+            (
+                item.get("suggest_feature")
+                for item in reversed(validation_iterations)
+                if item.get("suggest_feature")
+            ),
+            None,
+        )
 
         avg_feat = round(sum(per_feature_seconds) / max(len(per_feature_seconds), 1), 3)
         diagnostics = {
@@ -355,7 +370,7 @@ class EchoInsightV2Pipeline:
             "validation_pass": validation_iterations[-1].get("pass") if validation_iterations else None,
             "validation_reason": validation_iterations[-1].get("reason", "") if validation_iterations else "",
             "validation_confidence": validation_iterations[-1].get("confidence", 0.0) if validation_iterations else 0.0,
-            "missing_features": validation_iterations[-1].get("missing_features", []) if validation_iterations else [],
+            "suggest_feature": last_suggest_feature,
             "new_feature_candidates": _unique_strings(new_feature_candidates),
             "dynamic_features_added": _unique_strings(dynamic_features_added),
             "dynamic_errors": dynamic_errors,
@@ -614,6 +629,8 @@ class EchoInsightV2Pipeline:
                 "input_csv": self._csv_path,
                 "max_reviews": self.max_reviews,
                 "sample_size_init": self.sample_size_init,
+                "initial_feature_catalog_size": self.initial_feature_catalog_size,
+                "final_feature_catalog_size": len(catalog),
                 "classification_temperature": self.classification_temperature,
                 "dynamic_temperature": self.dynamic_temperature,
                 "validation_temperature": self.validation_temperature,
@@ -621,7 +638,9 @@ class EchoInsightV2Pipeline:
                 "max_validation_iters": self.max_validation_iters,
                 "timestamp": datetime.now().isoformat(timespec="seconds"),
             },
-            "initial_catalog": catalog,
+            "initial_catalog_size": self.initial_feature_catalog_size,
+            "initial_catalog": self.initial_feature_catalog,
+            "final_catalog": catalog,
             "events": self._log_events,
         }
 
@@ -631,6 +650,8 @@ class EchoInsightV2Pipeline:
         lines.append("")
         lines.append(f"- **Reviews processed:** {summary['total_reviews']}")
         lines.append(f"- **Initial catalog size:** {summary['initial_catalog_size']}")
+        lines.append(f"- **Final catalog size:** {summary.get('final_catalog_size', summary['initial_catalog_size'])}")
+        lines.append(f"- **Global dynamic features added:** {summary.get('dynamic_features_added_count', 0)}")
         lines.append(f"- **Avg relevant features per review:** {summary['avg_relevant_features_per_review']}")
         lines.append(f"- **Positive assignments:** {summary['positive_assignment_count']}")
         lines.append(f"- **Negative assignments:** {summary['negative_assignment_count']}")
@@ -653,11 +674,11 @@ class EchoInsightV2Pipeline:
         lines.append(f"- Failed reviews: {summary.get('validation_fail_count', 0)}")
         lines.append(f"- Avg validation iterations: {summary.get('avg_validation_iterations', 0)}")
         lines.append(f"- Avg validation seconds per review: {summary.get('avg_validation_seconds_per_review', 0)}s")
-        common_missing = summary.get("common_missing_feature_candidates", [])
-        if common_missing:
-            lines.append("- Common missing feature candidates: " + ", ".join(f"`{x['name']}` ({x['count']})" for x in common_missing[:10]))
+        common_suggested = summary.get("common_suggested_feature_candidates", [])
+        if common_suggested:
+            lines.append("- Common suggested feature candidates: " + ", ".join(f"`{x['name']}` ({x['count']})" for x in common_suggested[:10]))
         else:
-            lines.append("- Common missing feature candidates: (none)")
+            lines.append("- Common suggested feature candidates: (none)")
         lines.append("")
 
         # Top positive / negative / most relevant features
@@ -702,7 +723,7 @@ class EchoInsightV2Pipeline:
             lines.append("- (none)")
         lines.append("")
 
-        lines.append("## Initial Feature Catalog")
+        lines.append("## Final Feature Catalog")
         lines.append("")
         for f in catalog:
             lines.append(f"### `{f['name']}`")
@@ -732,10 +753,10 @@ class EchoInsightV2Pipeline:
                 f"iterations={diag.get('validation_iterations_used', 0)} "
                 f"confidence={float(diag.get('validation_confidence') or 0.0):.2f}"
             )
-            missing = _feature_names(diag.get("missing_features", []))
+            suggested = _feature_name(diag.get("suggest_feature"))
             added = diag.get("dynamic_features_added", []) or []
-            if missing:
-                lines.append("- **Missing feature feedback:** " + ", ".join(f"`{name}`" for name in missing))
+            if suggested:
+                lines.append(f"- **Suggested feature feedback:** `{suggested}`")
             if added:
                 lines.append("- **Dynamic features added:** " + ", ".join(f"`{name}`" for name in added))
             # top 3 strongest (by |score|)
@@ -769,7 +790,7 @@ class EchoInsightV2Pipeline:
         validation_values: list[bool] = []
         validation_iterations: list[int] = []
         validation_seconds: list[float] = []
-        missing_counts: dict[str, int] = {}
+        suggested_counts: dict[str, int] = {}
         classify_totals: list[float] = []
         feature_seconds: list[float] = []
         for r in records:
@@ -784,8 +805,9 @@ class EchoInsightV2Pipeline:
                 validation_values.append(bool(diag.get("validation_pass")))
             validation_iterations.append(int(diag.get("validation_iterations_used", 0) or 0))
             validation_seconds.append(float(diag.get("agent_timing", {}).get("validation_agent", 0.0) or 0.0))
-            for name in _feature_names(diag.get("missing_features", [])):
-                missing_counts[name] = missing_counts.get(name, 0) + 1
+            name = _feature_name(diag.get("suggest_feature"))
+            if name:
+                suggested_counts[name] = suggested_counts.get(name, 0) + 1
             classify_totals.append(float(r.get("elapsed_seconds") or 0.0))
             per_feat = diag.get("agent_timing", {}).get("classify_agent_avg_seconds_per_feature", 0.0)
             if per_feat:
@@ -807,14 +829,15 @@ class EchoInsightV2Pipeline:
         pass_count = sum(1 for value in validation_values if value)
         fail_count = sum(1 for value in validation_values if not value)
         pass_rate = round(pass_count / max(len(validation_values), 1), 3)
-        common_missing = [
+        common_suggested = [
             {"name": name, "count": count}
-            for name, count in sorted(missing_counts.items(), key=lambda kv: (-kv[1], kv[0]))[:20]
+            for name, count in sorted(suggested_counts.items(), key=lambda kv: (-kv[1], kv[0]))[:20]
         ]
 
         return {
             "total_reviews": total,
-            "initial_catalog_size": len(catalog),
+            "initial_catalog_size": self.initial_feature_catalog_size or len(catalog),
+            "final_catalog_size": len(catalog),
             "dynamic_new_feature_candidates_count": len(dynamic_candidates),
             "dynamic_new_feature_candidates": sorted(dynamic_candidates),
             "dynamic_features_added_count": len(dynamic_added),
@@ -825,7 +848,7 @@ class EchoInsightV2Pipeline:
             "validation_fail_count": fail_count,
             "avg_validation_iterations": round(sum(validation_iterations) / max(total, 1), 2),
             "avg_validation_seconds_per_review": round(sum(validation_seconds) / max(total, 1), 2),
-            "common_missing_feature_candidates": common_missing,
+            "common_suggested_feature_candidates": common_suggested,
             "avg_relevant_features_per_review": avg_relevant,
             "avg_features_per_review": avg_features,
             "positive_assignment_count": pos_count,
@@ -876,15 +899,7 @@ def _unique_strings(values: list[object]) -> list[str]:
     return out
 
 
-def _feature_names(values: object) -> list[str]:
-    names: list[str] = []
-    if not isinstance(values, list):
-        return names
-    for item in values:
-        if isinstance(item, dict):
-            name = str(item.get("name", "")).strip()
-        else:
-            name = str(item).strip()
-        if name:
-            names.append(name)
-    return names
+def _feature_name(value: object) -> str:
+    if isinstance(value, dict):
+        return str(value.get("name", "")).strip()
+    return ""

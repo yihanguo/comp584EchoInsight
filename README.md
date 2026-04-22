@@ -110,9 +110,10 @@ per-review summary with running pair-rate and ETA:
 [V2 HH:MM:SS] Review 2/10 id=1 done in 6.4s | relevant=7 pos=5 neg=2 neu=0 errors=0 | rate=2.5 pair/s ETA 0:05:20
 ```
 
-There is one initial `ClassifyAgent` call per `(review, initial feature)` pair.
-If validation fails, the pipeline may add a small number of dynamic feature
-classifications for that review only.
+There is one initial `ClassifyAgent` call per `(review, current global feature)`
+pair. If validation fails, the pipeline may add a small number of dynamic
+features to the global catalog, classify those new features for the current
+review, and use the expanded catalog for all later reviews.
 
 ### ValidationAgent and Dynamic Features
 
@@ -123,18 +124,22 @@ step. For each review:
 MasterAgent initializes feature catalog
 -> ClassifyAgent classifies initial features
 -> ValidationAgent checks relevant-feature coverage
--> if coverage fails, MasterAgent proposes missing reusable features
--> ClassifyAgent classifies only the new features
+-> if coverage fails, ValidationAgent suggests one reusable feature
+-> MasterAgent turns the suggestion into one catalog feature
+-> the accepted feature is appended to the global catalog
+-> ClassifyAgent classifies only the new features for the current review
 -> ValidationAgent checks coverage again
 -> outputs, report, and visualization
 ```
 
 Validation ignores sentiment direction. A negative battery-life mention covers
-`battery_life` just as much as a positive one. Dynamic features are scoped to
-the current review result and can appear as extra columns in `feature_map.csv`;
-they do not automatically mutate the global catalog for later reviews. Use
+`battery_life` just as much as a positive one. Dynamic features mutate the
+global feature catalog once accepted by `MasterAgent`; they are classified for
+the current review and for future reviews. Earlier reviews are not reprocessed,
+because they already passed validation without that feature. Use
 `--max-validation-iters` to cap the number of validation passes per review
-(default: `2`).
+(default: `2`). `--max-features` caps only the initial catalog size; dynamic
+features can grow the final catalog beyond that cap.
 
 ### Local parallelism: `--classify-workers`
 
@@ -259,11 +264,12 @@ Each run writes to `results_v2/<run-name>/`:
 | File | Description |
 |---|---|
 | `initialized_feature_corpus.json` | Initial features extracted from sampled reviews |
+| `final_feature_catalog.json` | Final global feature catalog after validation-driven dynamic additions |
 | `feature_map.csv` | Review-by-feature continuous sentiment score in `[-1.0, 1.0]` plus metadata (`review_id`, `rating`, `review_preview`) |
 | `feature_scores_detail.json` | Per-review, per-feature `{is_relevant, score, evidence_span, reason}` |
 | `review_level_diagnostics.jsonl` | One JSON record per review with relevant/positive/negative/neutral feature lists, `classify_errors`, `new_feature_candidates`, and `agent_timing` (`classify_total`, `classify_workers`, `features_classified`, `classify_agent_avg_seconds_per_feature`) |
-| `v2_run_log.json` | Metadata (including `classify_workers`), initial catalog, and event log |
-| `v2_summary.json` | Review count, avg relevant features/review, `avg_features_per_review`, positive/negative/neutral assignment counts, `classify_error_count`, avg classify seconds per review and per feature, `classify_workers` |
+| `v2_run_log.json` | Metadata (including `classify_workers`), initial/final catalogs, and event log |
+| `v2_summary.json` | Review count, initial/final catalog size, avg relevant features/review, `avg_features_per_review`, positive/negative/neutral assignment counts, `classify_error_count`, avg classify seconds per review and per feature, `classify_workers` |
 | `report.md` | Human-readable run report (top positive/negative/most-relevant features, per-review highlights) |
 | `feature_frequency_stats.csv` | Per-feature relevance counts, positive/negative/neutral counts, avg score when relevant |
 | `agent_timing_summary.csv` | Agent-level latency summary (review total, classify total per review, classify per feature) |
@@ -281,9 +287,9 @@ Score semantics:
 
 The current pipeline also writes validation and dynamic-feature fields:
 
-- `review_level_diagnostics.jsonl` includes `validation_pass`, `validation_reason`, `validation_confidence`, `missing_features`, `new_feature_candidates`, `dynamic_features_added`, `validation_iterations_used`, `validation_iteration_detail`, and validation/master timing under `agent_timing`.
+- `review_level_diagnostics.jsonl` includes `validation_pass`, `validation_reason`, `validation_confidence`, `suggest_feature`, `new_feature_candidates`, `dynamic_features_added`, `validation_iterations_used`, `validation_iteration_detail`, and validation/master timing under `agent_timing`.
 - `v2_summary.json` includes `validation_pass_rate`, `validation_fail_count`, `avg_validation_iterations`, `avg_validation_seconds_per_review`, and dynamic feature counts.
-- `report.md` includes a `Validation Summary` plus per-review validation status, missing feature feedback, and dynamic features added.
+- `report.md` includes a `Validation Summary` plus per-review validation status, suggested feature feedback, and dynamic features added.
 - `scripts/summarize_results.py` generates `validation_distribution.svg`, `validation_iteration_distribution.svg`, `agent_latency_summary.svg`, `new_feature_candidate_frequency.svg`, `dynamic_feature_added_frequency.svg`, and `visual_dashboard.html`.
 
 Regenerate validation/statistics visualizations for an existing run:

@@ -6,6 +6,7 @@ import argparse
 import csv
 import html
 import json
+import math
 from pathlib import Path
 
 
@@ -104,6 +105,12 @@ def svg_text(text: object) -> str:
     return html.escape(str(text), quote=True)
 
 
+def display_feature_label(name: object) -> str:
+    text = str(name).strip().replace("_", " ").replace("-", " ")
+    words = [word for word in text.split() if word]
+    return " ".join(word.capitalize() for word in words)
+
+
 def write_svg(path: Path, content: str, width: int, height: int) -> None:
     path.write_text(
         "\n".join([
@@ -155,13 +162,268 @@ def write_top_feature_svg(results_dir: Path, stats_rows: list[dict], top_n: int)
         bar_w = chart_w * relevant / max_value
         avg_score = float(row["avg_score_when_relevant"])
         color = "#6f8f2f" if avg_score > 0 else ("#c24949" if avg_score < 0 else "#7b8794")
-        parts.append(f'<text x="{left - 14}" y="{y + 16}" text-anchor="end" class="label">{svg_text(row["feature"])}</text>')
+        parts.append(
+            f'<text x="{left - 14}" y="{y + 16}" text-anchor="end" class="label">'
+            f'{svg_text(display_feature_label(row["feature"]))}</text>'
+        )
         parts.append(f'<rect x="{left}" y="{y}" width="{bar_w:.1f}" height="18" rx="2" fill="{color}"/>')
         parts.append(
             f'<text x="{left + bar_w + 8:.1f}" y="{y + 14}" class="small">'
             f'{relevant} reviews, avg score {avg_score:+.2f}</text>'
         )
     filename = "feature_relevance_top.svg"
+    write_svg(results_dir / filename, "\n".join(parts), width, height)
+    return filename
+
+
+def _sentiment_color(score: float) -> str:
+    if score > 0.2:
+        return "#4f8f4f"
+    if score < -0.2:
+        return "#c44e4e"
+    return "#5f7180"
+
+
+def _polar(cx: float, cy: float, radius: float, angle_radians: float) -> tuple[float, float]:
+    return cx + radius * math.cos(angle_radians), cy + radius * math.sin(angle_radians)
+
+
+def _sector_path(
+    cx: float,
+    cy: float,
+    inner_radius: float,
+    outer_radius: float,
+    start_angle: float,
+    end_angle: float,
+) -> str:
+    outer_start = _polar(cx, cy, outer_radius, start_angle)
+    outer_end = _polar(cx, cy, outer_radius, end_angle)
+    inner_end = _polar(cx, cy, inner_radius, end_angle)
+    inner_start = _polar(cx, cy, inner_radius, start_angle)
+    large_arc = 1 if end_angle - start_angle > math.pi else 0
+    return (
+        f"M {outer_start[0]:.1f} {outer_start[1]:.1f} "
+        f"A {outer_radius:.1f} {outer_radius:.1f} 0 {large_arc} 1 {outer_end[0]:.1f} {outer_end[1]:.1f} "
+        f"L {inner_end[0]:.1f} {inner_end[1]:.1f} "
+        f"A {inner_radius:.1f} {inner_radius:.1f} 0 {large_arc} 0 {inner_start[0]:.1f} {inner_start[1]:.1f} Z"
+    )
+
+
+def write_feature_sentiment_rose_svg(results_dir: Path, stats_rows: list[dict], top_n: int) -> str | None:
+    rows = [
+        row for row in stats_rows
+        if int(row.get("relevant_count", 0) or 0) > 0
+    ][: min(max(top_n, 1), 20)]
+    filename = "feature_sentiment_rose.svg"
+    if not rows:
+        content = "\n".join([
+            '<text x="40" y="34" class="title">Feature Sentiment Rose</text>',
+            '<text x="40" y="56" class="subtitle">No relevant feature scores for this run.</text>',
+        ])
+        write_svg(results_dir / filename, content, 960, 140)
+        return filename
+
+    width = 1280
+    height = 1080
+    cx = 640
+    cy = 515
+    inner_radius = 74
+    max_radius = 330
+    label_radius = 382
+    step = 2 * math.pi / len(rows)
+    gap = min(0.035, step * 0.12)
+    parts = [
+        f'<circle cx="{cx}" cy="{cy}" r="{inner_radius}" fill="#ffffff" stroke="#d9e2ec" stroke-width="1"/>',
+        '<rect x="956" y="36" width="278" height="108" rx="6" fill="#ffffff" stroke="#d9e2ec" stroke-width="1"/>',
+        '<rect x="980" y="62" width="18" height="18" fill="#4f8f4f"/>',
+        '<text x="1010" y="76" style="font:14px Arial, sans-serif;fill:#52616b">positive avg score &gt; +0.20</text>',
+        '<rect x="980" y="88" width="18" height="18" fill="#5f7180"/>',
+        '<text x="1010" y="102" style="font:14px Arial, sans-serif;fill:#52616b">near neutral</text>',
+        '<rect x="980" y="114" width="18" height="18" fill="#c44e4e"/>',
+        '<text x="1010" y="128" style="font:14px Arial, sans-serif;fill:#52616b">negative avg score &lt; -0.20</text>',
+    ]
+    for frac in (0.25, 0.5, 0.75, 1.0):
+        radius = inner_radius + (max_radius - inner_radius) * frac
+        parts.append(f'<circle cx="{cx}" cy="{cy}" r="{radius:.1f}" fill="none" class="grid"/>')
+        parts.append(
+            f'<text x="{cx + 8:.1f}" y="{cy - radius - 4:.1f}" class="axis">'
+            f'{frac:.2f}</text>'
+        )
+
+    for idx, row in enumerate(rows):
+        start = -math.pi / 2 + idx * step + gap
+        end = -math.pi / 2 + (idx + 1) * step - gap
+        relevant = int(row["relevant_count"])
+        avg_score = float(row["avg_score_when_relevant"])
+        # Radius encodes average sentiment magnitude; color encodes direction.
+        outer_radius = inner_radius + (max_radius - inner_radius) * min(abs(avg_score), 1.0)
+        color = _sentiment_color(avg_score)
+        path = _sector_path(cx, cy, inner_radius, outer_radius, start, end)
+        opacity = "0.94" if -0.2 <= avg_score <= 0.2 else "0.88"
+        parts.append(f'<path d="{path}" fill="{color}" opacity="{opacity}" stroke="#ffffff" stroke-width="1.5"/>')
+
+        mid = (start + end) / 2
+        lx, ly = _polar(cx, cy, label_radius, mid)
+        anchor = "start" if math.cos(mid) >= 0 else "end"
+        label = display_feature_label(row["feature"])
+        if len(label) > 24:
+            label = label[:21] + "..."
+        parts.append(
+            f'<text x="{lx:.1f}" y="{ly:.1f}" text-anchor="{anchor}" '
+            f'style="font:16px Arial, sans-serif;fill:#1f2933">'
+            f'{svg_text(label)}</text>'
+        )
+        sx, sy = _polar(cx, cy, label_radius, mid)
+        parts.append(
+            f'<text x="{sx:.1f}" y="{sy + 20:.1f}" text-anchor="{anchor}" '
+            f'style="font:13px Arial, sans-serif;fill:#52616b">'
+            f'n={relevant}, avg {avg_score:+.2f}</text>'
+        )
+
+    parts.extend([
+        f'<text x="{cx}" y="{cy - 10}" text-anchor="middle" style="font:13px Arial, sans-serif;fill:#52616b">Top</text>',
+        f'<text x="{cx}" y="{cy + 18}" text-anchor="middle" style="font:700 24px Arial, sans-serif;fill:#1f2933">{len(rows)}</text>',
+    ])
+    write_svg(results_dir / filename, "\n".join(parts), width, height)
+    return filename
+
+
+def write_feature_score_rank_svg(
+    results_dir: Path,
+    stats_rows: list[dict],
+    filename: str,
+    title: str,
+    rows: list[dict],
+    color: str,
+) -> str | None:
+    rows = [row for row in rows if int(row.get("relevant_count", 0) or 0) > 0][:10]
+    if not rows:
+        content = "\n".join([
+            f'<text x="40" y="34" class="title">{svg_text(title)}</text>',
+            '<text x="40" y="56" class="subtitle">No scored features for this run.</text>',
+        ])
+        write_svg(results_dir / filename, content, 980, 140)
+        return filename
+
+    width = 1120
+    row_h = 36
+    top = 92
+    left = 270
+    right = 84
+    chart_w = width - left - right
+    mid_x = left + chart_w / 2
+    height = top + row_h * len(rows) + 70
+    parts = [
+        f'<text x="40" y="36" style="font:700 22px Arial, sans-serif;fill:#1f2933">{svg_text(title)}</text>',
+        '<text x="40" y="62" style="font:14px Arial, sans-serif;fill:#52616b">Ranked by average feature score when relevant. Axis fixed from -1.00 to +1.00.</text>',
+    ]
+
+    for tick in (-1.0, -0.5, 0.0, 0.5, 1.0):
+        x = left + (tick + 1.0) / 2.0 * chart_w
+        parts.append(f'<line x1="{x:.1f}" y1="{top - 14}" x2="{x:.1f}" y2="{height - 46}" class="grid"/>')
+        parts.append(f'<text x="{x:.1f}" y="{height - 24}" text-anchor="middle" class="axis">{tick:+.1f}</text>')
+    parts.append(f'<line x1="{left}" y1="{height - 46}" x2="{left + chart_w}" y2="{height - 46}" class="rule"/>')
+    parts.append(f'<line x1="{mid_x:.1f}" y1="{top - 22}" x2="{mid_x:.1f}" y2="{height - 46}" stroke="#6b7280" stroke-width="1.2"/>')
+
+    for idx, row in enumerate(rows):
+        y = top + idx * row_h
+        score = max(-1.0, min(1.0, float(row["avg_score_when_relevant"])))
+        end_x = left + (score + 1.0) / 2.0 * chart_w
+        x = min(mid_x, end_x)
+        bar_w = max(abs(end_x - mid_x), 2.0)
+        label = display_feature_label(row["feature"])
+        if len(label) > 28:
+            label = label[:25] + "..."
+        parts.append(f'<text x="{left - 14}" y="{y + 20}" text-anchor="end" style="font:14px Arial, sans-serif;fill:#1f2933">{svg_text(label)}</text>')
+        parts.append(f'<rect x="{x:.1f}" y="{y + 3}" width="{bar_w:.1f}" height="22" rx="2" fill="{color}" opacity="0.9"/>')
+        value_x = end_x + 8 if score >= 0 else end_x - 8
+        anchor = "start" if score >= 0 else "end"
+        parts.append(
+            f'<text x="{value_x:.1f}" y="{y + 20}" text-anchor="{anchor}" class="small">'
+            f'{score:+.3f} (n={int(row["relevant_count"])})</text>'
+        )
+
+    write_svg(results_dir / filename, "\n".join(parts), width, height)
+    return filename
+
+
+def write_feature_score_extremes_svg(
+    results_dir: Path,
+    top_rows: list[dict],
+    bottom_rows: list[dict],
+) -> str | None:
+    top_rows = [row for row in top_rows if int(row.get("relevant_count", 0) or 0) > 0][:10]
+    bottom_rows = [row for row in bottom_rows if int(row.get("relevant_count", 0) or 0) > 0][:10]
+    filename = "feature_score_extremes.svg"
+    if not top_rows and not bottom_rows:
+        content = "\n".join([
+            '<text x="48" y="42" style="font:700 24px Arial, sans-serif;fill:#1f2933">Feature Score Extremes</text>',
+            '<text x="48" y="72" style="font:15px Arial, sans-serif;fill:#52616b">No scored features for this run.</text>',
+        ])
+        write_svg(results_dir / filename, content, 1280, 160)
+        return filename
+
+    width = 1280
+    height = 920
+    left = 360
+    right = 130
+    chart_w = width - left - right
+    mid_x = left + chart_w / 2
+    row_h = 34
+    section_gap = 72
+    top_y = 118
+    bottom_y = top_y + row_h * max(len(top_rows), 1) + section_gap
+    axis_y = height - 54
+
+    parts = [
+        '<text x="48" y="42" style="font:700 26px Arial, sans-serif;fill:#1f2933">Feature Score Extremes</text>',
+        '<text x="48" y="74" style="font:15px Arial, sans-serif;fill:#52616b">Top 10 highest and lowest average feature scores. Axis fixed from -1.00 to +1.00.</text>',
+        '<rect x="1000" y="34" width="18" height="18" fill="#4f8f4f"/>',
+        '<text x="1028" y="48" style="font:14px Arial, sans-serif;fill:#52616b">highest avg scores</text>',
+        '<rect x="1000" y="62" width="18" height="18" fill="#c44e4e"/>',
+        '<text x="1028" y="76" style="font:14px Arial, sans-serif;fill:#52616b">lowest avg scores</text>',
+        '<text x="48" y="108" style="font:700 18px Arial, sans-serif;fill:#4f8f4f">Highest</text>',
+        f'<text x="48" y="{bottom_y - 10}" style="font:700 18px Arial, sans-serif;fill:#c44e4e">Lowest</text>',
+    ]
+    for tick in (-1.0, -0.5, 0.0, 0.5, 1.0):
+        x = left + (tick + 1.0) / 2.0 * chart_w
+        parts.append(f'<line x1="{x:.1f}" y1="92" x2="{x:.1f}" y2="{axis_y}" class="grid"/>')
+        parts.append(f'<text x="{x:.1f}" y="{axis_y + 24}" text-anchor="middle" class="axis">{tick:+.1f}</text>')
+    parts.append(f'<line x1="{left}" y1="{axis_y}" x2="{left + chart_w}" y2="{axis_y}" class="rule"/>')
+    parts.append(f'<line x1="{mid_x:.1f}" y1="86" x2="{mid_x:.1f}" y2="{axis_y}" stroke="#6b7280" stroke-width="1.3"/>')
+
+    def add_rows(rows: list[dict], start_y: int, color: str) -> None:
+        for idx, row in enumerate(rows):
+            y = start_y + idx * row_h
+            score = max(-1.0, min(1.0, float(row["avg_score_when_relevant"])))
+            end_x = left + (score + 1.0) / 2.0 * chart_w
+            x = min(mid_x, end_x)
+            bar_w = max(abs(end_x - mid_x), 2.0)
+            label = display_feature_label(row["feature"])
+            if len(label) > 30:
+                label = label[:27] + "..."
+            parts.append(
+                f'<text x="{left - 26}" y="{y + 20}" text-anchor="end" '
+                f'style="font:14px Arial, sans-serif;fill:#1f2933">{svg_text(label)}</text>'
+            )
+            parts.append(f'<rect x="{x:.1f}" y="{y + 3}" width="{bar_w:.1f}" height="22" rx="2" fill="{color}" opacity="0.9"/>')
+            if score < 0 and end_x < left + 86:
+                value_x = min(mid_x - 8, x + bar_w - 10)
+                anchor = "end"
+                value_fill = "#ffffff"
+            else:
+                value_x = end_x + 8 if score >= 0 else end_x - 8
+                anchor = "start" if score >= 0 else "end"
+                value_fill = "#52616b"
+            parts.append(
+                f'<text x="{value_x:.1f}" y="{y + 20}" text-anchor="{anchor}" '
+                f'style="font:10px Arial, sans-serif;fill:{value_fill}">'
+                f'{score:+.3f} (n={int(row["relevant_count"])})</text>'
+            )
+
+    add_rows(top_rows, top_y, "#4f8f4f")
+    add_rows(bottom_rows, bottom_y, "#c44e4e")
+
     write_svg(results_dir / filename, "\n".join(parts), width, height)
     return filename
 
@@ -407,6 +669,27 @@ def main() -> int:
     )
 
     top_svg = write_top_feature_svg(results_dir, stats_rows, args.top_n)
+    rose_svg = write_feature_sentiment_rose_svg(results_dir, stats_rows, args.top_n)
+    scored_rows = [row for row in stats_rows if int(row.get("relevant_count", 0) or 0) > 0]
+    highest_score_rows = sorted(scored_rows, key=lambda row: (-float(row["avg_score_when_relevant"]), row["feature"]))[:10]
+    lowest_score_rows = sorted(scored_rows, key=lambda row: (float(row["avg_score_when_relevant"]), row["feature"]))[:10]
+    score_top_svg = write_feature_score_rank_svg(
+        results_dir,
+        stats_rows,
+        "feature_score_top10.svg",
+        "Highest Average Feature Scores",
+        highest_score_rows,
+        "#4f8f4f",
+    )
+    score_bottom_svg = write_feature_score_rank_svg(
+        results_dir,
+        stats_rows,
+        "feature_score_bottom10.svg",
+        "Lowest Average Feature Scores",
+        lowest_score_rows,
+        "#c44e4e",
+    )
+    score_extremes_svg = write_feature_score_extremes_svg(results_dir, highest_score_rows, lowest_score_rows)
     validation = validation_summary(diagnostics)
     validation_svg = write_simple_bar_svg(
         results_dir,
@@ -452,7 +735,7 @@ def main() -> int:
         [(row["agent"], int(round(float(row["total_seconds"])))) for row in timing_rows],
         "#4f7898",
     )
-    svg_files = [top_svg, validation_svg, iteration_svg, latency_svg, candidates_svg, dynamic_svg]
+    svg_files = [rose_svg, score_extremes_svg, top_svg, validation_svg, iteration_svg, latency_svg, candidates_svg, dynamic_svg]
     write_dashboard(results_dir, total_reviews, stats_rows, validation, [f for f in svg_files if f])
 
     lines = [
@@ -469,6 +752,16 @@ def main() -> int:
     ]
     if top_svg:
         lines.extend(["", "## Most Relevant Features (plot)", "", f"![top]({top_svg})", ""])
+    if rose_svg:
+        lines.extend(["", "## Feature Sentiment Rose", "", f"![feature sentiment rose]({rose_svg})", ""])
+    if score_extremes_svg or score_top_svg or score_bottom_svg:
+        lines.extend(["", "## Feature Score Extremes", ""])
+        if score_extremes_svg:
+            lines.extend([f"![feature score extremes]({score_extremes_svg})", ""])
+        if score_top_svg:
+            lines.extend([f"![highest feature scores]({score_top_svg})", ""])
+        if score_bottom_svg:
+            lines.extend([f"![lowest feature scores]({score_bottom_svg})", ""])
     lines.extend([
         "## Agent Timing Summary",
         "",

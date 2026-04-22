@@ -147,23 +147,28 @@ Return JSON list only."""
         existing_features: list[dict],
     ) -> list[dict]:
         existing_names = ", ".join(f.get("name", "") for f in existing_features)
-        missing = validation_feedback.get("missing_features", [])
-        missing_str = json.dumps(missing, ensure_ascii=False)
+        suggest_feature = validation_feedback.get("suggest_feature")
+        suggestion_str = json.dumps(suggest_feature, ensure_ascii=False)
         prompt = f"""You are the master agent in EchoInsight.
 The current feature bundle does not fully cover this review.
-Generate reusable missing features based on the review and validation feedback.
+Generate one reusable missing feature based on the review and validation feedback.
 
 Rules:
 - Do not repeat existing features: {existing_names}
-- Use reusable catalog-style features.
+- Generate at most ONE feature.
+- Use a reusable catalog-style feature, not a one-off phrase.
+- Prefer a broad feature dimension that could apply to future reviews.
 - Use snake_case names.
-- Return JSON only: a list with keys name, description, examples.
+- Return JSON only: a single object with keys name, description, examples.
+- For examples, copy 1-3 verbatim substrings from the review.
 
 Review: {review.get('review_text', '')}
-Validation feedback (missing): {missing_str}
+Validation suggested feature: {suggestion_str}
 
-Return JSON list only."""
+Return JSON object only."""
         result = self.client.chat_json(prompt, temperature=self.temperature)
+        if isinstance(result, dict):
+            return [result]
         if isinstance(result, list):
-            return result
+            return result[:1]
         return []

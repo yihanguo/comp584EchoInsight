@@ -20,12 +20,13 @@ Given the original review and the current relevant feature bundle, decide whethe
 Rules:
 - Do not rescore the existing features.
 - Do not judge sentiment. Positive, negative, and neutral mentions all count as coverage.
-- Only judge whether important reusable product-review feature topics are missing.
+- Only judge whether one important reusable product-review feature topic is missing.
 - Do not require every sentence to be covered.
 - Ignore shipping, order, seller, and customer-service issues unless they are central to product analysis.
-- If the relevant feature bundle covers the main product-related points, return pass: true with empty missing_features.
-- If missing features exist, list them as reusable catalog candidates.
-- Return JSON only with keys: pass (bool), missing_features (list of {{name, description}}), reason (str), confidence (float 0-1).
+- If the relevant feature bundle covers the main product-related points, return pass: true with suggest_feature: null.
+- If an important feature topic is missing, suggest exactly ONE reusable catalog-style feature.
+- Prefer a broad, high-level feature dimension over narrow one-off phrases.
+- Return JSON only with keys: pass (bool), suggest_feature (object with name and description, or null), reason (str), confidence (float 0-1).
 
 Review: {review_text}
 
@@ -35,13 +36,13 @@ Current feature bundle:
 Return JSON only."""
         result = self.client.chat_json(prompt, temperature=self.temperature)
         if isinstance(result, dict):
-            missing = result.get("missing_features", [])
-            if not isinstance(missing, list):
-                missing = []
+            suggest_feature = result.get("suggest_feature")
+            if not isinstance(suggest_feature, dict):
+                suggest_feature = None
             return {
                 "pass": bool(result.get("pass", True)),
-                "missing_features": missing,
+                "suggest_feature": suggest_feature,
                 "reason": result.get("reason", ""),
                 "confidence": float(result.get("confidence", 1.0)),
             }
-        return {"pass": True, "missing_features": [], "reason": "parse error fallback", "confidence": 0.5}
+        return {"pass": True, "suggest_feature": None, "reason": "parse error fallback", "confidence": 0.5}
