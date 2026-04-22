@@ -1,0 +1,133 @@
+[
+  {
+    "name": "copy_paste_functionality",
+    "description": "Ease of copying and pasting text or links.",
+    "examples": [
+      "Cut and paste is horrible.",
+      "Copying embedded links and pasting it elsewhere is worthless, in that it doesn't work at all."
+    ]
+  },
+  {
+    "name": "file_management",
+    "description": "System for organizing and saving files.",
+    "examples": [
+      "Since iOS lacks a file structure, it's difficult to save documents to a set location."
+    ]
+  },
+  {
+    "name": "image_handling",
+    "description": "Process of managing or editing images.",
+    "examples": [
+      "Image handling isn't the greatest thing in the world, but there are workarounds."
+    ]
+  },
+  {
+    "name": "trackpad_support",
+    "description": "Availability or need for trackpad navigation.",
+    "examples": [
+      "There are things that we take for granted on a computer, like trackpads and easy copy/paste, that are necessary to make this work better."
+    ]
+  },
+  {
+    "name": "content_creation",
+    "description": "Suitability for creating written or visual content.",
+    "examples": [
+      "But if you want it for creating content, it falls short.",
+      "If you're an artist, you'll be impressed."
+    ]
+  },
+  {
+    "name": "content_consumption",
+    "description": "Suitability for media consumption like videos and music.",
+    "examples": [
+      "Now, if you want the iPad Pro for just a consumption device (music, videos, photos), this thing is a Five Star home run device."
+    ]
+  },
+  {
+    "name": "app_compatibility",
+    "description": "Performance and integration with specific applications.",
+    "examples": [
+      "And the Pencil works really well with the Amazon Kindle app, so highlighting and saving notes is incredible."
+    ]
+  },
+  {
+    "name": "ease_of_use",
+    "description": "The product is easy to set up and operate.",
+    "examples": [
+      "He was easy to set up and to use"
+    ]
+  },
+  {
+    "name": "display_quality",
+    "description": "The screen provides clear and sharp visuals.",
+    "examples": [
+      "Crisp screen"
+    ]
+  },
+  {
+    "name": "security_features",
+    "description": "Includes hardware or software for secure access.",
+    "examples": [
+      "fingerprint scan for password"
+    ]
+  },
+  {
+    "name": "delivery_speed",
+    "description": "The product arrived quickly or on time.",
+    "examples": [
+      "Excellent delivery time",
+      "arrived on tiime"
+    ]
+  },
+  {
+    "name": "packaging_condition",
+    "description": "The state of the box or wrapping upon arrival.",
+    "examples": [
+      "The packing was not nice"
+    ]
+  },
+  {
+    "name": "physical_damage",
+    "description": "Visible scratches or dents on the device.",
+    "examples": [
+      "got a small scratch near the edge"
+    ]
+  },
+  {
+    "name": "device_integration",
+    "description": "The ability to connect or sync the device with other hardware or accounts.",
+    "examples": [
+      "it’s easy too link your iPhone with iPad"
+    ]
+  },
+  {
+    "name": "web_browsing",
+    "description": "Using the device to access and navigate the internet.",
+    "examples": [
+      "great for browsing the web"
+    ]
+  },
+  {
+    "name": "email_management",
+    "description": "Functionality for sending, receiving, or managing emails.",
+    "examples": [
+      "checking emails",
+      "I use it mostly for replying too email"
+    ]
+  },
+  {
+    "name": "video_conferencing",
+    "description": "Capability to conduct video calls or virtual meetings.",
+    "examples": [
+      "video conferencing with my doc appointments",
+      "FaceTime is amazing"
+    ]
+  },
+  {
+    "name": "gaming_performance",
+    "description": "The quality and visual clarity of games played on the device.",
+    "examples": [
+      "playing games the graphics are so clear and pretty"
+    ]
+  }
+]

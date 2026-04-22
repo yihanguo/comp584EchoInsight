@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="702" viewBox="0 0 1100 702">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">Top Feature Frequencies</text>
+<text x="40" y="56" class="subtitle">Top 20 features by review-level occurrence; color encodes feature origin.</text>
+<line x1="260.0" y1="72" x2="260.0" y2="656" class="grid"/>
+<text x="260.0" y="678" text-anchor="middle" class="axis">0</text>
+<line x1="414.0" y1="72" x2="414.0" y2="656" class="grid"/>
+<text x="414.0" y="678" text-anchor="middle" class="axis">18</text>
+<line x1="568.0" y1="72" x2="568.0" y2="656" class="grid"/>
+<text x="568.0" y="678" text-anchor="middle" class="axis">37</text>
+<line x1="722.0" y1="72" x2="722.0" y2="656" class="grid"/>
+<text x="722.0" y="678" text-anchor="middle" class="axis">55</text>
+<line x1="876.0" y1="72" x2="876.0" y2="656" class="grid"/>
+<text x="876.0" y="678" text-anchor="middle" class="axis">74</text>
+<line x1="1030.0" y1="72" x2="1030.0" y2="656" class="grid"/>
+<text x="1030.0" y="678" text-anchor="middle" class="axis">92</text>
+<line x1="260" y1="656" x2="1030" y2="656" class="rule"/>
+<text x="246" y="100" text-anchor="end" class="label">overall_satisfaction</text>
+<rect x="260" y="84" width="770.0" height="18" rx="2" fill="#2f6f9f"/>
+<text x="1038.0" y="98" class="small">92 (92.0%)</text>
+<text x="246" y="128" text-anchor="end" class="label">product_quality</text>
+<rect x="260" y="112" width="460.3" height="18" rx="2" fill="#2f6f9f"/>
+<text x="728.3" y="126" class="small">55 (55.0%)</text>
+<text x="246" y="156" text-anchor="end" class="label">sound_quality</text>
+<rect x="260" y="140" width="393.4" height="18" rx="2" fill="#2f6f9f"/>
+<text x="661.4" y="154" class="small">47 (47.0%)</text>
+<text x="246" y="184" text-anchor="end" class="label">fit</text>
+<rect x="260" y="168" width="251.1" height="18" rx="2" fill="#2f6f9f"/>
+<text x="519.1" y="182" class="small">30 (30.0%)</text>
+<text x="246" y="212" text-anchor="end" class="label">ease_of_use</text>
+<rect x="260" y="196" width="167.4" height="18" rx="2" fill="#2f6f9f"/>
+<text x="435.4" y="210" class="small">20 (20.0%)</text>
+<text x="246" y="240" text-anchor="end" class="label">battery_life</text>
+<rect x="260" y="224" width="150.7" height="18" rx="2" fill="#2f6f9f"/>
+<text x="418.7" y="238" class="small">18 (18.0%)</text>
+<text x="246" y="268" text-anchor="end" class="label">hardware_malfunction</text>
+<rect x="260" y="252" width="75.3" height="18" rx="2" fill="#2f6f9f"/>
+<text x="343.3" y="266" class="small">9 (9.0%)</text>
+<text x="246" y="296" text-anchor="end" class="label">physical_discomfort</text>
+<rect x="260" y="280" width="67.0" height="18" rx="2" fill="#2f6f9f"/>
+<text x="335.0" y="294" class="small">8 (8.0%)</text>
+<text x="246" y="324" text-anchor="end" class="label">noise_cancellation</text>
+<rect x="260" y="308" width="58.6" height="18" rx="2" fill="#6f8f2f"/>
+<text x="326.6" y="322" class="small">7 (7.0%)</text>
+<text x="246" y="352" text-anchor="end" class="label">value_for_money</text>
+<rect x="260" y="336" width="50.2" height="18" rx="2" fill="#6f8f2f"/>
+<text x="318.2" y="350" class="small">6 (6.0%)</text>
+<text x="246" y="380" text-anchor="end" class="label">microphone_quality</text>
+<rect x="260" y="364" width="41.8" height="18" rx="2" fill="#6f8f2f"/>
+<text x="309.8" y="378" class="small">5 (5.0%)</text>
+<text x="246" y="408" text-anchor="end" class="label">connectivity</text>
+<rect x="260" y="392" width="25.1" height="18" rx="2" fill="#6f8f2f"/>
+<text x="293.1" y="406" class="small">3 (3.0%)</text>
+<text x="246" y="436" text-anchor="end" class="label">accessory_compatibility</text>
+<rect x="260" y="420" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="434" class="small">2 (2.0%)</text>
+<text x="246" y="464" text-anchor="end" class="label">ambient_mode_performance</text>
+<rect x="260" y="448" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="462" class="small">2 (2.0%)</text>
+<text x="246" y="492" text-anchor="end" class="label">comfort</text>
+<rect x="260" y="476" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="490" class="small">2 (2.0%)</text>
+<text x="246" y="520" text-anchor="end" class="label">controls</text>
+<rect x="260" y="504" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="518" class="small">2 (2.0%)</text>
+<text x="246" y="548" text-anchor="end" class="label">noise_cancelling</text>
+<rect x="260" y="532" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="546" class="small">2 (2.0%)</text>
+<text x="246" y="576" text-anchor="end" class="label">price_value</text>
+<rect x="260" y="560" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="574" class="small">2 (2.0%)</text>
+<text x="246" y="604" text-anchor="end" class="label">product_comparison</text>
+<rect x="260" y="588" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="602" class="small">2 (2.0%)</text>
+<text x="246" y="632" text-anchor="end" class="label">use_case</text>
+<rect x="260" y="616" width="16.7" height="18" rx="2" fill="#6f8f2f"/>
+<text x="284.7" y="630" class="small">2 (2.0%)</text>
+<rect x="260" y="688" width="12" height="12" fill="#2f6f9f"/>
+<text x="278" y="698" class="small">initial catalog</text>
+<rect x="392" y="688" width="12" height="12" fill="#6f8f2f"/>
+<text x="410" y="698" class="small">dynamic discovery</text>
+</svg>

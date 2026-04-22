@@ -1,4 +1,4 @@
-"""Smoke test for the ModelScope OpenAI-compatible Qwen API."""
+"""Smoke test for the ModelScope OpenAI-compatible chat API."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ DEFAULT_MODELSCOPE_API_KEY = "ms-74b8eedd-5f76-419a-a513-f421399093da"
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Send a small multimodal chat request to the ModelScope OpenAI-compatible API."
+        description="Send a small chat request to the ModelScope OpenAI-compatible API."
     )
     parser.add_argument(
         "--base-url",
@@ -25,12 +25,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="Qwen/Qwen3.5-35B-A3B",
+        default="deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
         help="ModelScope model id.",
     )
     parser.add_argument(
         "--text",
-        default="描述这幅图",
+        default="你好",
         help="User text prompt.",
     )
     parser.add_argument(
@@ -41,12 +41,26 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--text-only",
         action="store_true",
+        default=True,
         help="Send a pure text request without image input.",
+    )
+    parser.add_argument(
+        "--multimodal",
+        action="store_false",
+        dest="text_only",
+        help="Send text plus --image-url.",
     )
     parser.add_argument(
         "--stream",
         action="store_true",
+        default=True,
         help="Use streaming responses.",
+    )
+    parser.add_argument(
+        "--no-stream",
+        action="store_false",
+        dest="stream",
+        help="Use a non-streaming response.",
     )
     parser.add_argument(
         "--show-reasoning",

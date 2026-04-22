@@ -1,0 +1,2779 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "They sound amazing",
+        "reason": "The description mentions that the product sounds amazing."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses overall satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "I will proble buy another pair",
+        "reason": "The customer mentions buying another pair, indicating satisfaction with quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "They sound amazing",
+        "reason": "The description mentions that the product sounds amazing."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I only have to charge the case every few days",
+        "reason": "Battery life is so long and practical."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "These feel so much better and fit better in the ears than the first AirPods",
+        "reason": "Fits perfect in my pocket."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The sound quality is amazing",
+        "reason": "The responsiveness and performance of the sound."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Fantastic, as usual."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I love the noise cancellation, and I also like that I can adjust it if I need to",
+        "reason": "The effectiveness of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The product has lasted for a year",
+        "reason": "The overall quality and potential issues with the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The sound quality is amazing",
+        "reason": "The responsiveness and performance of the sound."
+      }
+    }
+  },
+  {
+    "review_id": "2",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "stays in the ears well",
+        "reason": "The customer mentions that the product stays in their ears well, which suggests comfort and fit."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer explicitly states their overall satisfaction with the product."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "Good and works really well",
+        "reason": "The customer mentions the product works well, suggesting positive aspects of quality."
+      }
+    }
+  },
+  {
+    "review_id": "3",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The bass comes across very clear as if you’re in a room listening to a high-quality stereo. The noise cancellation is the best that I’ve experienced.",
+        "reason": "The customer explicitly mentions enjoying the sound quality and the effectiveness of noise cancellation."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "The noise cancellation is the best that I’ve experienced. You have the option of either blocking everything out or allowing some noise to come in so that you can be aware in your environment. To give you an idea of how good the noise cancellation is, I have driven with my window down and have been sitting by a couple of Harleys at a stop light, neither instance was too loud for this setting. However, when the Harleys accelerated, I definitely heard them but they were not overwhelmingly loud.",
+        "reason": "The customer tested the noise cancellation in various scenarios and found it effective."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "However, when the Harleys accelerated, I definitely heard them but they were not overwhelmingly loud. Like I mentioned in the title however, the only issue I have with them is they fall out easily no matter what size ear tip I use. So this caused another purchase for me to buy ear hooks to secure them in my ear.",
+        "reason": "The customer had issues with the product falling out and needed secure ear hooks."
+      }
+    }
+  },
+  {
+    "review_id": "4",
+    "features": {
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "didn't pay for refurbished Airpods and even if I had, they would have worked. These didn't work at all.",
+        "reason": "The customer expresses dissatisfaction with the product quality."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "These didn't work at all. Well, one did.",
+        "reason": "The customer mentions that only one Airpod worked."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "These didn't work at all. Well, one did.",
+        "reason": "The customer had to replace one Airpod, indicating issues with replacements."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "Really disappointed.",
+        "reason": "The customer expresses general dissatisfaction with the product."
+      }
+    }
+  },
+  {
+    "review_id": "5",
+    "features": {
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "hard to keep in my ear sometimes",
+        "reason": "Implies noise issues but isn't direct"
+      }
+    }
+  },
+  {
+    "review_id": "6",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Worked very well!",
+        "reason": "It worked very well."
+      }
+    }
+  },
+  {
+    "review_id": "7",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Implies overall satisfaction"
+      }
+    }
+  },
+  {
+    "review_id": "8",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Good sound quality and usefulness.",
+        "reason": "Explicit mention of good sound quality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "Explicit satisfaction statement."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Good sound quality and usefulness.",
+        "reason": "Mentions product effectiveness but not general quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Good sound quality and usefulness.",
+        "reason": "Mentions sound quality specifically."
+      }
+    }
+  },
+  {
+    "review_id": "9",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My granddaughter loves this",
+        "reason": "The review expresses positive satisfaction with the product."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My granddaughter loves this",
+        "reason": "The review expresses positive satisfaction with the product."
+      },
+      "appeal_to_children": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My granddaughter loves this",
+        "reason": "The product is appealing to children."
+      }
+    }
+  },
+  {
+    "review_id": "10",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "This earbuds is definitely overpriced.",
+        "reason": "The earbuds are clearly overpriced."
+      },
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the battery life isn’t that good either.",
+        "reason": "The battery life isn’t that good either."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The sound quality isn't any better than other no name brands.",
+        "reason": "Negative opinion on sound quality."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "This earbuds is definitely overpriced.",
+        "reason": "The product quality issues are highlighted."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The sound quality isn't any better than other no name brands.",
+        "reason": "Negative feedback on sound quality."
+      },
+      "Rechargeable Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "the battery life isn't that good either.",
+        "reason": "Negative opinion on battery life."
+      }
+    }
+  },
+  {
+    "review_id": "11",
+    "features": {
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "With the pros there is almost too much noise cancelling. I also hate that you can’t tap to skip or make adjustments.",
+        "reason": "The customer expresses dissatisfaction with the noise cancellation effectiveness and control issues."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "With the pros there is almost too much noise cancelling.",
+        "reason": "The customer mentions noise cancellation issues and control problems, indicating poor product quality."
+      }
+    }
+  },
+  {
+    "review_id": "12",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Directly reflects satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "13",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I love these AirPods Pro!!!",
+        "reason": "Explicit mention of amazing sound quality."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I lost my first pair and had to have another pair",
+        "reason": "Indicates durability issues."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I love these AirPods Pro!!!",
+        "reason": "Clear indication of high satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I lost my first pair and had to have another pair",
+        "reason": "Implies quality issues."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I lost my first pair and had to have another pair",
+        "reason": "Indicates that replacements do not work."
+      }
+    }
+  },
+  {
+    "review_id": "14",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "they just work",
+        "reason": "The earphones fit well and are comfortable, as implied by the customer's satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "15",
+    "features": {
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This newer version of the Airpods hurt my ears.",
+        "reason": "The customer mentions the newer version causing ear pain, indicating quality issues."
+      }
+    }
+  },
+  {
+    "review_id": "16",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Worth the costs!",
+        "reason": "The customer mentions that these products are worth the cost, indicating consideration of affordability."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses high satisfaction, indicating overall positive feedback."
+      }
+    }
+  },
+  {
+    "review_id": "17",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Battery does last along time.",
+        "reason": "Battery life is described as lasting along time."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing.",
+        "reason": "The sound quality is described as amazing."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "my name and not someone else’s",
+        "reason": "Noise cancellation is implied by the product not being recognized as someone else's."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "received my pair perfectly packaged and sealed just as you would get at the store. Both pods were clean, no sign of them being used.",
+        "reason": "Product quality is implied by the packaging and condition."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Overall, I’m very pleased and would recommend them.",
+        "reason": "Satisfaction is explicitly stated as overall and positive."
+      }
+    }
+  },
+  {
+    "review_id": "18",
+    "features": {}
+  },
+  {
+    "review_id": "19",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "they like everything about them",
+        "reason": "Overall satisfaction is mentioned."
+      }
+    }
+  },
+  {
+    "review_id": "20",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "lasts about 4.5 hours on one charge",
+        "reason": "Directly mentioned in the review."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "can't imagine music without the noise cancelling and transparence option",
+        "reason": "Essentially mentioned."
+      }
+    }
+  },
+  {
+    "review_id": "21",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Overall satisfaction, as usual",
+        "reason": "The review mentions 'Fantastic, as usual' which is a positive general satisfaction rating."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The product quality is excellent."
+      },
+      "neutral-satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review mentions 'Fantastic, as usual' which is a positive general satisfaction rating."
+      }
+    }
+  },
+  {
+    "review_id": "22",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the battery life is phenomenal",
+        "reason": "The reviewer explicitly states that the battery life is phenomenal."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review ends with a statement of overall satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love the noise cancellation",
+        "reason": "The review mentions the effectiveness of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I’ve tried troubleshooting this multiple ways",
+        "reason": "The reviewer mentions trying troubleshooting multiple ways without success."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "People have repeatedly commented that I am very scratchy on calls",
+        "reason": "The reviewer explicitly states that the microphone quality is subpar."
+      },
+      "improved_mic_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I was extremely disappointed in the quality",
+        "reason": "The review explicitly mentions the microphone quality being a problem."
+      },
+      "consistent_volume": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It isn’t extremely quiet, but to me it just seems a bit low",
+        "reason": "The customer mentions the volume being inconsistent."
+      }
+    }
+  },
+  {
+    "review_id": "23",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Battery life is so long",
+        "reason": "The review explicitly states excellent battery life."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "Implies high sound quality."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the product has lasted for a year",
+        "reason": "Mentions product longevity."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Addresses durability under wear."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "General satisfaction statement."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The effectiveness of noise cancellation",
+        "reason": "Explicitly mentions noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The overall quality and potential issues with the product",
+        "reason": "Discusses product quality and potential issues."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "A better alternative to buying from Apple",
+        "reason": "Implies this feature."
+      }
+    }
+  },
+  {
+    "review_id": "24",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I’ve had these for almost a year now, love them!",
+        "reason": "Implies satisfaction with price."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I’ve had these for almost a year now, love them!",
+        "reason": "Implies durability over time."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I’ve had these for almost a year now, love them!",
+        "reason": "Strong statement of satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I’ve had these for almost a year now, love them!",
+        "reason": "Implies product quality and reliability."
+      }
+    }
+  },
+  {
+    "review_id": "25",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I use them every single day…at the gym, at work, at home, at the store…all day! The sound quality is absolutely incredible and there is just so much more.",
+        "reason": "The statement about sound quality being absolutely incredible."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I have all the other Apple Products and these are absolutely amazing and make me soooooo happy! I use them every single day…at the gym, at work, at home, at the store…all day! 95% of the time I only wear one at a time but that’s one of the things I love most because I can do every single thing on the left one or on the right one. They preform identically and it’s amazing.",
+        "reason": "The product has lasted for a year."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I would absolutely recommend these to anyone that is thinking of getting them. I’m sure glad I took the leap on these for sure.",
+        "reason": "The statement about being fantastic, as usual."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "My right one is physically cutting my ear. Apple is working on this issue with me to figure out what is going on. I’ve sent all kinds of pictures in for them to review. They believe it’s a micro defect on the casing that is basically invisible to the naked eye but is off just enough to cause this issue of cutting my ear.",
+        "reason": "The issue with the casing."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The sound quality is absolutely incredible and there is just so much more.",
+        "reason": "The statement about sound quality being absolutely incredible."
+      }
+    }
+  },
+  {
+    "review_id": "26",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review explicitly mentions overall satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "la calidad",
+        "reason": "The review mentions the overall quality of the product."
+      },
+      "product_quality_consistency": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Excelente producto",
+        "reason": "The review mentions consistent quality."
+      }
+    }
+  },
+  {
+    "review_id": "27",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "would recommend & buy again",
+        "reason": "The customer explicitly mentions recommending and buying again, indicating satisfaction."
+      },
+      "Product Likelihood to Recommend": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "would recommend & buy again",
+        "reason": "The customer explicitly mentions recommending the product."
+      },
+      "Likelihood to Repurchase": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "would recommend & buy again",
+        "reason": "The customer's explicit intention to buy again indicates a high likelihood of repurchasing."
+      }
+    }
+  },
+  {
+    "review_id": "28",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "they will last a few hours",
+        "reason": "Battery life being high as they last a few hours."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "They sound amazing",
+        "reason": "Sound quality is described as amazing."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "Noise cancellation is mentioned as effective."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The description indicated that the box may have been opened and possibly damaged.",
+        "reason": "Product quality issues are mentioned due to potential prior use."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "I sincerely wish that Amazon had taken a little more care in the processing of returns such as this!",
+        "reason": "General satisfaction with Amazon's processing is expressed."
+      }
+    }
+  },
+  {
+    "review_id": "29",
+    "features": {
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The carrying case is a joke but if you’re spending this much for headphones, I suppose you know how to take care of nice things.",
+        "reason": "The customer mentions the headphones lasted for several weeks, which implies durability."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "During a marathon writing session, I saw condensation once, which came during a marathon writing session.",
+        "reason": "The customer mentions that condensation occurred during wear, indicating wear resistance."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses high satisfaction with the headphones."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I was hesitant to buy them after reading about the condensation issue but I’ve worn them now for several weeks and have only seen condensation once, which came during a marathon writing session.",
+        "reason": "The customer mentions the product quality, specifically regarding condensation."
+      }
+    }
+  },
+  {
+    "review_id": "30",
+    "features": {
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The 2nd edition has problems, so Apple replaced one of them.",
+        "reason": "Clear mention of product quality issues due to replacement problems."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The product replacements do not function correctly.",
+        "reason": "The customer explicitly states that replacements do not work."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I love airpods, anyway. Fantastic, as usual.",
+        "reason": "Highly positive sentiment towards the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing.",
+        "reason": "Clear statement about the product's sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "31",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I can’t believe I got these for $229",
+        "reason": "The product is affordable and priced lower than retail"
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I can’t believe I got these for $229",
+        "reason": "The product has lasted for a year"
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I can’t believe I got these for $229",
+        "reason": "Dropped several times but still work"
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Awesome product. Love how amazon sells apple products and other for a bit cheaper than retail price!! I can’t believe I got these for $229",
+        "reason": "Overall positive sentiment about the product"
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love how amazon sells apple products and other for a bit cheaper than retail price!! I can’t believe I got these for $229",
+        "reason": "Amazon is a better alternative to buying from Apple"
+      }
+    }
+  },
+  {
+    "review_id": "32",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This one fits me so well.",
+        "reason": "Directly mentions fit."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Great sound!!!",
+        "reason": "Directly mentions sound quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Great sound!!!",
+        "reason": "Mentions sound quality."
+      },
+      "Comfort Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This one fits me so well.",
+        "reason": "Indicates comfort fit."
+      },
+      "Ergonomic Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This one fits me so well.",
+        "reason": "Mentions ergonomic fit."
+      }
+    }
+  },
+  {
+    "review_id": "33",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Form and fit",
+        "reason": "The product fits well."
+      }
+    }
+  },
+  {
+    "review_id": "34",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "They are easy to connect to my device.",
+        "reason": "The review mentions ease of connecting, implying a good fit."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love them.",
+        "reason": "The review starts with a positive statement about the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "the sound is not as good as the Bose quiet comfort headphones.",
+        "reason": "The review compares the sound quality to another product, indicating dissatisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "35",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "Directly mentions sound quality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "very happy with these",
+        "reason": "Expresses high satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "incredible quality",
+        "reason": "Directly mentions product quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "Mentions sound quality."
+      },
+      "super_comfortable": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "super comfortable",
+        "reason": "Directly mentions comfort."
+      }
+    }
+  },
+  {
+    "review_id": "36",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The shape change makes it harder to fit.",
+        "reason": "The user mentions struggling to fit the new version, indicating a problem with perfect fit."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The stem size change makes adjusting gestures difficult.",
+        "reason": "The reviewer mentions using multiple fingers to adjust settings, indicating wear resistance issues."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I will probably re-gift these to someone for xmas and I will definitely be betting another gen 2 set.",
+        "reason": "The user expresses strong dissatisfaction and a preference for the older model, indicating low overall satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The product has lasted for a year but now has lost some features.",
+        "reason": "The user mentions functionality issues and a decline in product quality over time."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "They sound amazing but now they don't work the same way.",
+        "reason": "The user compares the older model's sound quality to the new one, indicating a decline."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I will definitely be betting another gen 2 set.",
+        "reason": "The user expresses a preference for the older model as a better alternative."
+      }
+    }
+  },
+  {
+    "review_id": "37",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The review mentions spending more for quality, implying sound quality."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "The customer implies the product is resistant to wear."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The quality is outstanding",
+        "reason": "The review explicitly mentions outstanding quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The review mentions spending more for quality, implying sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "38",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "They highly enjoyed the features.",
+        "reason": "The customer mentions enjoying the features, which implies satisfaction."
+      },
+      "gift_wrapping_options": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Purchased as Christmas gift.",
+        "reason": "The customer mentions purchasing as a gift, implying wrapping options."
+      }
+    }
+  },
+  {
+    "review_id": "39",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "only ok sound",
+        "reason": "The customer explicitly mentions that the sound quality is only 'ok,' which indicates a lack of 'amazing' sound quality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer explicitly states 'Fantastic, as usual,' which indicates high overall satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "only ok sound",
+        "reason": "The customer mentions that the sound quality is only 'ok,' which implies potential quality issues."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "only ok sound",
+        "reason": "The customer explicitly mentions that the sound quality is only 'ok,' which indicates moderate concern about sound quality."
+      },
+      "positive_flexibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Awesome flex",
+        "reason": "The customer highlights 'Awesome flex,' indicating positive feedback on the product's flexibility."
+      },
+      "negative_sound_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "only ok sound",
+        "reason": "The customer explicitly mentions 'only ok sound,' indicating negative feedback on the product's sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "40",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Works great",
+        "reason": "The review expresses positive satisfaction with the product."
+      }
+    }
+  },
+  {
+    "review_id": "41",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "I even checked with apple",
+        "reason": "Indicates satisfaction"
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "They are real; I even checked with apple",
+        "reason": "Product is genuine"
+      }
+    }
+  },
+  {
+    "review_id": "42",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Sound is great but the fit of the earplugs sucks .",
+        "reason": "Mentions great sound quality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I am a short petite woman with small ears I have purchased from Amazon a set of earplugs that are supposed to be very comfy. Will report back.",
+        "reason": "Mentions satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I simply cannot get the left ear to pass the fit test. I have small ear innards I think apple needs to improve the fit. One size does not fit all.",
+        "reason": "Dissatisfaction with product quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Sound is great but the fit of the earplugs sucks .",
+        "reason": "Mentions sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "43",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love my new AirPod pro it’s worth it",
+        "reason": "The customer mentions it’s worth it, implying satisfaction with the price."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love my new AirPod pro it’s worth it",
+        "reason": "The customer expresses overall satisfaction with the product."
+      }
+    }
+  },
+  {
+    "review_id": "44",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I am sure like them.",
+        "reason": "Confident purchase, likely happy with the product."
+      }
+    }
+  },
+  {
+    "review_id": "45",
+    "features": {
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Just mad I lost one, so I’ve only been using the other one every since",
+        "reason": "The customer mentions losing one product, implying that replacements do not work."
+      },
+      "Parts Are Stolen": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Just mad I lost one, so I’ve only been using the other one every since",
+        "reason": "The customer mentions losing one product, implying that parts are stolen."
+      }
+    }
+  },
+  {
+    "review_id": "46",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Best price",
+        "reason": "The customer explicitly states that the product has the best price."
+      }
+    }
+  },
+  {
+    "review_id": "47",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "battery life is 24 hours",
+        "reason": "The review explicitly states the battery life."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review ends with a positive statement about overall satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "48",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Four hours of talk on the phone and the battery is already low",
+        "reason": "Directly mentions battery life."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "has lasted for a year",
+        "reason": "Mentions the product lasting a year."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Mentions the product being dropped and still functioning."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Strong positive statement about satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "There is no noice-cancelling and that’s of course not the point of this product",
+        "reason": "Clear negative mention of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "has lasted for a year and dropped several times but still work",
+        "reason": "Implies potential issues with quality."
+      }
+    }
+  },
+  {
+    "review_id": "49",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "It reflects high customer satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "50",
+    "features": {}
+  },
+  {
+    "review_id": "51",
+    "features": {}
+  },
+  {
+    "review_id": "52",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Battery life is not as long as the previous versions.",
+        "reason": "The customer mentions the shorter battery life compared to previous versions."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing.",
+        "reason": "The customer explicitly states that the sound quality is amazing."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "The customer's overall satisfaction is implied by their review."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The customer mentions that turning off noise cancellation caused issues."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "They are great for blocking out sound though.",
+        "reason": "The customer praises the product's quality for sound blocking."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing.",
+        "reason": "The customer explicitly states that the sound quality is amazing."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "A better alternative to buying from Apple.",
+        "reason": "The customer explicitly states that these headphones are a better alternative."
+      }
+    }
+  },
+  {
+    "review_id": "53",
+    "features": {
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The product has lasted for a year",
+        "reason": "The customer explicitly mentions the product lasting a year."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "The customer mentions the product being dropped multiple times."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses high satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Very happy with this buy",
+        "reason": "The customer implies high product quality."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Better alternative than buying from Apple",
+        "reason": "The customer explicitly states this preference."
+      }
+    }
+  },
+  {
+    "review_id": "54",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I’m Apple fan. Like it!",
+        "reason": "The review ends with 'Like it!', indicating high satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "55",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Very good!!!!",
+        "reason": "The review explicitly mentions high satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "56",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "there is less battery life than the original Airpods",
+        "reason": "The customer explicitly mentions less battery life."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "none of the sizes fit my ear properly",
+        "reason": "The customer is dissatisfied with the fit."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "They fall out of my ears at different times, so I could only use them in my house",
+        "reason": "The customer mentions that the earpieces fall out frequently, affecting their usability."
+      },
+      "Automatic Connectivity": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I did love the way they automatically connect",
+        "reason": "The customer expresses satisfaction with the automatic connectivity feature."
+      }
+    }
+  },
+  {
+    "review_id": "57",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review directly mentions high satisfaction."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "sound quality is okay",
+        "reason": "The review directly mentions sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "58",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It works the way it’s supposed to.",
+        "reason": "The review explicitly states satisfaction with the product."
+      }
+    }
+  },
+  {
+    "review_id": "59",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The price is very affordable.",
+        "reason": "Directly addresses price."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Generally it's the same as the one bought in the Apple Store.",
+        "reason": "Affirms satisfaction."
+      },
+      "noise_levels": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "The earphone feels a little noisy when used.",
+        "reason": "Directly mentions noise levels."
+      },
+      "logistics_time": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "The logistics took several days.",
+        "reason": "Directly mentions logistics time."
+      }
+    }
+  },
+  {
+    "review_id": "60",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I can wear them for hours",
+        "reason": "Directly addresses battery life"
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "they stay in place",
+        "reason": "Indicates a good fit"
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "they stay in place",
+        "reason": "Implied but not directly stated"
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "General satisfaction statement"
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "If you like the shape... you will love these",
+        "reason": "Implied by positive reception"
+      },
+      "User Feedback": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "The customer provides a positive feedback about the product."
+      }
+    }
+  },
+  {
+    "review_id": "61",
+    "features": {
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Drop and functionality suggest durability."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Positive overall comment."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "They work great and the same as the pair I bought from Apple",
+        "reason": "Comparison to a known good product suggests quality."
+      }
+    }
+  },
+  {
+    "review_id": "62",
+    "features": {
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "They have lasted for a year",
+        "reason": "Specific positive statement about durability."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Direct statement about resistance to wear."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "High satisfaction statement."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The product has lasted for a year",
+        "reason": "Indicates durability but is vague."
+      }
+    }
+  },
+  {
+    "review_id": "63",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "",
+        "reason": "The review mentions a positive experience, implying satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "64",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "they are small but I would say the right size",
+        "reason": "The customer mentions the AirPods being the right size, indicating a perfect fit."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I’m happy with them",
+        "reason": "The customer expresses satisfaction with the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The sound quality is good",
+        "reason": "The customer directly states the sound quality is good."
+      }
+    }
+  },
+  {
+    "review_id": "65",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "didn't fit in my ears constantly falling out",
+        "reason": "Clear issue with fit."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "loved them worked amazingly",
+        "reason": "Expresses high satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "returning item looking for alternative",
+        "reason": "Implies issues with quality."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "looking for alternative",
+        "reason": "Indicates problems with replacements."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "worked amazingly",
+        "reason": "Suggests good sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "66",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I lost my airpod pros. Saw these on major discount ($90 for Black Friday), and couldn't resist.",
+        "reason": "The Beats were clearly more affordable than the AirPods Pro."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Sound quality -- versus the airpod pros, these are almost identical in sound. The only difference is the beats buds are a touch bass heavy.",
+        "reason": "The Beats have almost identical sound quality to the AirPods Pro."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I dropped several times but still work.",
+        "reason": "The Beats have proven to be durable despite being dropped."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It's not to say that beats mak you deaf or anything but things are just noticeably quieter in transparency vs airpods with its full clarity.",
+        "reason": "The customer is satisfied with the Beats, highlighting their effectiveness in noise cancellation."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Noise cancelling -- now this could have to do with the shape of my ear, but I found the beats to actually be a step ABOVE in noise cancelling.",
+        "reason": "The Beats have superior noise cancellation compared to the AirPods Pro."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The only difference is the beats buds are a touch bass heavy.",
+        "reason": "The Beats have a slightly bass-heavy sound quality compared to the AirPods Pro."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It's not to say that beats mak you deaf or anything but things are just noticeably quieter in transparency vs airpods with its full clarity.",
+        "reason": "The Beats are considered a better alternative to the Apple AirPods Pro."
+      }
+    }
+  },
+  {
+    "review_id": "67",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the right pod’s battery drained really fast, even after being fully charged. (From 100%-26% within 35 minutes)",
+        "reason": "The review explicitly mentions the battery drain and the percentage drop, indicating strong concern."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "sound quality was ok",
+        "reason": "The review states that sound quality was okay, indicating neutral sentiment."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "noise cancellation on the other hand was meh",
+        "reason": "The review uses a negative adjective to describe noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I return and purchased the same pair at the same price at target & not having any issues with them",
+        "reason": "The review mentions returning the product and not having issues, indicating positive feedback."
+      }
+    }
+  },
+  {
+    "review_id": "68",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "these were a tolerable price point",
+        "reason": "They're affordable compared to expectations."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great functions and decent mic pickup though i will admit.",
+        "reason": "They fit perfectly in my pocket."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "The sound is amazing."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "It's dropped several times but still works."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "It's fantastic, as usual."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The overall quality and potential issues with the product.",
+        "reason": "The product has lasted for a year and parts are stolen."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "The sound is amazing."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Parts are stolen from the product.",
+        "reason": "The product replacements do not function correctly."
+      },
+      "Parts Are Stolen": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Parts are stolen from the product.",
+        "reason": "The product replacements do not function correctly."
+      }
+    }
+  },
+  {
+    "review_id": "69",
+    "features": {
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The product keeps falling out my ear, which could indicate issues with wear resistance.",
+        "reason": "The review mentions that the product keeps falling out, which might relate to wear resistance."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The product keeps falling out, suggesting potential quality issues.",
+        "reason": "The falling out may indicate quality problems."
+      },
+      "Secure Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The product keeps falling out, indicating issues with the fit.",
+        "reason": "The falling out directly relates to the fit."
+      }
+    }
+  },
+  {
+    "review_id": "70",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I feel like they fit perfectly in my pocket.",
+        "reason": "The user mentions feeling like they fit perfectly in their pocket."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I have had them fall out plenty of times.",
+        "reason": "The user mentions the AirPods falling out multiple times."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I have had them fall out plenty of times.",
+        "reason": "The user mentions the AirPods falling out multiple times, indicating wear resistance issues."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The user ends with a positive statement about their experience."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The noise cancellation could be a lot better.",
+        "reason": "The user expresses that noise cancellation could be improved."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it has lasted for a year and I have had them fall out plenty of times.",
+        "reason": "The user mentions both good and bad experiences with the product quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I would love to give it 5 stars but there's definitely areas in need of improvement.",
+        "reason": "The user mentions they feel the sound quality is good but has room for improvement."
+      }
+    }
+  },
+  {
+    "review_id": "71",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": false,
+        "feature_score": 0.5,
+        "evidence_span": "",
+        "reason": ""
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "They sound amazing",
+        "reason": "Directly mentions the sound quality."
+      },
+      "Durability Over Time": {
+        "has_feature": false,
+        "feature_score": 0.5,
+        "evidence_span": "It was strange getting used the noise cancellation but now it’s great",
+        "reason": "Mentions the product lasting a year."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "They don’t fall out of my ears and not painful",
+        "reason": "Mentions comfort and resistance to wear."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "So far all pros",
+        "reason": "Starts with all pros, implying satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It was strange getting used the noise cancellation but now it’s great",
+        "reason": "Mentions noise cancellation specifically."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "They sound amazing",
+        "reason": "Mentions overall quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "Directly about sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "72",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Amazon doesn’t lower all prices at the start of Prime Day but only lowers some of them well after Prime Day has begun, and I had to send back the first pair I bought and purchase another pair to get a discounted price",
+        "reason": "Mentions price issues and had to send back the first pair."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "they’re comfortable enough to wear for extended periods",
+        "reason": "Mentions comfort for extended wear."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Quality of construction does seem to be excellent",
+        "reason": "Mentions good construction quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "these headphones are definitely lacking in bass response – as in, there’s very little, and what there is gets completely lost under any midrange and high-end sounds that may be playing at the same time",
+        "reason": "Explicitly mentions lacking sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "73",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "They are comfortable and easy to store/charge.",
+        "reason": "Comfort and ease of use suggest a good fit, though not explicitly perfect."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Directly states overall satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "74",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The product has been a great purchase."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "work way better than a normal headset if calling from your cell",
+        "reason": "Effective noise cancellation enhances call quality."
+      },
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "so far battery has lasted me a whole day while on the phone",
+        "reason": "Long battery life supports extended use."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Product has maintained functionality despite drops."
+      }
+    }
+  },
+  {
+    "review_id": "75",
+    "features": {
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The noise cancelling is disappointing and mine came with a problem in the left earphone, the noise cancel option sometimes turn off automatically.",
+        "reason": "Negative feedback on noise cancellation and functionality issues."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The product came with a problem in the left earphone.",
+        "reason": "Quality issue with the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The sound is average, nothing special.",
+        "reason": "Negative feedback on average sound quality."
+      },
+      "Connection Stability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The good thing is the connection stability with iPhone.",
+        "reason": "Positive feedback on connection stability."
+      }
+    }
+  },
+  {
+    "review_id": "76",
+    "features": {
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "no noise cancellation",
+        "reason": "The effectiveness of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Fit poorly and without proper fit",
+        "reason": "The overall quality and potential issues with the product."
+      },
+      "Improper Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fit poorly and without proper fit",
+        "reason": "The customer explicitly states that the product does not fit properly."
+      }
+    }
+  },
+  {
+    "review_id": "77",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "occasionally has problems with asymmetric charging",
+        "reason": "The customer mentions occasional issues with asymmetric charging, indicating concerns about battery life."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the product has lasted for a year",
+        "reason": "The customer states that the product has lasted for a year, indicating high durability."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "The customer mentions that the headphones dropped several times but still function, indicating good wear resistance."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses overall satisfaction with the purchase."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "occasional problems with asymmetric charging",
+        "reason": "The customer mentions occasional issues with asymmetric charging, which relates to product quality."
+      }
+    }
+  },
+  {
+    "review_id": "78",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Good sound quality",
+        "reason": "The review mentions 'Good sound quality,' which implies 'Amazing Sound Quality.'"
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Good sound quality",
+        "reason": "The review directly states 'Good sound quality,' indicating the feature."
+      }
+    }
+  },
+  {
+    "review_id": "79",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Because of the price ticket.",
+        "reason": "The customer mentions considering the price, indicating the product's affordability."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "The customer states the sound quality is excellent."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The customer highlights the noise cancellation feature."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer expresses overall satisfaction with the product."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "A better alternative to buying from Apple.",
+        "reason": "The customer compares the product positively to Apple products."
+      }
+    }
+  },
+  {
+    "review_id": "80",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "good battery life, though not quite as good as my original AirPods",
+        "reason": "Mentioned as good but not as good as original."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "Explicitly mentioned."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Positive mention of durability."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Very happy with the purchase overall",
+        "reason": "Explicit satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "much better noise cancellation than I anticipated",
+        "reason": "Explicit mention of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The overall quality and potential issues with the product",
+        "reason": "Mention of quality issues."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "Explicit mention of sound quality."
+      },
+      "Parts Are Stolen": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Parts are stolen from the product",
+        "reason": "Explicit mention of parts being stolen."
+      }
+    }
+  },
+  {
+    "review_id": "81",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "they cancel out all other noise",
+        "reason": "The effectiveness of noise cancellation."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review ends with 'Fantastic, as usual,' which directly refers to overall satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I hear absolutely nothing when these are in; they cancel out all other noise",
+        "reason": "The review explicitly states that the product cancels out all other noise."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the volume goes way higher than I need",
+        "reason": "The responsiveness and performance of the sound."
+      }
+    }
+  },
+  {
+    "review_id": "82",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It fits nicely in ears.",
+        "reason": "The customer explicitly states the product fits well in their ears."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing.",
+        "reason": "The review highlights the high sound quality of the product."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "The customer expresses overall satisfaction with the product."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "They sound amazing.",
+        "reason": "The review mentions great sound, indicating sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "83",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Comfortable to wear",
+        "reason": "The review implies a good fit."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the sound is great",
+        "reason": "The review mentions great sound."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review states overall satisfaction."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the sound is great",
+        "reason": "The review mentions great sound."
+      }
+    }
+  },
+  {
+    "review_id": "84",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Pre Black Friday special for less than $160",
+        "reason": "Mentions the product being a special deal and affordable"
+      }
+    }
+  },
+  {
+    "review_id": "85",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "long battery life",
+        "reason": "The review explicitly mentions 'long battery life'."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "great sound quality",
+        "reason": "The review explicitly mentions 'great sound quality'."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The review ends with an expression of satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "noise cancelling ability",
+        "reason": "The review explicitly mentions 'noise cancelling ability'."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Great product",
+        "reason": "The review uses 'Great product' which implies overall quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "great sound quality",
+        "reason": "The review explicitly mentions 'great sound quality'."
+      }
+    }
+  },
+  {
+    "review_id": "86",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing.",
+        "reason": "Direct mention of sound quality."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They were worlds better than anything else I had tried and I have used them weekly ever since.",
+        "reason": "Mention of lasting a year."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Overall, I don't regret this at all. I've fallen in love again.",
+        "reason": "Expresses overall satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They were worlds better than anything else I had tried and I have used them weekly ever since.",
+        "reason": "Discusses product longevity and quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing.",
+        "reason": "Direct mention of sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "87",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I've got lots of people around me using these all the time and I thought perhaps I was missing something, but truthfully, these are annoying and I'm always worried that I'll lose one, so I don't like wearing them outside my home. Good idea, just not for me.",
+        "reason": "Concern about short battery life and worry about losing the product."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I see lots of people around me using these all the time and I thought perhaps I was missing something, but truthfully, these are annoying and I'm always worried that I'll lose one, so I don't like wearing them outside my home. Good idea, just not for me.",
+        "reason": "Praise for the sound quality."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I don't like wearing them outside my home. Good idea, just not for me.",
+        "reason": "Concern about losing the product when wearing them."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I see lots of people around me using these all the time and I thought perhaps I was missing something, but truthfully, these are annoying and I'm always worried that I'll lose one, so I don't like wearing them outside my home. Good idea, just not for me.",
+        "reason": "Praise for the sound quality."
+      },
+      "Dedicated Volume Controls": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I don't like the fact that I have to keep using the iPhone to change the volume, change the station change anything.",
+        "reason": "Dislike for the need to use the iPhone."
+      },
+      "Secure Earbud Lock": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I don't like wearing them outside my home.",
+        "reason": "Concern about losing the product."
+      }
+    }
+  },
+  {
+    "review_id": "88",
+    "features": {
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The battery life is so long",
+        "reason": "The customer explicitly mentions that the battery lasts much longer."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They fit in my ear so much better",
+        "reason": "The customer notes a significant improvement in fit."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "The customer states that the sound quality is much better."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer provides a general satisfaction statement."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The customer explicitly mentions improved noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Genuine Apple quality",
+        "reason": "The customer refers to the product as 'Genuine Apple quality'."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound much better & the battery lasts much longer. I love the size reduction.",
+        "reason": "The customer mentions both sound quality and battery life improvements."
+      }
+    }
+  },
+  {
+    "review_id": "89",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Excellent price.",
+        "reason": "Directly mentions the price."
+      },
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Long lasting battery.",
+        "reason": "Clear mention of battery life."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Excellent sound quality.",
+        "reason": "Directly mentions sound quality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "Clear satisfaction statement."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Noise cancellation wonderful.",
+        "reason": "Direct mention of noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "excellent sound quality and excellent price.",
+        "reason": "Mentions overall quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Excellent sound quality.",
+        "reason": "Direct mention of sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "90",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "I cringe at the price of these little used accessories",
+        "reason": "Mentions price discomfort."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "They sound amazing",
+        "reason": "Strong positive statement about sound quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "I can hear the umph in the music as well as background brush strokes on the symbols",
+        "reason": "Detailed feedback on sound quality."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The product has lasted for a year",
+        "reason": "Mention of product longevity."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Mention of product resilience."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "Fits perfect in my pocket",
+        "reason": "Mention of perfect fit."
+      }
+    }
+  },
+  {
+    "review_id": "91",
+    "features": {
+      "Product Affordability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I caught these on sale, which Amazon does from time to time, so the cost was not too bad.",
+        "reason": "The customer explicitly mentions the affordability of the ear buds."
+      },
+      "Battery Life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The batteries last as long she needs them to last, so that is good. Even when they do need charging she can throw them on the case and put the case on a charging pad or plug it in.",
+        "reason": "The customer highlights the battery life and convenient charging options."
+      },
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They are easy enough for her to use w/her iPhone or iPad. She says they fit her well and she likes the sound quality.",
+        "reason": "The customer mentions that the ear buds fit her well and she uses them comfortably."
+      }
+    }
+  },
+  {
+    "review_id": "92",
+    "features": {
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Directly states overall satisfaction."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the effectiveness of noise cancellation.",
+        "reason": "Directly mentions noise cancellation."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Water resistant and the noise canceling is great.",
+        "reason": "Inferred from product features."
+      }
+    }
+  },
+  {
+    "review_id": "93",
+    "features": {
+      "Perfect Fit": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I was thrilled with them. So much better than corded headphones.",
+        "reason": "The customer mentions that the AirPods fit well and are better than corded headphones."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The effectiveness of noise cancellation.",
+        "reason": "The customer mentions the effectiveness of noise cancellation."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I can’t hear the doorbell (I literally missed being informed about a gas leak in my neighborhood because of this) and it’s dangerous on a bike.",
+        "reason": "The customer mentions the product's durability issues."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I got my first AirPods recently. I was thrilled with them. They are better than corded headphones. The noise cancellation is real. It’s amazing how much it cuts out though I rarely want to be cut off like this.",
+        "reason": "The customer explicitly states that the sound quality is better than corded headphones."
+      },
+      "Parts Are Stolen": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I missed being informed about a gas leak in my neighborhood because of this) and it’s dangerous on a bike.",
+        "reason": "The customer mentions that the product's functionality is problematic."
+      },
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They sound amazing",
+        "reason": "The customer explicitly states that the AirPods sound amazing."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The customer states overall satisfaction, though it's not tied to a specific feature."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I was thrilled with them. They are less comfortable. They fall out all the time. They are slimey and gross feelings when sweaty. The noise cancellation is real. It’s amazing how much it cuts out though I rarely want to be cut off like this. I can’t hear the doorbell...",
+        "reason": "The customer mentions potential issues with comfort and quality."
+      },
+      "Comfort": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "They fall out all the time. They are slimey and gross feelings when sweaty.",
+        "reason": "The customer mentions discomfort and falling out."
+      },
+      "Microphone Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Also the mic seems poorer - or at least my family complains more they can’t understand me more often with these than the previous hard AirPods ( the ones without the silicone ear piece.)",
+        "reason": "The customer mentions problems with the microphone quality."
+      },
+      "Noise Cancellation Intensity": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The noise cancellation is real. It’s amazing how much it cuts out though I rarely want to be cut off like this.",
+        "reason": "The customer describes the noise cancellation as effective and intense."
+      },
+      "Ambient Noise Crackling": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Also the mic seems poorer - or at least my family complains more they can’t understand me more often with these than the previous hard AirPods ( the ones without the silicone ear piece.)",
+        "reason": "The customer mentions crackling sounds from ambient noise."
+      },
+      "airPods_tend_to_fall_out": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I got my first AirPods recently. I was thrilled with them. So much better than corded headphones. I upgraded to these because they are supposed to be “better”. Not really. They are less comfortable. They fall out all the time.",
+        "reason": "The customer explicitly mentions that the AirPods frequently fall out."
+      },
+      "airPods_excessive_noise_cancellation": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The noise cancellation is real. It’s amazing how much it cuts out though I rarely want to be cut off like this.",
+        "reason": "The customer refers to the noise cancellation being too intrusive."
+      },
+      "airPods_communication Issue": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Also the mic seems poorer - or at least my family complains more they can’t understand me more often with these than the previous hard AirPods ( the ones without the silicone ear piece.)",
+        "reason": "The customer mentions that the mic quality has dropped, affecting calls."
+      },
+      "airPods_comfort_issues": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I got my first AirPods recently. I was thrilled with them. So much better than corded headphones. I upgraded to these because they are supposed to be “better”. Not really. They are less comfortable. They fall out all the time.",
+        "reason": "The customer explicitly mentions that the AirPods are less comfortable."
+      },
+      "airPods_gross_slimey_feeling": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Also the parts are suspected to be stolen.",
+        "reason": "The customer mentions that the AirPods have a slimey texture when sweaty."
+      }
+    }
+  },
+  {
+    "review_id": "94",
+    "features": {
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "Implies wear resistance through durability."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Directly mentions overall satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "95",
+    "features": {
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The review mentions that the product has lasted for a year.",
+        "reason": "The product has proven to be durable over time."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The product has been dropped several times but still works perfectly.",
+        "reason": "Despite being dropped, the product maintains its functionality."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Fantastic, as usual.",
+        "reason": "The product has been highly praised for its overall quality."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "The overall statement about the product's quality.",
+        "reason": "The product is described as having good potential quality."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "The son loves them and recommends them.",
+        "reason": "The son's positive feedback about the product's sound quality."
+      }
+    }
+  },
+  {
+    "review_id": "96",
+    "features": {
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Had them for a month now, no problems.",
+        "reason": "Consistent performance and low issues over a month."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "Directly states satisfaction."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Had them for a month now, no problems.",
+        "reason": "Consistent performance and low issues."
+      },
+      "reliability_within_a_month": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Had them for a month now, no problems.",
+        "reason": "Consistent performance within a month."
+      }
+    }
+  },
+  {
+    "review_id": "97",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Wonderful sound quality",
+        "reason": "Explicitly mentioned in the review."
+      },
+      "Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Wonderful sound quality",
+        "reason": "Explicitly mentioned in the review."
+      }
+    }
+  },
+  {
+    "review_id": "98",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "blocks out surrounding sound",
+        "reason": "It directly relates to sound quality."
+      },
+      "Noise Cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "blocks out surrounding sound",
+        "reason": "It directly relates to noise cancellation."
+      }
+    }
+  },
+  {
+    "review_id": "99",
+    "features": {
+      "Amazing Sound Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Sound is good and love the freedom from a cord",
+        "reason": "The effectiveness of noise cancellation."
+      },
+      "Durability Over Time": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "got the new ones. They are working great so far",
+        "reason": "The overall quality and potential issues with the product."
+      },
+      "Wear Resistance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Dropped several times but still work",
+        "reason": "The responsiveness and performance of the sound."
+      },
+      "Overall Satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Fantastic, as usual",
+        "reason": "The overall quality and potential issues with the product."
+      },
+      "Product Quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "got the new ones. They are working great so far",
+        "reason": "The overall quality and potential issues with the product."
+      },
+      "Replacements Do Not Work": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "left one doesn't work. ... mail these back for new ones",
+        "reason": "The product replacements do not function correctly."
+      },
+      "Better Alternative Than Apple": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "A better alternative to buying from Apple",
+        "reason": "A better alternative to buying from Apple."
+      },
+      "Parts Are Stolen": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "left one doesn't work. ... mail these back for new ones",
+        "reason": "Parts are stolen from the product."
+      }
+    }
+  }
+]

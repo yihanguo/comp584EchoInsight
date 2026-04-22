@@ -1,0 +1,4456 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am horribly disappointed that this Apple product turned out to be a lemon.",
+        "reason": "The customer explicitly states they are 'horribly disappointed' with the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "There is a specific area on my screen that does not respond well anymore.",
+        "reason": "The lack of responsiveness in the touch screen indicates a performance issue."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I recently began to have problems with the touch screen.",
+        "reason": "The customer reports specific issues with the touch screen functionality."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I recently began to have problems with the touch screen.",
+        "reason": "The product is failing to function correctly, indicating low reliability."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I am horribly disappointed that this Apple product turned out to be a lemon.",
+        "reason": "The customer expresses a negative emotional response."
+      },
+      "touchscreen_responsiveness": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "There is a specific area on my screen that does not respond well anymore. I have to tap firmly several times before it finally responds.",
+        "reason": "The review explicitly details a specific area of the screen failing to respond to taps."
+      },
+      "product_durability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I bought my iPad Mini in April of 2021. I recently began to have problems with the touch screen.",
+        "reason": "The product developed issues after some time, questioning its longevity."
+      },
+      "repairability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Is there any way to fix this problem??",
+        "reason": "The customer is explicitly asking for options to fix the device."
+      }
+    }
+  },
+  {
+    "review_id": "1",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Small nut mighty",
+        "reason": "The phrase 'mighty' implies strong approval and satisfaction with the product's capabilities."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Small nut mighty",
+        "reason": "The word 'mighty' suggests the product performs well and meets expectations despite its size."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Small nut mighty",
+        "reason": "The enthusiastic tone and the word 'mighty' express a high positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "2",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "😀",
+        "reason": "The smiling emoji indicates a general expression of happiness with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "😀",
+        "reason": "The emoji clearly expresses a positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "3",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I've had it for over one month now and love it.",
+        "reason": "The user explicitly states they love the device and considers the viewing experience rewarding."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I got this for home use to watch videos and to easily type on the larger virtual keyboard.",
+        "reason": "The user describes specific, regular use cases such as watching videos and typing at home."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I also dislike how all my boyfriend's iPhone messages that use to go to my Gmail account, now landed only in iMessage on the iPad",
+        "reason": "The user discusses how the iPad interacts (or fails to interact) with iPhone messages and Gmail, highlighting integration issues."
+      },
+      "device_syncing": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "all my boyfriend's iPhone messages that use to go to my Gmail account, now landed only in iMessage on the iPad",
+        "reason": "The review details a specific problem where messages did not sync correctly across devices and accounts."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the 12.9&#34; display that sold me on this version",
+        "reason": "The user cites the display size and quality as the primary reason for purchasing the device and compares it favorably to other screens."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Set-up was a cinch. Battery power is also excellent and lasts for over 10 hours.",
+        "reason": "The user reports that setup was easy and the battery performs excellently, indicating the device meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love it so much that if my Google Nexus ever fails, I might just purchase the more portable 9.7&#34; iPad Pro",
+        "reason": "The user expresses strong positive emotion and a willingness to buy another product from the same brand."
+      },
+      "brand_reputation": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Apple's reputation also sealed the deal.",
+        "reason": "The user explicitly states that the reputation of Apple influenced the purchase decision."
+      },
+      "display_size": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it was the iPad's 12.9&#34; display that sold me on this version",
+        "reason": "The specific 12.9-inch display size is cited as the primary reason for choosing this version."
+      },
+      "user_control": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The one negative that I noticed is that Apple does everything in its power to control their users.",
+        "reason": "The user criticizes Apple for controlling user behavior, specifically regarding email signatures and message routing."
+      },
+      "message_integration": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I also dislike how all my boyfriend's iPhone messages that use to go to my Gmail account, now landed only in iMessage on the iPad",
+        "reason": "The user describes a negative experience with how messages are integrated between iPhone, iMessage, and Gmail."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Portability was not an issue because I got this for home use",
+        "reason": "The user explicitly discusses portability, noting it was not a concern for their home use but considered a 9.7\" model for travel."
+      },
+      "virtual_keyboard_usability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "easily type on the larger virtual keyboard. Thankfully, the virtual keyboard was enough for me.",
+        "reason": "The user highlights the ease of typing on the larger virtual keyboard and confirms it met their needs."
+      },
+      "case_functionality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "ZUGU CASE Prodigy Exec Thin Wake / Sleep Stand Protective Case... props the tablet up as high or low to the surface of my desk as I want it.",
+        "reason": "The user describes the specific functionality of the purchased case, including its fit and adjustable stand."
+      },
+      "stylus_precision": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I decided to purchase the amPen hybrid stylus instead of the Apple Pencil because I did not need the precision of the pencil.",
+        "reason": "The user mentions stylus precision as a deciding factor in choosing a third-party stylus over the Apple Pencil."
+      },
+      "keyboard_integration": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Note that the ZUGU case will not work with the Apple Smart Keyboard; this keyboard acts like its own case.",
+        "reason": "The user notes compatibility issues between the specific case they bought and the Apple Smart Keyboard."
+      },
+      "user_manual_accessibility": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Eventually, I'll teach myself more about my iPad via the online manual I downloaded.",
+        "reason": "The user mentions accessing an online manual to learn more about the device."
+      }
+    }
+  },
+  {
+    "review_id": "4",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Finally an ipad that works for me!",
+        "reason": "The user expresses strong approval that the device meets their needs."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "light dimming for night time reading to avoid eye straining",
+        "reason": "The user praises a specific display feature for reading comfort."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Finally an ipad that works for me!",
+        "reason": "The user implies the device functions correctly for their specific needs."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "love the memory booster",
+        "reason": "The user uses strong positive language like 'love' to describe features."
+      },
+      "stylus_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The apply pencil works great for my music score annotations",
+        "reason": "The user discusses the performance of the Apple Pencil for annotations."
+      },
+      "accessory_requirements": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "although you need to buy pencil grips for more friendly use",
+        "reason": "The user notes the need to purchase an additional accessory (pencil grips) for better usability."
+      },
+      "application_usage": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "used for my music scores, particularly piano and guitar; pianist magazine, videos .. whilst it is a great reading app too",
+        "reason": "The user details specific types of content and apps they interact with."
+      },
+      "comparison_preference": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I still prefer the kindle",
+        "reason": "The user states a preference for a competitor (Kindle) regarding reading apps."
+      }
+    }
+  },
+  {
+    "review_id": "5",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The ipad screen is amazing and the fluidity of the ios system is nice.",
+        "reason": "The reviewer expresses strong approval of the device's screen and system fluidity."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the fluidity of the ios system is nice.",
+        "reason": "The mention of 'fluidity' implies a positive assessment of the device's responsiveness."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The ipad screen is amazing",
+        "reason": "The reviewer explicitly praises the visual quality of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the fluidity of the ios system is nice.",
+        "reason": "The comment on system fluidity relates to the speed at which the device handles operations."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The battery lasted longer than any other iPad, or iPad mini I previously used.",
+        "reason": "The reviewer indicates the product met and exceeded expectations regarding battery life."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "We highly recommend this to anyone looking to update their ipad or switching from a computer or laptop.",
+        "reason": "The strong recommendation indicates a high positive emotional response to the product."
+      },
+      "ease_of_setup": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I set it up and organized it for \"Senior Citizen\" use.",
+        "reason": "The user mentions setting up and organizing the device, implying a focus on initial configuration."
+      },
+      "user_friendly_interface": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "I set it up and organized it for \"Senior Citizen\" use.",
+        "reason": "Organizing the device for a senior citizen suggests the interface is accessible and intuitive."
+      },
+      "os_update_experience": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I used it to get familiar and be able to explain the iOS 14 update.",
+        "reason": "The user discusses their experience with the iOS 14 update."
+      },
+      "screen_visual_quality": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "The ipad screen is amazing",
+        "reason": "The user explicitly praises the visual appeal and clarity of the screen."
+      },
+      "system_fluidity": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the fluidity of the ios system is nice",
+        "reason": "The user directly comments on the smoothness of the operating system."
+      },
+      "battery_longevity": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "The battery lasted longer than any other iPad, or iPad mini I previously used.",
+        "reason": "The user explicitly compares the battery life favorably to previous models."
+      },
+      "recommendation_suitability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "We highly recommend this to anyone looking to update their ipad or switching from a computer or laptop.",
+        "reason": "The user recommends the device for specific use cases like updating or switching from a computer."
+      }
+    }
+  },
+  {
+    "review_id": "6",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "loves, loves, loves it! Perfect for her art work design!",
+        "reason": "The reviewer expresses strong approval and satisfaction with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Perfect for her art work design!",
+        "reason": "The reviewer indicates the product works perfectly for its intended purpose."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "loves, loves, loves it!",
+        "reason": "The reviewer expresses a very strong positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "7",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "This new iPad meets my needs",
+        "reason": "The customer explicitly states that the new iPad meets their needs, indicating satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "This new iPad meets my needs",
+        "reason": "Stating that the device meets needs implies it is functioning correctly and meeting expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Amazon had the best price",
+        "reason": "The customer explicitly compares the price favorably, indicating competitiveness."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It’s easy to use and Amazon had the best price",
+        "reason": "The positive comments about usability and price reflect a high regard for the product."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My old iPad had not more data space. This new iPad meets my needs with data storage.",
+        "reason": "The customer directly contrasts the lack of space on the old device with the adequate storage on the new one."
+      },
+      "usability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It’s easy to use",
+        "reason": "The customer explicitly states that the device is easy to use."
+      }
+    }
+  },
+  {
+    "review_id": "8",
+    "features": {
+      "sizing_accuracy": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Bought wrong size",
+        "reason": "The customer explicitly states they bought the wrong size, indicating an issue with sizing."
+      },
+      "return_process": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "had to return",
+        "reason": "The customer mentions that they had to return the product."
+      }
+    }
+  },
+  {
+    "review_id": "9",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I really love this device",
+        "reason": "The user explicitly states they love the device and plan to buy another, indicating high satisfaction despite the defect."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I watch a lot of videos &amp; read news articles",
+        "reason": "The user describes specific habits like watching a lot of videos, indicating frequent use."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "find the larger screen is much easier for me to hold onto",
+        "reason": "The user comments positively on the larger screen size, which relates to display characteristics."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I really love this device but unfortunately I got a bad one",
+        "reason": "The user expresses strong positive emotion ('really love') and intends to repurchase, showing high customer satisfaction."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Sound is really so much better than the old models",
+        "reason": "The user explicitly praises the sound quality compared to previous models."
+      },
+      "product_weight": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Amazing how much lighter this is than my old iPad2",
+        "reason": "The user highlights the device's lightness as a positive attribute."
+      },
+      "video_playback_issues": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "experienced problems with video Playback ( shadowing &amp; freezing especially with YouTube and some websites. )",
+        "reason": "The user details specific problems like shadowing and freezing during video playback."
+      },
+      "hardware_defect": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "apparently it has a problem with video chip",
+        "reason": "The review explicitly identifies a faulty video chip as the cause of the issues."
+      },
+      "seller_service": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The seller is very agreeable &amp; offered to give me a Refund.",
+        "reason": "The user describes a positive experience with the seller regarding a refund offer."
+      }
+    }
+  },
+  {
+    "review_id": "10",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "this is a great piece of technical engineering!",
+        "reason": "The user explicitly praises the iPad Pro 11 as a great piece of engineering and expresses love for the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "speedy performance",
+        "reason": "The user highlights the speedy performance of the iPad compared to Android tablets."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "app integration",
+        "reason": "The user mentions app integration as a positive aspect of the iPad Pro."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "beautiful screen, picture quality",
+        "reason": "The user praises the beautiful screen and picture quality of the iPad Pro."
+      },
+      "internet_connection_speed": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "LTE connectivity",
+        "reason": "The user mentions LTE connectivity as a positive feature, implying good internet connection capabilities."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "speedy performance",
+        "reason": "The user's mention of speedy performance aligns with processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "everything I’ve thrown set it so far it has handled with ease",
+        "reason": "The user states that the device handles everything thrown at it with ease, indicating reliable performance."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Apple, I may not like your phones yet I love your iPad Pro 11!",
+        "reason": "The user expresses a strong positive emotional response, stating they love the iPad Pro 11."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "outstanding battery life",
+        "reason": "The user praises the outstanding battery life of the iPad Pro."
+      },
+      "operating_system_efficiency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "small footprint of iOS on the hard drive",
+        "reason": "The user mentions the small footprint of iOS as a positive aspect, indicating efficiency."
+      },
+      "design_aesthetics": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "graceful line",
+        "reason": "The user appreciates the graceful lines of the iPad Pro, indicating positive design aesthetics."
+      },
+      "versatility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "well thought out workhorse that is equally at ease for fun",
+        "reason": "The user describes the device as a workhorse that is equally at ease for fun, highlighting its versatility."
+      },
+      "scrolling_screen": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "lack of a scrolling screen",
+        "reason": "The user notes the lack of a scrolling screen as a quibble, indicating a missing feature."
+      },
+      "software_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I’m installing Office 365 on it today",
+        "reason": "The user mentions installing Office 365, indicating compatibility with productivity software."
+      }
+    }
+  },
+  {
+    "review_id": "11",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "this one is well worth the upgrade",
+        "reason": "The reviewer explicitly states the upgrade is worth it and highlights multiple improvements."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "the speed difference is amazing",
+        "reason": "The reviewer describes the speed difference as amazing compared to the older model."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I have already run out of space before completely transferring my existing apps and data",
+        "reason": "The reviewer discusses the process of transferring apps and data from an old device."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the screen is so vastly superior that there is no comparison",
+        "reason": "The reviewer praises the screen quality as vastly superior to the previous model."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "the speed difference is amazing",
+        "reason": "The comment on the speed difference implies high satisfaction with processing capabilities."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "this one is well worth the upgrade",
+        "reason": "The recommendation to upgrade implies the device performs reliably and meets expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "saving a few bucks and getting the same capacity here would be prudent",
+        "reason": "The reviewer discusses the cost-saving decision of choosing a lower capacity model."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "this one is well worth the upgrade",
+        "reason": "The reviewer expresses high regard and positive sentiment towards the product."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the 16GB capacity is insufficient for the newer operating system",
+        "reason": "The reviewer explicitly discusses the insufficiency of the 16GB model and recommends higher capacities."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "battery life, are giant improvements as well",
+        "reason": "The reviewer highlights battery life as a giant improvement."
+      },
+      "camera_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "especially the camera... are giant improvements as well",
+        "reason": "The reviewer notes the camera as a giant improvement over older models."
+      }
+    }
+  },
+  {
+    "review_id": "12",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am glad I bought it, and use it every day.",
+        "reason": "The user explicitly states they are glad they bought the product and use it daily."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The iPad is fast",
+        "reason": "The user directly describes the iPad as 'fast'."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "use it every day",
+        "reason": "The user explicitly mentions using the device every day."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The iPad is fast",
+        "reason": "The statement that the iPad is 'fast' implies good processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It works exactly as advertised.",
+        "reason": "The user confirms the device works exactly as expected, indicating reliability."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I predict you'll enjoy using this iPad model as I do.",
+        "reason": "The user expresses high regard and predicts others will enjoy it too."
+      },
+      "device_weight": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it's still a bit heavy when holding after a while",
+        "reason": "The user explicitly complains that the device is heavy."
+      },
+      "screen_size": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "if you want the bigger screen than what is offered on the iPad Mini",
+        "reason": "The user compares the screen size to the iPad Mini."
+      }
+    }
+  },
+  {
+    "review_id": "13",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "otherwise works great",
+        "reason": "The user expresses general approval with the phrase 'works great'."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Slow on turning screen",
+        "reason": "The user mentions the device is 'Slow' when rotating the screen."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "don't have any trouble seeing screen",
+        "reason": "The user explicitly mentions the visibility and quality of the screen."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "otherwise works great",
+        "reason": "The statement 'works great' indicates the product is functioning correctly overall."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "otherwise works great",
+        "reason": "The user displays a positive emotional response by stating the device 'works great'."
+      }
+    }
+  },
+  {
+    "review_id": "14",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "saved me so much time",
+        "reason": "The user expresses high satisfaction by stating the product saved them time and works amazingly."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "pairs immediately to the pencil",
+        "reason": "The user highlights how well the product integrates with the pencil accessory."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "feels very natural to draw on",
+        "reason": "The user indicates the product functions correctly and meets expectations during use."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "amazing by the way",
+        "reason": "The user explicitly expresses a strong positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "15",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "love it",
+        "reason": "The phrase 'love it' clearly indicates a high level of satisfaction with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "love it",
+        "reason": "The phrase 'love it' expresses a strong positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "16",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "best Pre-Christmas present",
+        "reason": "The user explicitly states it was the best present, indicating high approval."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "works much faster than the older model",
+        "reason": "The user compares the speed favorably to an older model, highlighting responsiveness."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Very clear pictures/screen",
+        "reason": "The user explicitly praises the clarity of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "works much faster than the older model",
+        "reason": "The comment about working faster implies improved processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It works much faster",
+        "reason": "Stating that it works indicates the product is functioning correctly."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Wife said it was the best Pre-Christmas present",
+        "reason": "The expression 'best present' indicates a strong positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "17",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I actually love the bigger size better than my iPad air.",
+        "reason": "The user explicitly states they love the product and have no regrets."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I love the screen size for watching Netflix and reading on.",
+        "reason": "The user expresses satisfaction with the screen size for specific activities."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "No regrets so far.",
+        "reason": "The user indicates the product is meeting expectations without issues."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "I actually love the bigger size better than my iPad air. No regrets so far.",
+        "reason": "The user expresses strong positive emotion and satisfaction with the purchase."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "To me it's not heavy at all or bulky.",
+        "reason": "The user addresses concerns about carrying the device and confirms it is not heavy or bulky."
+      },
+      "size_comparison": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I actually love the bigger size better than my iPad air.",
+        "reason": "The user explicitly compares the product's size favorably to their iPad Air."
+      }
+    }
+  },
+  {
+    "review_id": "18",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I’m grad I purchased this!",
+        "reason": "The customer explicitly states they are glad they made the purchase, indicating general satisfaction."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I have Apple pen(1st gen) and this works with it!",
+        "reason": "The user confirms that the product works with an existing Apple device, indicating good integration."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "this works with it!",
+        "reason": "The statement that the product 'works' implies it is functioning as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I’m grad I purchased this!",
+        "reason": "The phrase 'I'm grad I purchased this' expresses a positive emotional response to the purchase."
+      }
+    }
+  },
+  {
+    "review_id": "19",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "not very user friendly",
+        "reason": "The reviewer expresses dissatisfaction with the product's usability."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "you have to join the cult to access its full ability",
+        "reason": "The reviewer criticizes the requirement to join a specific ecosystem ('cult') to use all features."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "not very user friendly",
+        "reason": "The reviewer expresses a negative emotional response regarding the product's user experience."
+      }
+    }
+  },
+  {
+    "review_id": "20",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I love this ipad.",
+        "reason": "The user explicitly states they love the product, indicating high satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "battery... is excellent",
+        "reason": "Describing the battery duration as excellent implies the device is meeting expectations reliably."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "I love this ipad.",
+        "reason": "The phrase 'I love this ipad' expresses a strong positive emotional response."
+      },
+      "battery_duration": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "battery duration is excellent",
+        "reason": "The user explicitly states that the battery duration is excellent."
+      },
+      "product_size": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Good size",
+        "reason": "The user explicitly mentions the size as a positive attribute."
+      }
+    }
+  },
+  {
+    "review_id": "21",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Loving this new one. Thanks Apple for a great product.",
+        "reason": "The user explicitly expresses love for the new device and calls it a great product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Thanks Apple for a great product.",
+        "reason": "Calling it a 'great product' implies it is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "Loving this new one. Thanks Apple for a great product.",
+        "reason": "The text conveys a strong positive emotional response and high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "22",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "The camera is junk.",
+        "reason": "The user expresses dissatisfaction with the product, specifically calling the camera 'junk' and comparing it unfavorably to an older model."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "The camera is junk.",
+        "reason": "The user indicates the product failed to meet expectations regarding the camera functionality."
+      },
+      "camera_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The camera is junk. Tried to take video at my granddaughter's recital. All of them were blurry.",
+        "reason": "The user explicitly criticizes the camera quality, stating it is junk and produces blurry videos."
+      },
+      "comparison_with_previous_model": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Even my oldest Ipad with the big plug takes better pictures than this one.",
+        "reason": "The user compares the new iPad unfavorably to their oldest model regarding picture quality."
+      }
+    }
+  },
+  {
+    "review_id": "23",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "It is not the IPad Pro I wanted, but I'm going to keep the iPad.",
+        "reason": "The customer expresses mixed satisfaction, noting they did not receive the desired model but decided to keep it anyway."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "It is not the IPad Pro I wanted, but I'm going to keep the iPad.",
+        "reason": "The customer expresses a somewhat positive emotional response by deciding to keep the product despite it not being the desired model."
+      },
+      "product_variant_accuracy": {
+        "has_feature": true,
+        "feature_score": 0.0,
+        "evidence_span": "I requested a gold iPad Pro 32 GB, Wi-Fi. I didn't receive a gold apple iPad 9.7 inch 32 GB, WI-Fi. I received a black Apple iPad 9.7 inches, 32 GB, Wi-Fi.",
+        "reason": "The customer explicitly states they received the wrong color (black instead of gold) and the wrong model (iPad 9.7 inch instead of iPad Pro)."
+      },
+      "order_specification_discrepancy": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It is not the IPad Pro I wanted",
+        "reason": "There is a clear discrepancy between the requested iPad Pro and the delivered iPad 9.7 inch model."
+      },
+      "product_acceptance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I'm going to keep the iPad.",
+        "reason": "The customer explicitly states their decision to keep the product despite it not being the one they wanted."
+      }
+    }
+  },
+  {
+    "review_id": "24",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "works well",
+        "reason": "The phrase 'works well' indicates general approval and satisfaction with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "works well",
+        "reason": "The phrase 'works well' directly indicates that the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "works well",
+        "reason": "The positive statement 'works well' expresses a high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "25",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love this iPad!",
+        "reason": "The user explicitly expresses strong approval and happiness with the product."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I use it all the time!",
+        "reason": "The phrase 'use it all the time' directly indicates very high usage frequency."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love this iPad!",
+        "reason": "The user expresses a strong positive emotional response toward the product."
+      }
+    }
+  },
+  {
+    "review_id": "26",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Great product",
+        "reason": "The phrase 'Great product' explicitly expresses approval and satisfaction with the item."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Have never used something more than this",
+        "reason": "The statement implies the product is used very frequently or is the user's favorite."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "no issues on delivery",
+        "reason": "The phrase 'no issues' indicates that the product arrived and functioned as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Great product",
+        "reason": "The review expresses a strong positive emotional response with 'Great product'."
+      }
+    }
+  },
+  {
+    "review_id": "27",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "The hardware is great, but unless you just want this to play games or watch movies, it's useless.",
+        "reason": "The reviewer expresses mixed satisfaction, praising the hardware but ultimately calling the device useless for most tasks."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "Even browsing online can be hard, with safari being unstable, missing features or just buggy.",
+        "reason": "The reviewer indicates the device is unreliable for general tasks, citing instability and bugs in the browser."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "The hardware is great, but unless you just want this to play games or watch movies, it's useless.",
+        "reason": "The customer shows limited satisfaction, appreciating the hardware but expressing strong dissatisfaction with the overall utility."
+      }
+    }
+  },
+  {
+    "review_id": "28",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love my ipad",
+        "reason": "The user expresses strong approval and happiness with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love my ipad",
+        "reason": "The phrase 'Love my ipad' indicates a positive emotional response and high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "29",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great price",
+        "reason": "The positive adjective 'Great' indicates general approval of the product's value."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Great price",
+        "reason": "The review explicitly praises the cost of the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Great price",
+        "reason": "The use of 'Great' expresses a positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "30",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Woks great as expected.",
+        "reason": "The user explicitly states the product works as expected, indicating satisfaction."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Faster than my old iPad",
+        "reason": "The user compares the device favorably to an older model regarding speed."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "beautiful display",
+        "reason": "The user explicitly praises the visual quality of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Faster than my old iPad",
+        "reason": "The comment about being faster than the old iPad implies improved processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Woks great as expected.",
+        "reason": "The phrase 'works great' indicates the device is functioning correctly."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Woks great as expected. Faster than my old iPad with a beautiful display!",
+        "reason": "The overall tone of the first sentence expresses a positive emotional response."
+      },
+      "software_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "upgraded to iOS 10...big mistake.",
+        "reason": "The user expresses negative feedback specifically regarding an operating system upgrade."
+      }
+    }
+  },
+  {
+    "review_id": "31",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love, love, love it!",
+        "reason": "The repetition of 'love' indicates a strong general approval of the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love, love, love it!",
+        "reason": "The phrase expresses a very strong positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "32",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it!!",
+        "reason": "The phrase 'Love it!!' clearly indicates general happiness and approval with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love it!!",
+        "reason": "The strong positive sentiment implies the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it!!",
+        "reason": "The phrase 'Love it!!' expresses a strong positive emotional response and high regard for the product."
+      },
+      "upgrade_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Upgrade from IPad touch.",
+        "reason": "The customer explicitly states they upgraded from a previous device, the IPad touch."
+      }
+    }
+  },
+  {
+    "review_id": "33",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Great tablet as very fast with the M1 Chip but too large and heavy.",
+        "reason": "The reviewer expresses mixed satisfaction, praising the tablet's speed but criticizing its size and weight."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "very fast with the M1 Chip",
+        "reason": "The reviewer explicitly praises the speed of the device."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "very fast with the M1 Chip",
+        "reason": "The mention of the M1 Chip and speed directly relates to processing capability."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great tablet as very fast",
+        "reason": "The reviewer describes the tablet as 'great' and 'fast', indicating it performs well."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "Great tablet as very fast with the M1 Chip but too large and heavy.",
+        "reason": "The reviewer shows a positive emotional response to the speed but dissatisfaction with the size."
+      },
+      "portability_size": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "too large and heavy",
+        "reason": "The reviewer explicitly states the tablet is too large and heavy, indicating portability concerns."
+      },
+      "product_comparison": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Might as well have the 13\" MacBook Pro which was released at the end of 2020.",
+        "reason": "The reviewer compares the tablet to the 13\" MacBook Pro, suggesting a preference for the latter."
+      },
+      "purchase_decision": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Returned and purchased the 11 inch iPad Pro from Best Buy.",
+        "reason": "The reviewer clearly states they returned the product and bought an 11-inch iPad Pro instead."
+      }
+    }
+  },
+  {
+    "review_id": "34",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I use my iPad a lot and find that the battery life is not quite what I had expected. However, it does charge quickly... It is very user friendly",
+        "reason": "The user expresses mixed feelings, noting a battery life disappointment but highlighting several positive aspects like charging speed and usability."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I use my iPad a lot",
+        "reason": "The user explicitly states they use the device 'a lot', indicating high frequency of use."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "pairs perfectly with my BOSE speaker... pairs nicely with my portable keyboard",
+        "reason": "The user describes successful pairing with multiple external devices, indicating strong ecosystem compatibility."
+      },
+      "device_syncing": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It syncs with my iPhone 8+ Very well",
+        "reason": "The user explicitly mentions that the device syncs very well with their iPhone."
+      },
+      "multitasking_capability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "use it often and with multiple apps",
+        "reason": "The user mentions using the cast feature often with multiple apps, implying multitasking."
+      },
+      "charging_functionality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it does charge quickly with the lightening charger included",
+        "reason": "The user positively comments on the speed of charging and the included charger."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "battery life is not quite what I had expected",
+        "reason": "The feature is present as the user notes the battery life did not meet expectations, indicating a reliability issue."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It is very user friendly and pairs perfectly with my BOSE speaker... I love the cast feature",
+        "reason": "The user uses strong positive language like 'love' and 'perfectly', indicating high satisfaction despite one negative point."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "battery life is not quite what I had expected",
+        "reason": "The user explicitly discusses the battery life not meeting expectations."
+      },
+      "user_friendliness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It is very user friendly",
+        "reason": "The user directly states that the device is 'very user friendly'."
+      },
+      "audio_device_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "pairs perfectly with my BOSE speaker",
+        "reason": "The user explicitly states the device pairs perfectly with a BOSE speaker."
+      },
+      "casting_capability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I love the cast feature and use it often and with multiple apps",
+        "reason": "The user loves the cast feature and uses it often with multiple apps."
+      },
+      "communication_functionality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am able to receive phone calls and FaceTime and Zoom easily",
+        "reason": "The user confirms ability to easily handle calls, FaceTime, and Zoom."
+      },
+      "peripheral_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "pairs nicely with my portable keyboard",
+        "reason": "The user mentions successful pairing with a portable keyboard and expects a mouse to work too."
+      }
+    }
+  },
+  {
+    "review_id": "35",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it works",
+        "reason": "The phrase 'it works' indicates approval and satisfaction with the product's functionality."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Use it every day",
+        "reason": "The phrase 'Use it every day' explicitly states the high frequency of product usage."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it works",
+        "reason": "The statement 'it works' confirms that the product is functioning correctly and reliably."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Use it every day it works",
+        "reason": "The positive tone and statement of functionality imply a positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "36",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it works great",
+        "reason": "The user explicitly states the product works great, indicating high satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it works great",
+        "reason": "The statement that the device works great indicates it is functioning correctly."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it works great",
+        "reason": "The phrase 'works great' expresses a positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "37",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Best touchscreen available -Strong battery life -Solid build -Access to Apple app ecosystem",
+        "reason": "The reviewer lists several positive aspects of the product, indicating general satisfaction."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Access to Apple app ecosystem",
+        "reason": "The reviewer explicitly mentions access to the Apple app ecosystem as a pro."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Best touchscreen available",
+        "reason": "The reviewer praises the touchscreen as the best available, indicating high display quality."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Strong battery life -Solid build",
+        "reason": "The reviewer notes strong battery life and solid build, indicating reliable performance."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Mediocre value versus alternatives",
+        "reason": "The reviewer explicitly mentions mediocre value compared to alternatives, addressing price competitiveness."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Pros: -Best touchscreen available -Strong battery life -Solid build -Access to Apple app ecosystem",
+        "reason": "The list of pros indicates a positive emotional response and high regard for the product."
+      },
+      "touchscreen_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Best touchscreen available",
+        "reason": "The reviewer explicitly praises the touchscreen as the best available."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Strong battery life",
+        "reason": "The reviewer describes the battery life as strong."
+      },
+      "build_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Solid build",
+        "reason": "The reviewer describes the build quality as solid."
+      },
+      "app_ecosystem_access": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Access to Apple app ecosystem",
+        "reason": "The reviewer highlights access to the Apple app ecosystem as a positive feature."
+      },
+      "value_for_money": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Mediocre value versus alternatives",
+        "reason": "The reviewer explicitly states the value is mediocre compared to alternatives."
+      },
+      "pricing_policy": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Amazon/Apple pricing policy (reduced price $50 days after purchase and will not credit; will see if they lest this truth through)",
+        "reason": "The reviewer explicitly mentions dissatisfaction with the pricing policy regarding price reductions and refusal to credit."
+      }
+    }
+  },
+  {
+    "review_id": "38",
+    "features": {
+      "delivery_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "At the time I purchased the iPad Pro the wait times for shipment of the Apple Pencil was 4-5 weeks.",
+        "reason": "The reviewer explicitly mentions the wait times for shipment of an accessory, indicating a discussion of delivery speed."
+      },
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "After 7 days with the new Apple iPad Pro I am happy that I followed my hunch that the iPad Pro would be better for me than a laptop for a mobile multi-purpose device.",
+        "reason": "The reviewer expresses happiness and approval of the iPad Pro after using it for a week."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "the Lightning connector includes support for USB 3.0, a much faster transfer speeds.",
+        "reason": "The reviewer notes the inclusion of USB 3.0 support for faster transfer speeds, which relates to data transfer capabilities."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I tend to use iCloud to store photos, music, documents",
+        "reason": "The user mentions using iCloud, indicating integration with the Apple ecosystem."
+      },
+      "multitasking_capability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am very pleased how the slide over multitasking works. Bigger is better whether using multi-tasking features live slide over and picture-in-picture.",
+        "reason": "The reviewer explicitly praises the multitasking features like slide over and picture-in-picture."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The mirror surface of the lake in this photograph enables the viewer to immerse himself or herself in the device",
+        "reason": "The reviewer describes an immersive visual experience enabled by the device's display."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I am happy that I followed my hunch that the iPad Pro would be better for me than a laptop",
+        "reason": "The user confirms the device met their expectations for a mobile multi-purpose device."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am very pleased how the slide over multitasking works.",
+        "reason": "The reviewer expresses a positive emotional response and high regard for the product's features."
+      },
+      "multitasking_usability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Bigger is better whether using multi-tasking features live slide over and picture-in-picture",
+        "reason": "The user specifically praises the usability of slide-over and picture-in-picture features."
+      },
+      "orientation_usage": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I use the iPad Pro almost exclusively landscape or horizontal",
+        "reason": "The reviewer explicitly states their preferred orientation for using the device."
+      },
+      "creative_input_methods": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The only accessory I use so far is the Apple Pencil for drawing in Paper by 53",
+        "reason": "The user discusses using the Apple Pencil and touch for creative tasks."
+      },
+      "future_technology_potential": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It will be interesting to see what applications take advantage of that speed next year",
+        "reason": "The user speculates on how future applications might utilize the USB 3.0 technology."
+      },
+      "multitasking_interface": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Bigger is better whether using multi-tasking features live slide over and picture-in-picture",
+        "reason": "The reviewer comments on the interface layout and size of multitasking features."
+      },
+      "cloud_storage_integration": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I purchased the 32MB version because I tend to use iCloud to store photos, music, documents",
+        "reason": "The reviewer explains their storage choice based on iCloud integration."
+      },
+      "input_device_usage": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am concentrating on using the Apple Pencil at the moment, using just the on-screen keyboard",
+        "reason": "The reviewer details their current usage of the Pencil and on-screen keyboard."
+      },
+      "future_proofing": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the Lightning connector includes support for USB 3.0, a much faster transfer speeds",
+        "reason": "The reviewer identifies hardware capabilities that support future use cases."
+      },
+      "orientation_preference": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I use the iPad Pro almost exclusively landscape or horizontal",
+        "reason": "The reviewer explicitly states their preference for landscape orientation."
+      }
+    }
+  },
+  {
+    "review_id": "39",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Very accurate description and excellent price for an iPad 4 cellular, would recommend.",
+        "reason": "The reviewer explicitly states they would recommend the product, indicating general approval."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Very accurate description",
+        "reason": "The phrase 'accurate description' implies the product met the buyer's expectations regarding its condition and functionality."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "excellent price",
+        "reason": "The reviewer explicitly praises the price as 'excellent'."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "would recommend",
+        "reason": "The statement 'would recommend' reflects a high level of customer satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "40",
+    "features": {
+      "delivery_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it arrived within two days!",
+        "reason": "The customer explicitly praises the fast arrival time of the product compared to another vendor."
+      },
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Perfect, brand new box.",
+        "reason": "The customer describes the condition and arrival as 'Perfect', indicating high approval."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Easy to start and setup.",
+        "reason": "The customer notes that the device was easy to start and setup, indicating it functioned correctly out of the box."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I recommend!",
+        "reason": "The customer explicitly states a recommendation, reflecting a high positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "41",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "No, it's not worth the money, and I wouldn't buy it again",
+        "reason": "The reviewer explicitly states they would not buy the product again and that it is not worth the money, indicating low overall satisfaction."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "And it's a lot faster than my old iPad.",
+        "reason": "The reviewer directly compares the device favorably to an older model regarding speed."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "Its security features won't let it transfer passwords from my other devices",
+        "reason": "The reviewer discusses significant difficulties transferring data (passwords) from other devices due to security restrictions."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "Its security features won't let it transfer passwords from my other devices",
+        "reason": "The reviewer highlights issues with integrating passwords and data from other Apple devices, indicating poor ecosystem compatibility in this instance."
+      },
+      "device_syncing": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "I can't even think of getting rid of my laptop, because I need it to look up my passwords so that I can enter them on the iPad.",
+        "reason": "The inability to sync passwords (Keychain) forces the user to manually look up data on another device, indicating a syncing failure."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The iPad itself is sleek and gorgeous.",
+        "reason": "The reviewer describes the device as 'gorgeous' and 'sleek', which refers positively to its physical appearance and display."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "And it's a lot faster than my old iPad.",
+        "reason": "The statement that the device is 'a lot faster' directly addresses its processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.4,
+        "evidence_span": "And - in theory - it should run app versions of everything I use my laptop for. In theory. And it almost does. Kind of.",
+        "reason": "The reviewer expresses hesitation that the device does not fully meet the theoretical expectation of replacing a laptop for all tasks."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "No, it's not worth the money",
+        "reason": "The reviewer explicitly states the product is not worth the money, indicating poor value for the price."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "Yes, I'm keeping it and am open to changing my mind.",
+        "reason": "While critical, the reviewer admits to keeping the product and being open to changing their mind, showing a mixed but slightly positive emotional response."
+      },
+      "keyboard_usability": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "the expensive keyboard case has amazing keys, but in a tiny little format that isn't really easy to type on quickly",
+        "reason": "The reviewer praises the key action but criticizes the cramped layout."
+      },
+      "trackpad_functionality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Having a trackpad is lovely.",
+        "reason": "The reviewer expresses strong positive sentiment regarding the trackpad."
+      },
+      "case_adjustability": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "the case again interferes with functionality because you can't really adjust the iPad angle.",
+        "reason": "The reviewer notes a lack of adjustability which negatively impacts functionality."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "And it has a lot more space in it.",
+        "reason": "The reviewer positively mentions the increased storage space."
+      },
+      "setup_difficulty": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "But it's a pain and a half to set up.",
+        "reason": "The reviewer explicitly describes the setup process as difficult."
+      },
+      "security_restrictions": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Its security features won't let it transfer passwords from my other devices",
+        "reason": "The reviewer details how security features are blocking specific usability tasks."
+      }
+    }
+  },
+  {
+    "review_id": "42",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "made it a worthwhile upgrade",
+        "reason": "The user explicitly states the upgrade was worthwhile and expresses liking for the device."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "slightly faster",
+        "reason": "The user compares the device to an older model, noting it is slightly faster."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I've only needed it twice so far",
+        "reason": "The user mentions how often they have needed the cellular data feature."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "integrating them with the household computers was more work than I wanted to do",
+        "reason": "The user discusses the difficulty of integrating non-Apple tablets into their Mac household."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "slightly faster",
+        "reason": "The user notes the device is faster than the previous model, which relates to processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it has been extremely valuable both times",
+        "reason": "The user indicates the device worked as expected when needed, suggesting reliability."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "T-mobile had the cheapest data",
+        "reason": "The user discusses finding the model on sale and securing the cheapest data plan, highlighting cost benefits."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I like this one",
+        "reason": "The user concludes with a direct statement of liking the product."
+      },
+      "weight_portability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "significantly lighter... every ounce in my bag matters",
+        "reason": "The user emphasizes the importance of weight due to arthritis and compares it favorably to heavier tablets."
+      },
+      "connectivity_cellular_data": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "T-mobile had the cheapest data (including a small amount for free for the life of the tablet) with no contract",
+        "reason": "A significant portion of the review discusses the carrier, data costs, and contract terms."
+      },
+      "app_availability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "some of the apps I need for my son's school are, unfortunately, iOS only",
+        "reason": "The user explicitly mentions needing specific apps that are only available on this platform."
+      }
+    }
+  },
+  {
+    "review_id": "43",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I still hate it.",
+        "reason": "The reviewer explicitly states a strong negative sentiment towards the product."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "It's been about a month",
+        "reason": "The review indicates the device has been used for a specific duration."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The audio and visual qualities are just fine.",
+        "reason": "The user states that visual qualities are fine, indicating satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "touch interface sucks",
+        "reason": "The reviewer indicates the device is failing to function correctly regarding touch input."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I still hate it.",
+        "reason": "The user expresses a negative emotional response and low regard for the product."
+      },
+      "touch_interface_responsiveness": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "It frequently doesn't register when I'm trying to interact with it",
+        "reason": "The user explicitly complains that the touch interface fails to register interactions."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The audio and visual qualities are just fine.",
+        "reason": "The user states that audio qualities are fine, indicating satisfaction."
+      },
+      "fingerprint_sensor_performance": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "the fingerprint unlock doesn't work well at all.",
+        "reason": "The user reports that the fingerprint unlock feature performs poorly."
+      }
+    }
+  },
+  {
+    "review_id": "44",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it is perfect",
+        "reason": "The user explicitly states the iPad is perfect and expresses strong approval."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It’s so fast",
+        "reason": "The user highlights the speed of the device as a key positive attribute."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It’s so fast",
+        "reason": "The user's comment about the device being fast directly relates to processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it is perfect",
+        "reason": "The statement that the device is perfect implies it functions correctly and meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I absolutely love my iPhone 8 but... I splurged on this iPad and it is perfect",
+        "reason": "The user expresses a high emotional response and love for the product."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "excellent battery life",
+        "reason": "The user explicitly praises the battery life as excellent."
+      },
+      "display_mode_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I can see websites in desk top modes",
+        "reason": "The user highlights the specific ability to view websites in desktop mode."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "it’s big enough for everything I need to see but small enough to fit in bags",
+        "reason": "The user explains the size is ideal for both viewing and fitting in bags."
+      },
+      "brand_comparison": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "I love Amazon for almost everything but I love Apple electronics",
+        "reason": "The user directly compares their preference for Apple electronics over Amazon devices."
+      }
+    }
+  },
+  {
+    "review_id": "45",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I'm enjoying my iPad",
+        "reason": "The user explicitly states they are enjoying the product, indicating general approval."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "have had no problems",
+        "reason": "The user explicitly states they have had no problems, indicating reliable performance."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Glad I chose this one",
+        "reason": "The user expresses a positive emotional response about their choice."
+      }
+    }
+  },
+  {
+    "review_id": "46",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I feel this iPad is a great buy and it’s so much better than our old iPad.",
+        "reason": "The user explicitly states the iPad is a great buy and much better than the previous one."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The speed is amazing",
+        "reason": "The user describes the speed of the device as amazing compared to the old slow iPad."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "She began to hog it up",
+        "reason": "The phrase 'hog it up' implies the wife is using the device very frequently."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The touchscreen is amazing",
+        "reason": "The user describes the touchscreen as amazing, indicating high display quality."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I did not realize how slow the old iPad was until she started using the new iPad.",
+        "reason": "The comparison highlights the processing speed improvement of the new iPad over the old one."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I feel this iPad is a great buy",
+        "reason": "The general positive sentiment implies the device is functioning as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I would buy it again.",
+        "reason": "The statement 'I would buy it again' indicates a high level of customer satisfaction."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the sound is very nice for such tiny speakers. It does have a stereo sound.",
+        "reason": "The user explicitly praises the sound quality and notes the stereo feature."
+      },
+      "stylus_compatibility": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "you need to purchase the Apple pen. I love to draw and I have been drawing with her iPad.",
+        "reason": "The user discusses purchasing the Apple Pencil and their positive experience drawing with it."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "This one is only 64 MB but it’s plenty for my wife... I have already saved over 75 very colorful drawings and have used very little memory.",
+        "reason": "The user discusses specific storage sizes and their experience with memory usage."
+      },
+      "gaming_performance": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "since she mostly plays games... I have also downloaded X plane 11 and infinite flight",
+        "reason": "The user mentions playing games and downloading flight simulators, indicating usage for gaming."
+      }
+    }
+  },
+  {
+    "review_id": "47",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Can’t believe I made it this long with out it!",
+        "reason": "The phrase implies strong regret for not having the product sooner, indicating high satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Can’t believe I made it this long with out it!",
+        "reason": "The sentiment suggests the product is essential and meets expectations well."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "Can’t believe I made it this long with out it!",
+        "reason": "The expression of disbelief at living without the product indicates a very high positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "48",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Nicely designed and powerful",
+        "reason": "The reviewer expresses approval with the design and power, though notes some flaws."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "powerful",
+        "reason": "The term 'powerful' suggests good performance and responsiveness."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Colors are so muted they are practically non-existent",
+        "reason": "The reviewer comments on the color reproduction of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "powerful",
+        "reason": "The descriptor 'powerful' implies fast processing capabilities."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "powerful",
+        "reason": "The device is described as powerful, indicating it meets performance expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Sound quality excellent",
+        "reason": "The reviewer expresses high regard for the sound quality."
+      },
+      "ergonomics": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "made for right handed people as pen gets in the way of holding the tablet with the right hand or the power button can be put on the bottom",
+        "reason": "The review explicitly discusses physical design issues related to handedness and button placement."
+      },
+      "sound_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Sound quality excellent",
+        "reason": "The reviewer explicitly rates the sound quality as excellent."
+      },
+      "operating_system": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "OS needs work as it is somewhere between IOS and MacOS",
+        "reason": "The reviewer critiques the operating system and compares it to other systems."
+      }
+    }
+  },
+  {
+    "review_id": "49",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it.",
+        "reason": "The phrase 'Love it' indicates a strong general approval of the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Perfect for an elementary aged child.",
+        "reason": "Stating the product is 'Perfect' implies it functions correctly and meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it.",
+        "reason": "The phrase 'Love it' expresses a strong positive emotional response."
+      },
+      "target_audience": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "elementary aged child",
+        "reason": "The review explicitly identifies 'elementary aged child' as the intended user."
+      }
+    }
+  },
+  {
+    "review_id": "50",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It does all required of it",
+        "reason": "The user states the product meets all requirements, indicating approval."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It does all required of it",
+        "reason": "The phrase confirms the product functions as expected and meets requirements."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "price was very good",
+        "reason": "The user explicitly states the price was very good, indicating high value."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It does all required of it and price was very good",
+        "reason": "The overall tone is positive regarding functionality and cost."
+      }
+    }
+  },
+  {
+    "review_id": "51",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love this iPad",
+        "reason": "The user explicitly states they love the product, indicating high satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Does everything",
+        "reason": "The phrase 'Does everything' implies the device functions correctly and meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love this iPad",
+        "reason": "The user expresses a strong positive emotional response with the word 'Love'."
+      },
+      "ease_of_use": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "easy to use",
+        "reason": "The user explicitly states the product is 'easy to use'."
+      },
+      "durability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "very durable",
+        "reason": "The user directly describes the product as 'very durable'."
+      }
+    }
+  },
+  {
+    "review_id": "52",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Easy to use, vivid colors",
+        "reason": "The positive attributes mentioned indicate general approval of the product."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "vivid colors",
+        "reason": "The phrase 'vivid colors' directly describes the visual quality of the screen."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Easy to use",
+        "reason": "Stating the product is 'Easy to use' implies it functions correctly and meets usability expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Easy to use, vivid colors",
+        "reason": "The positive descriptors express a high regard and positive emotional response to the product."
+      }
+    }
+  },
+  {
+    "review_id": "53",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Wish I had purchased it a long time ago.",
+        "reason": "The expression of regret for not buying sooner implies strong satisfaction with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Wish I had purchased it a long time ago.",
+        "reason": "The statement indicates a high level of regret for not owning the product sooner, reflecting strong customer satisfaction."
+      },
+      "purchase_timing_regret": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Wish I had purchased it a long time ago.",
+        "reason": "The reviewer explicitly regrets not buying the product sooner."
+      },
+      "accessory_requirement": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I need the pencil now.",
+        "reason": "The reviewer explicitly states a need for a specific accessory, the pencil."
+      }
+    }
+  },
+  {
+    "review_id": "54",
+    "features": {
+      "delivery_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "fast shipment",
+        "reason": "The review explicitly mentions 'fast shipment', directly addressing the speed of delivery."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "No problems",
+        "reason": "The phrase 'No problems' indicates the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "No problems fast shipment",
+        "reason": "The positive tone and lack of complaints express a high regard for the overall experience."
+      }
+    }
+  },
+  {
+    "review_id": "55",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "doesn’t disappoint",
+        "reason": "The user explicitly states the product did not disappoint, indicating high satisfaction."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I’m on my iPad much of the day",
+        "reason": "The user mentions using the iPad frequently throughout the day."
+      },
+      "charging_functionality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "24 hour charge",
+        "reason": "The user expresses a desire for improved battery charging duration."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "doesn’t disappoint",
+        "reason": "The statement implies the device is functioning as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I’m an Apple fan going way back and the 10.2” iPad doesn’t disappoint",
+        "reason": "The user identifies as a fan and expresses approval of the product."
+      }
+    }
+  },
+  {
+    "review_id": "56",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I hate it!",
+        "reason": "The user explicitly states 'I hate it!', indicating strong dissatisfaction with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "battery doesn’t last",
+        "reason": "The user indicates the product is failing to meet expectations regarding battery duration."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I hate it!",
+        "reason": "The phrase 'I hate it!' expresses a negative emotional response and low satisfaction."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "battery doesn’t last",
+        "reason": "The user explicitly complains that the 'battery doesn’t last', directly addressing the feature."
+      },
+      "headphone_accessory_requirement": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "you have to buy extra different plug for headphones",
+        "reason": "The user explicitly states the need to 'buy extra different plug for headphones', matching the feature definition."
+      },
+      "product_size": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "This is smaller",
+        "reason": "The user comments on the physical dimensions of the product."
+      },
+      "headphone_jack_availability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Doesn’t have a hole for headphones",
+        "reason": "The user explicitly states the absence of a headphone jack."
+      }
+    }
+  },
+  {
+    "review_id": "57",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Perfect for school work",
+        "reason": "The phrase 'Perfect for school work' indicates strong approval of the product's suitability."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Perfect for school work",
+        "reason": "Stating the product is 'Perfect' implies it functions correctly and meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "grandson was very happy",
+        "reason": "The phrase 'grandson was very happy' explicitly expresses a positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "58",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "top notch",
+        "reason": "The phrase 'top notch' indicates high approval of the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "top notch",
+        "reason": "The phrase 'top notch' implies the product functions correctly and meets high expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "top notch",
+        "reason": "The phrase 'top notch' expresses a positive emotional response and high regard."
+      }
+    }
+  },
+  {
+    "review_id": "59",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Much faster than my old iPad 2. Better screen",
+        "reason": "The reviewer expresses approval by comparing the new device favorably to an older model."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Much faster than my old iPad 2",
+        "reason": "The phrase 'Much faster' directly indicates improved responsiveness or processing speed."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Better screen",
+        "reason": "The phrase 'Better screen' explicitly refers to the visual quality of the display."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Much faster than my old iPad 2",
+        "reason": "The comment about being 'Much faster' implies improved processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Much faster than my old iPad 2. Better screen",
+        "reason": "The favorable comparisons imply the device is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Much faster than my old iPad 2. Better screen",
+        "reason": "The positive comparisons indicate a high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "60",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love it.",
+        "reason": "The user explicitly states 'I love it', indicating high satisfaction."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "lie in bed and watch, work and read until I’m ready to go to sleep or get up",
+        "reason": "The user describes using the device continuously from bedtime until waking up."
+      },
+      "multitasking_capability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "watch, work and read",
+        "reason": "The user lists multiple activities (watching, working, reading) performed on the device."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Beautiful screen.",
+        "reason": "The user explicitly praises the screen as 'Beautiful'."
+      },
+      "charging_functionality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I always keep it plugged into power",
+        "reason": "The user discusses their habit of keeping the device plugged in."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Never have a problem.",
+        "reason": "The user states they 'Never have a problem', indicating high reliability."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love it.",
+        "reason": "The phrase 'I love it' expresses a strong positive emotional response."
+      },
+      "battery_health_maintenance": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I once worried about keeping it plugged in too much and not exercising the battery but it doesn’t seem to be a problem or effect it at all.",
+        "reason": "The user explicitly discusses concerns about battery health related to constant charging."
+      },
+      "mounting_compatibility": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I attached it to an articulating arm at my bedside",
+        "reason": "The user mentions successfully attaching the device to a mounting accessory."
+      },
+      "screen_size_comparison": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it’s replacing my iPad “mini” and this new larger screen is wonderful",
+        "reason": "The user compares the new screen size favorably against an iPad mini."
+      }
+    }
+  },
+  {
+    "review_id": "61",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "just as expected",
+        "reason": "The phrase 'just as expected' indicates the product meets the customer's expectations, implying satisfaction."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "very sharp picture",
+        "reason": "The phrase 'very sharp picture' directly describes the high visual quality of the screen."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "just as expected",
+        "reason": "The phrase 'just as expected' implies the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "just as expected, very sharp picture",
+        "reason": "The positive tone and approval of the picture quality express a positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "62",
+    "features": {
+      "replacement_need": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "needed a new one",
+        "reason": "The phrase 'needed a new one' implies the item was purchased to replace an old or broken item."
+      },
+      "gift_recipient": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "grandson",
+        "reason": "The review explicitly identifies 'grandson' as the person for whom the item was purchased."
+      }
+    }
+  },
+  {
+    "review_id": "63",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My beautiful case arrived in perfect condition and I have been enjoying using it",
+        "reason": "The reviewer expresses high satisfaction with the product's condition and usage experience."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "My beautiful case arrived in perfect condition and I have been enjoying using it",
+        "reason": "The reviewer confirms the product arrived in perfect condition and works as expected."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "it was absolutely the best price I found on the internet!",
+        "reason": "The reviewer explicitly states the product had the best price found on the internet."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am finding this to be a lovely new toy and I am looking forward to many years of fun with it.",
+        "reason": "The reviewer expresses a positive emotional response and long-term enjoyment."
+      },
+      "software_learning_curve": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "the sketching programs seem to have a somewhat steeper learning curve than I expected",
+        "reason": "The reviewer mentions that sketching programs have a steeper learning curve than expected."
+      },
+      "compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "My early iPad air works quite well",
+        "reason": "The reviewer mentions that their early iPad Air works well with the product."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "but with a 16 Gb hard drive I was finding it constraining",
+        "reason": "The reviewer discusses the 16 GB storage capacity and finds it constraining."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I will be traveling very soon and plan to use it to do sketches during my trip",
+        "reason": "The reviewer plans to use the product while traveling, indicating its portability."
+      }
+    }
+  },
+  {
+    "review_id": "64",
+    "features": {
+      "color_accuracy": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The color is not regular gold. It’s rose gold.",
+        "reason": "The user explicitly compares the actual color to an expected 'regular gold' and clarifies it is 'rose gold'."
+      },
+      "color_variations": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "It’s rose gold.",
+        "reason": "The review identifies a specific color variant of the product."
+      }
+    }
+  },
+  {
+    "review_id": "65",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Was a great value for the price.",
+        "reason": "The phrase 'great value' indicates approval and satisfaction with the product."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "great value for the price",
+        "reason": "The phrase 'great value for the price' directly addresses the cost relative to worth."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Was a great value for the price.",
+        "reason": "The positive sentiment in 'great value' expresses a high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "66",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "She loves it.",
+        "reason": "The phrase 'loves it' indicates a high level of general approval and happiness with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "She loves it.",
+        "reason": "The expression of love implies the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "She loves it.",
+        "reason": "The phrase 'loves it' expresses a strong positive emotional response and high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "67",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I’m super happy with my IPad!",
+        "reason": "The user explicitly states they are 'super happy' with the product, indicating high satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "it’s been very useful and fun!",
+        "reason": "The user describes the device as 'very useful,' implying it functions as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I’m super happy with my IPad!",
+        "reason": "The phrase 'super happy' indicates a strong positive emotional response to the product."
+      },
+      "ease_of_use": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It was easy to relearn after my older one (I’m a senior!).",
+        "reason": "The user explicitly mentions it was 'easy to relearn' after theiraring older device, highlighting user-friendliness."
+      },
+      "accessory_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I got a keypad and mouse to go with it and it’s been very useful and fun!",
+        "reason": "The user mentions using a keypad and mouse with the iPad, indicating compatibility with accessories."
+      }
+    }
+  },
+  {
+    "review_id": "68",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I can't believe that its battery life is up to 10 hours and more.",
+        "reason": "The user expresses disbelief and satisfaction with the battery life performance."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it gives me the assurance that it can hold for a lot of hours to come.",
+        "reason": "The user expresses confidence that the device will continue to perform reliably over time."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I can't believe that its battery life is up to 10 hours and more.",
+        "reason": "The user shows a positive emotional response to the product's battery life."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "its battery life is up to 10 hours and more",
+        "reason": "The review explicitly focuses on the long duration of the battery life."
+      },
+      "usage_scenario": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I can use it to do my presentation",
+        "reason": "The user identifies a specific use case for the product: doing presentations."
+      }
+    }
+  },
+  {
+    "review_id": "69",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great machine",
+        "reason": "The phrase 'Great machine' indicates a clear expression of approval with the product."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "as expected",
+        "reason": "The phrase 'as expected' implies the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great machine",
+        "reason": "The positive adjective 'Great' expresses a high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "70",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Great iPad with great color.",
+        "reason": "The user explicitly states the iPad is 'Great' and praises its features."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "great color",
+        "reason": "The user specifically praises the color quality of the display."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Good price",
+        "reason": "The customer explicitly states the product had a 'Good price'."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Love the features on this devise",
+        "reason": "The user expresses a strong positive emotional response by saying they 'Love the features'."
+      },
+      "installation_difficulty": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Very difficult to install",
+        "reason": "The user explicitly states that installation was 'Very difficult'."
+      },
+      "technical_support_quality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Apple support is good",
+        "reason": "The user rates the manufacturer's support as 'good'."
+      },
+      "color_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "great color",
+        "reason": "The user specifically praises the 'great color' of the iPad."
+      },
+      "feature_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Love the features on this devise",
+        "reason": "The user explicitly states they 'Love the features', indicating high satisfaction with functionality."
+      },
+      "setup_complexity": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Very difficult to install and had to get professional help to set up",
+        "reason": "The user describes the setup as difficult and requiring professional help, confirming high complexity."
+      }
+    }
+  },
+  {
+    "review_id": "71",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "loves this iPad",
+        "reason": "The user expresses strong approval and happiness with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "loves this iPad",
+        "reason": "The user expresses a positive emotional response and high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "72",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it",
+        "reason": "The phrase 'Love it' is a direct expression of happiness and approval with the product."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love it",
+        "reason": "The phrase 'Love it' expresses a strong positive emotional response and high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "73",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love this iPad!",
+        "reason": "The user explicitly expresses strong approval and happiness with the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "runs beautifully",
+        "reason": "The phrase 'runs beautifully' implies the device operates smoothly and responsively."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "runs beautifully",
+        "reason": "The comment about running beautifully suggests efficient processing and handling of tasks."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "runs beautifully",
+        "reason": "The statement indicates the device is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love this iPad!",
+        "reason": "The user expresses a strong positive emotional response toward the product."
+      },
+      "product_size": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "perfect size",
+        "reason": "The user explicitly states the size is perfect."
+      },
+      "product_weight": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "not too heavy",
+        "reason": "The user highlights the weight as being manageable."
+      }
+    }
+  },
+  {
+    "review_id": "74",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I am so impressed with my new iPad. It does everything and it does it well.",
+        "reason": "The user explicitly states they are impressed and that the device does everything well."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It does everything and it does it well.",
+        "reason": "The user affirms that the device functions correctly and meets expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "the cost is so much more than a Fire",
+        "reason": "The user compares the cost of the iPad to the Kindle Fire."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "I am so impressed with my new iPad.",
+        "reason": "The user expresses a strong positive emotional response to the new device."
+      },
+      "connectivity_stability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "being knocked offline all the time",
+        "reason": "The user mentions frequent disconnections with the previous device."
+      },
+      "printing_functionality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Tryin to print anything was hit or miss, mostly miss.",
+        "reason": "The user explicitly discusses the unreliability of printing on the old device."
+      },
+      "device_comparison": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I bought the IPad Mini with a lot of hesitation mainly because I have so many Fires that still work and the cost is so much more than a Fire.",
+        "reason": "The user compares the new iPad Mini to their previous Kindle Fire devices."
+      }
+    }
+  },
+  {
+    "review_id": "75",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "It didn’t disappoint.",
+        "reason": "The user explicitly states the product did not disappoint and highly recommends it."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "the M1 with 8GB RAM and 120hz speed is phenomenal",
+        "reason": "The user describes the speed and performance as phenomenal."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Set up was a breeze and took under an hour to restore this iPad to my old iPad settings via the cloud.",
+        "reason": "The user discusses the ease of restoring settings and transferring data from an old device."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "It also has a feature where you can set it next to your old iPad and it will transfer the data automatically.",
+        "reason": "The user highlights a feature that requires interaction with another Apple device."
+      },
+      "device_syncing": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "restore this iPad to my old iPad settings via the cloud",
+        "reason": "The user mentions restoring settings via the cloud, which implies syncing."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The gen 3 iPad is beautiful.",
+        "reason": "The user describes the device as beautiful, which often refers to the display and build."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "the M1 with 8GB RAM and 120hz speed is phenomenal",
+        "reason": "The specific mention of the M1 chip and RAM indicates high processing speed."
+      },
+      "charging_functionality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "If I had any complaints it would be the short charging cord.",
+        "reason": "The user mentions a complaint regarding the charging cord."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It is extremely well-built as usual, and the response is incredible.",
+        "reason": "The user states the response is incredible and it is well-built, indicating reliability."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "when I saw it on Amazon for $100 off the Apple price, I had to jump on it.",
+        "reason": "The user highlights the discount received compared to the Apple price."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Highly recommend this beauty",
+        "reason": "The user expresses high satisfaction and recommends the product."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I love having 4 speakers as well.",
+        "reason": "The user mentions the 4 speakers, which contributes to the audio experience."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Also, there’s no way you’re getting “all-day” power unless it’s just minimal activity.",
+        "reason": "The user discusses the battery duration and its limitations."
+      },
+      "accessory_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "If only the iPencil would go on sale, but it never does.",
+        "reason": "The user mentions the iPencil, an accessory compatible with the iPad."
+      },
+      "device_weight": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "It’s a bit heavier than my older Pro",
+        "reason": "The user compares the weight of the new device to the older model."
+      }
+    }
+  },
+  {
+    "review_id": "76",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Works quickly and well.",
+        "reason": "The phrase 'works well' indicates general approval and satisfaction with the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Works quickly",
+        "reason": "The word 'quickly' describes the responsiveness and speed of the device's performance."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Works quickly",
+        "reason": "The term 'quickly' implies fast processing and handling of tasks."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Works ... well",
+        "reason": "The phrase 'works well' indicates the product is functioning correctly and meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Works quickly and well.",
+        "reason": "The positive tone of the review expresses a high regard for the product."
+      }
+    }
+  },
+  {
+    "review_id": "77",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "As expected from apple",
+        "reason": "The phrase 'As expected' indicates the product met the customer's expectations, implying satisfaction."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "As expected from apple",
+        "reason": "The phrase 'As expected' suggests the product is functioning correctly and meeting standards."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "As expected from apple light easy to use and hold decent storage",
+        "reason": "The overall positive tone and listing of good attributes indicate a high regard for the product."
+      },
+      "weight": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "light",
+        "reason": "The customer explicitly describes the product as 'light'."
+      },
+      "usability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "easy to use",
+        "reason": "The customer explicitly states the product is 'easy to use'."
+      },
+      "ergonomics": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "easy to use and hold",
+        "reason": "The mention that it is easy to 'hold' refers to the physical comfort and handling of the device."
+      },
+      "storage_capacity": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "decent storage",
+        "reason": "The customer explicitly comments on the amount of storage space."
+      }
+    }
+  },
+  {
+    "review_id": "78",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My boyfriend loves this gift.",
+        "reason": "The phrase 'loves this gift' indicates strong approval and happiness with the product."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "He hasn't put it down yet.",
+        "reason": "The statement 'hasn't put it down yet' implies very frequent and continuous usage."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Set up was easy and now he's loading apps.",
+        "reason": "The successful setup and app loading suggest the device is functioning as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My boyfriend loves this gift.",
+        "reason": "The expression of love for the gift indicates a positive emotional response."
+      },
+      "gift_suitability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "My boyfriend loves this gift.",
+        "reason": "The review explicitly identifies the item as a gift and confirms the recipient's positive reaction."
+      },
+      "user_engagement": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "He hasn't put it down yet. Set up was easy and now he's loading apps.",
+        "reason": "The user is actively engaged, indicated by not putting the device down and immediately loading apps."
+      }
+    }
+  },
+  {
+    "review_id": "79",
+    "features": {
+      "waste_generation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Waste",
+        "reason": "The review explicitly mentions 'Waste', directly indicating a concern with waste generation."
+      }
+    }
+  },
+  {
+    "review_id": "80",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "I was very happy with the older Ipad.",
+        "reason": "The user expresses satisfaction with the older iPad, but contrasts it with issues on the new one."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.3,
+        "evidence_span": "The new one does not rotate easily.",
+        "reason": "The user reports a specific functional issue with the new device not rotating easily."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.5,
+        "evidence_span": "I was very happy with the older Ipad.",
+        "reason": "The user explicitly states they were very happy with the previous device."
+      },
+      "screen_rotation_functionality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The new one does not rotate easily.",
+        "reason": "The customer reports a specific issue with the ease of screen rotation."
+      },
+      "battery_drain_rate": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Battery seems to run out quickly.",
+        "reason": "The customer provides direct feedback that the battery depletes too fast."
+      }
+    }
+  },
+  {
+    "review_id": "81",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Perfect display, fantastic with the pencil and keypad.",
+        "reason": "The user uses strong positive adjectives like 'Perfect' and 'fantastic' to describe the product."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "all the time I spend on airplanes",
+        "reason": "The user implies frequent usage by mentioning the time spent on airplanes."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Perfect display",
+        "reason": "The user explicitly describes the display as 'Perfect'."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Replaces my Laptop for nearly every task",
+        "reason": "The device is reliable enough to replace a laptop for almost all tasks."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "Amazing number of Apps ready for the pencil.",
+        "reason": "The user expresses high regard with words like 'Amazing' and 'Perfect'."
+      },
+      "accessory_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "fantastic with the pencil and keypad",
+        "reason": "The user explicitly praises compatibility with the pencil and keypad."
+      },
+      "portability_form_factor": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Opted for the smaller one for all the time I spend on airplanes.",
+        "reason": "The user discusses choosing the smaller size for travel, indicating portability is a key factor."
+      },
+      "app_ecosystem": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Amazing number of Apps ready for the pencil.",
+        "reason": "The user highlights the availability and quality of apps."
+      },
+      "use_case_meetings": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Less intrusive during meetings than a laptop.",
+        "reason": "The user specifically mentions the device's suitability for meetings compared to a laptop."
+      },
+      "task_limitations": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "except photo editing and detailed spreadsheet work.",
+        "reason": "The user lists specific tasks where the device cannot replace their laptop."
+      }
+    }
+  },
+  {
+    "review_id": "82",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Very nice Christmas gift",
+        "reason": "The phrase 'Very nice' indicates general approval and happiness with the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Much faster",
+        "reason": "The user explicitly states the device is 'Much faster' than the previous generation."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Much faster",
+        "reason": "The comment 'Much faster' directly refers to the device's processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Very nice Christmas gift to upgrade",
+        "reason": "The positive tone and context of an upgrade suggest the product meets expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "very reasonable price",
+        "reason": "The phrase 'very reasonable price' indicates the cost is viewed positively."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Very nice Christmas gift",
+        "reason": "The reviewer expresses a positive emotional response by calling it a 'Very nice' gift."
+      },
+      "upgrade_value": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "upgrade a first gen iPad. Much faster and more storage for a very reasonable price.",
+        "reason": "The review explicitly discusses the benefits of upgrading from an older model regarding speed, storage, and price."
+      },
+      "gift_suitability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Very nice Christmas gift",
+        "reason": "The review explicitly identifies the product as a 'Christmas gift,' highlighting its suitability."
+      },
+      "upgrade_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "upgrade a first gen iPad",
+        "reason": "The review confirms the device serves as a direct upgrade for a first gen iPad."
+      },
+      "value_for_money": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "more storage for a very reasonable price",
+        "reason": "The user perceives high worth due to increased storage at a reasonable price."
+      }
+    }
+  },
+  {
+    "review_id": "83",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I like this upgrade",
+        "reason": "The user explicitly states they like the upgrade, indicating general approval."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "screen clairity I very good",
+        "reason": "The user explicitly praises the screen clarity, which directly relates to display quality."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "it definitely sounds better",
+        "reason": "The comparison to the previous model implies the device is meeting or exceeding expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "I like this upgrade from my air 2",
+        "reason": "The expression of liking the upgrade indicates a positive emotional response."
+      }
+    }
+  },
+  {
+    "review_id": "84",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I did keep my Pro and I do love it",
+        "reason": "The user explicitly states they love the product and kept it, indicating high satisfaction."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I am an apple fan, starting with the ipod, then moving up the line thru the years. Currently I have a macbook air, iphone, ipad mini, ipod and now the Apple Pro.",
+        "reason": "The user lists multiple Apple devices they own, implying integration within the Apple ecosystem."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I did keep my Pro and I do love it",
+        "reason": "The user kept the device and uses it for professional work, implying it functions correctly and meets expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "I did not purchase this from Amazon as I found it a little cheaper elsewhere.",
+        "reason": "The user mentions finding the product cheaper elsewhere, indicating a comparison of cost."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Things I love: 1)The size... 3) The keyboard... 4) And the crown jewel - The Pen.",
+        "reason": "The user lists several specific features they 'love' and expresses a positive emotional response."
+      },
+      "portability_form_factor": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I do find the Pro to be very awkward to hold, but put it on your lap or table and its a different story.",
+        "reason": "The user discusses the size and how it feels to hold the device versus using it on a lap."
+      },
+      "accessory_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The keyboard - Adds another dimension to working with an ipad... And the crown jewel - The Pen.",
+        "reason": "The user highlights the keyboard and pen as essential accessories that enhance the experience."
+      },
+      "media_consumption": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Download a movie before going on an airplane and watch it on the Pro",
+        "reason": "The user describes using the device to watch movies during travel."
+      },
+      "software_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "If only the Pro would run other IOS programs - like Quicken I would get rid of my laptop",
+        "reason": "The user explicitly complains about the inability to run specific iOS programs like Quicken."
+      },
+      "value_for_money": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The Pro is a very large investment for a pimped out ipad",
+        "reason": "The user discusses the high cost and whether the investment is worth it for different use cases."
+      }
+    }
+  },
+  {
+    "review_id": "85",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Love the tablet",
+        "reason": "The user explicitly states they love the tablet, indicating general approval."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It is fast",
+        "reason": "The user directly describes the device as fast, referring to its responsiveness."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "for people who are not familiar with IOS",
+        "reason": "The user comments on the difficulty for those unfamiliar with the iOS ecosystem."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "had a great display",
+        "reason": "The user explicitly praises the visual quality of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It is fast",
+        "reason": "The comment about the device being fast implies high processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It is fast and had a great display",
+        "reason": "The positive comments on speed and display indicate the product functions as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Love the tablet",
+        "reason": "The expression of love for the tablet reflects a positive emotional response."
+      },
+      "operating_system_usability": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "for people who are not familiar with IOS it could be better documents",
+        "reason": "The user critiques the experience for those unfamiliar with iOS, relating to OS usability."
+      },
+      "learning_curve": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "for people who are not familiar with IOS it could be better documents",
+        "reason": "The mention of users not familiar with iOS implies a difficulty or effort in learning the system."
+      }
+    }
+  },
+  {
+    "review_id": "86",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "he loves it",
+        "reason": "The recipient's strong positive reaction indicates high satisfaction with the product."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "could not work with newer apps",
+        "reason": "The review discusses compatibility issues with apps on the old device versus the new one."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "could not work with newer apps",
+        "reason": "The review implies the new device works where the old one failed, meeting expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The weird thing about Apple’s Ipad pricing is that the smallest Ipad is one of the most expensive ones",
+        "reason": "The reviewer explicitly comments on the pricing structure relative to the product size."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "he loves it",
+        "reason": "The statement expresses a clear positive emotional response from the recipient."
+      },
+      "software_update_support": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "very old Ipad that could not be updated any more",
+        "reason": "The review explicitly mentions the inability to update the old device as a key issue."
+      },
+      "app_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "could not work with newer apps",
+        "reason": "The review highlights the old device's inability to function with newer applications."
+      },
+      "gift_suitability": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This was a gift to a relative... he loves it",
+        "reason": "The entire context of the review is about the product being a successful gift."
+      },
+      "size_preference": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "My relative wanted a small one",
+        "reason": "The review explicitly states the recipient's preference for a smaller device."
+      }
+    }
+  },
+  {
+    "review_id": "87",
+    "features": {
+      "delivery_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "As far as shipping goes, Apple has been more reliable and faster than Amazon.",
+        "reason": "The reviewer explicitly compares the shipping speed favorably against Amazon."
+      },
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Definitely recommend any of the iPads, get the best one you can afford, but they are all great.",
+        "reason": "The review starts with a strong recommendation and general approval of the product line."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This iPad Pro is incredibly fast: it can play really cool games and keep all the tabs open.",
+        "reason": "The reviewer describes the device as 'incredibly fast' and capable of handling demanding tasks."
+      },
+      "device_usage_frequency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "I only use my MacBook for a few things nowadays",
+        "reason": "The reviewer implies high usage of the iPad by stating they rarely use their MacBook anymore."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The Apple TV app is soooooo much better on the iPad, equivalent to the Apple TV box.",
+        "reason": "The review discusses how the iPad integrates and compares with other Apple hardware and services."
+      },
+      "multitasking_capability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "keep all the tabs open",
+        "reason": "The ability to keep many tabs open suggests the device is used for multiple tasks at once."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This Pro has the best screen in my house by far.",
+        "reason": "The reviewer explicitly praises the screen quality as the best they own."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The M chips are a big improvement.",
+        "reason": "Mentioning the M chips implies satisfaction with the processing power and speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I haven’t had any trouble with the iPads aside from the battery and lightning port eventually wearing out",
+        "reason": "The reviewer states they have had no trouble with the iPads generally, indicating reliability."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love the big size",
+        "reason": "The reviewer uses strong positive emotional language like 'love' to describe the product."
+      },
+      "accessibility_support": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Apple makes it so easy to make all the fonts bigger/bolder for those with low vision.",
+        "reason": "The reviewer specifically highlights font adjustment features for low vision users."
+      },
+      "stylus_performance": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The pencil is responsive for drawing — it’s definitely better than the regular iPads or original Pro.",
+        "reason": "The responsiveness of the pencil for drawing is explicitly praised."
+      },
+      "keyboard_accessory_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the keys are responsive and the trackpad is very useful",
+        "reason": "The reviewer details the positive aspects of the Magic Keyboard keys and trackpad."
+      },
+      "device_weight": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "with the Magic Keyboard it’s a lot heavier than a MacBook Air.",
+        "reason": "The reviewer compares the weight of the iPad with the keyboard to a MacBook Air."
+      },
+      "workflow_integration": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "if you already have a finely-tuned work-flow on the Mac it’s probably going to be frustrating to try to use the iPad.",
+        "reason": "The review discusses how the iPad fits (or doesn't fit) into an existing Mac workflow."
+      },
+      "battery_durability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "I haven’t had any trouble with the iPads aside from the battery and lightning port eventually wearing out after many years.",
+        "reason": "The reviewer notes that the battery wears out after many years of use."
+      },
+      "port_durability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "lightning port eventually wearing out after many years. Perhaps USB C is more resilient",
+        "reason": "The reviewer discusses the wear and tear on the Lightning port and speculates on USB-C resilience."
+      },
+      "camera_placement": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Apple, move the damn camera! You made this beautiful keyboard to hold the iPad in landscape but then the camera makes me look like a serial killer.",
+        "reason": "The reviewer explicitly complains about the physical location of the camera."
+      }
+    }
+  },
+  {
+    "review_id": "88",
+    "features": {
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "known issue with my iPad with no confirmed resolution date (i.e. it's on Apple's end)",
+        "reason": "The review highlights a compatibility issue between the iPad and Netflix, attributing it to Apple."
+      },
+      "internet_connection_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Wifi connectivity is super unreliable",
+        "reason": "The review explicitly complains about the reliability of the Wifi connection."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "Wifi connectivity is super unreliable",
+        "reason": "The review indicates that the product is not functioning correctly due to connectivity issues."
+      },
+      "vendor_communication": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Would be nice if Apple communicated about it",
+        "reason": "The user explicitly states a desire for better communication from the vendor regarding the issue."
+      },
+      "customer_support_interaction": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "Contacted Netflix support and they said there's a known issue",
+        "reason": "The user describes contacting support and receiving information about the issue."
+      },
+      "known_issue_resolution": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "no confirmed resolution date",
+        "reason": "The user mentions that there is a known issue with no confirmed resolution date."
+      }
+    }
+  },
+  {
+    "review_id": "89",
+    "features": {
+      "delivery_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Super fast shipping",
+        "reason": "The customer explicitly states that the shipping was super fast."
+      },
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love my iPad Pro 9.7",
+        "reason": "The customer expresses general happiness with the product."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This thing is fast",
+        "reason": "The customer explicitly mentions the device is fast."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "has a great display",
+        "reason": "The customer praises the visual quality of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "This thing is fast",
+        "reason": "The comment about the device being fast implies high processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "Best I have seen on an iPad",
+        "reason": "The customer indicates the device is performing better than previous models."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Love my iPad Pro 9.7",
+        "reason": "The customer expresses a positive emotional response to the product."
+      },
+      "shipping_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "Super fast shipping",
+        "reason": "The customer explicitly states that the shipping was super fast."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "The 4 speakers are loud and sound better than all but th 12.9 pro",
+        "reason": "The customer praises the loudness and sound quality of the speakers."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The 12.9 was way to big for me",
+        "reason": "The customer implies the current model is better because the larger one was too big, highlighting portability."
+      }
+    }
+  },
+  {
+    "review_id": "90",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It came at a great price. Screen is brighter, faster.",
+        "reason": "The reviewer lists positive attributes like price, screen brightness, and speed, indicating general approval."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "faster",
+        "reason": "The word 'faster' directly describes the improved responsiveness of the new device."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Screen is brighter",
+        "reason": "The reviewer explicitly notes that the screen is brighter, which is a key aspect of display quality."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "faster",
+        "reason": "The term 'faster' implies improved processing speed compared to the older model."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "Screen is brighter, faster.",
+        "reason": "The positive comparison to the older device implies it is functioning well and meeting expectations."
+      },
+      "price_competitiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It came at a great price.",
+        "reason": "The phrase 'great price' explicitly indicates satisfaction with the cost."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "It came at a great price. Screen is brighter, faster.",
+        "reason": "The overall tone is positive, highlighting price and performance improvements."
+      }
+    }
+  },
+  {
+    "review_id": "91",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I am beyond disgusted.",
+        "reason": "The user expresses extreme dissatisfaction and regret regarding the purchase."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "Now, it's freezing on both units.",
+        "reason": "The device is freezing and unresponsive, indicating poor performance speed."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "It's tied into ios8 and Apple hasn't fixed it",
+        "reason": "The user blames the iOS 8 ecosystem for the device failures."
+      },
+      "device_syncing": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "The trouble first started when the two synced.",
+        "reason": "The user explicitly states that syncing the devices caused major problems."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "The screen in beautiful.",
+        "reason": "The user explicitly praises the visual quality of the screen."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.2,
+        "evidence_span": "Now, it's freezing on both units.",
+        "reason": "The freezing issues indicate a failure in processing speed."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "All of a sudden nothing worked on both",
+        "reason": "The device frequently fails to work, indicating very low reliability."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.1,
+        "evidence_span": "I am beyond disgusted.",
+        "reason": "The user expresses a strong negative emotional response, indicating low satisfaction."
+      }
+    }
+  },
+  {
+    "review_id": "92",
+    "features": {
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "this experience was very good",
+        "reason": "The customer explicitly states the experience was very good and appreciated the seller's actions."
+      },
+      "order_cancellation": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the seller cancelled the order immediately for me",
+        "reason": "The review clearly describes an instance where the seller cancelled the order."
+      },
+      "seller_communication_responsiveness": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "appreciated the sellers prompt reply and action",
+        "reason": "The customer explicitly appreciates the seller's prompt reply and action."
+      },
+      "seller_politeness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "was very nice about it",
+        "reason": "The customer describes the seller as being very nice, indicating politeness."
+      }
+    }
+  },
+  {
+    "review_id": "93",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "this is a quality ptoduct, does everything I want it to do",
+        "reason": "The user explicitly states the product is quality and meets their needs."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "Works just fine",
+        "reason": "The phrase 'Works just fine' indicates the product is functioning correctly."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "I love these",
+        "reason": "The user expresses a strong positive emotional response with 'I love these'."
+      },
+      "product_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "quality ptoduct",
+        "reason": "The user explicitly describes it as a 'quality product' (despite the typo)."
+      },
+      "functionality_meets_expectations": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "does everything I want it to do",
+        "reason": "The user confirms the product performs exactly as needed."
+      },
+      "ease_of_setup": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "easy to set up",
+        "reason": "The review directly states that the product is 'easy to set up'."
+      },
+      "replacement_upgrade": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "bought two to replace two older ones",
+        "reason": "The user mentions buying the product specifically to replace older models."
+      }
+    }
+  },
+  {
+    "review_id": "94",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the functions are amazing. the sound is astonishing. i actually teared up listening to some of my favorite songs because of how good it sounded",
+        "reason": "The reviewer expresses strong satisfaction with the device's functions and sound quality, even noting an emotional response."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "i have a lightning USB that i can use to pull photos and movies off my phone and move them to other Apple devices or a computer.",
+        "reason": "The reviewer describes using a lightning USB to move photos and movies between devices."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "i have a lightning USB that i can use to pull photos and movies off my phone and move them to other Apple devices or a computer.",
+        "reason": "The reviewer mentions moving data between the phone, iPad, and computer, indicating integration within the Apple ecosystem."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "the software the powers the screen is slick. ... the white is beautiful, but my eye want to look at the bezel and so are distracting from the screen.",
+        "reason": "The reviewer comments on the software powering the screen and the visual distraction of the bezel."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "the functions are amazing. ... the software the powers the screen is slick. it uses power in a way that does not require a huge battery",
+        "reason": "The reviewer indicates the device functions as expected and efficiently manages power."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "i actually teared up listening to some of my favorite songs because of how good it sounded and what it made me feel. and that is what Apple does best; makes you forget the device and focus on the experience.",
+        "reason": "The reviewer expresses a highly positive emotional response, stating the experience made them tear up."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it is a reasonable weight for the size, but due to the large size it's not something you can just grab as you are walking off. it requires more focus to carry with you.",
+        "reason": "The reviewer explicitly discusses the difficulty of carrying the device due to its size."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the sound is astonishing. i actually teared up listening to some of my favorite songs because of how good it sounded",
+        "reason": "The reviewer praises the sound quality highly and describes an emotional reaction."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "the software the powers the screen is slick. it uses power in a way that does not require a huge battery, so the battery is big but not so big as to make the iPad Pro feel heavy.",
+        "reason": "The reviewer comments on the battery size and power efficiency."
+      },
+      "design_aesthetics": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "one last thing, i returned my white/silver for space grey. the white is beautiful, but my eye want to look at the bezel and so are distracting from the screen.",
+        "reason": "The reviewer discusses color choices and the visual impact of the bezel."
+      },
+      "usability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the large size does take some getting use to. i suggest you have a mini and a pro and use them for a unique set of purposes.",
+        "reason": "The reviewer mentions the learning curve regarding the device's size and usage."
+      },
+      "touch_sensitivity": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it does not have 3D touch (force touch). not clear why.",
+        "reason": "The reviewer explicitly notes the absence of 3D touch capabilities."
+      },
+      "gps_functionality": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "if you get any iPad with cell you can use it in your car as a GPS.",
+        "reason": "The reviewer mentions the capability to use the device as a GPS in a car."
+      },
+      "physical_dimensions": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it takes up an entire side table and you don't want to set stuff o top of this. you may have to reconfigure your home a bit to have places to set this down.",
+        "reason": "The reviewer describes the device's large footprint and its impact on furniture space."
+      }
+    }
+  },
+  {
+    "review_id": "95",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the functions are amazing. the sound is astonishing. i actually teared up listening to some of my favorite songs because of how good it sounded",
+        "reason": "The reviewer expresses strong approval and amazement regarding the device's functions and sound quality."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "i have a lightning USB that i can use to pull photos and movies off my phone and move them to other Apple devices or a computer.",
+        "reason": "The reviewer describes using a cable to move photos and movies between devices."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "move them to other Apple devices or a computer",
+        "reason": "The reviewer mentions moving files to other Apple devices and a computer, indicating integration."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "the functions are amazing.",
+        "reason": "The reviewer states that the functions are amazing, indicating the device meets expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "i actually teared up listening to some of my favorite songs because of how good it sounded and what it made me feel.",
+        "reason": "The reviewer displays a strong positive emotional response, even tearing up due to the experience."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it is a reasonable weight for the size, but due to the large size it's not something you can just grab as you are walking off.",
+        "reason": "The reviewer discusses the weight and size, noting it is not easy to carry casually."
+      },
+      "sound_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the sound is astonishing. i actually teared up listening to some of my favorite songs because of how good it sounded",
+        "reason": "The reviewer praises the sound quality highly, describing it as astonishing and emotionally impactful."
+      },
+      "missing_features": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it does not have 3D touch (force touch). not clear why.",
+        "reason": "The reviewer explicitly notes the absence of 3D touch."
+      },
+      "usage_scenarios": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "i will use it for work and pleasure travel. sitting on the couch and going thru email and Tivo season pass manager.",
+        "reason": "The reviewer describes specific use cases such as work, travel, and email management."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "it uses power in a way that does not require a huge battery, so the battery is big but not so big as to make the iPad Pro feel heavy.",
+        "reason": "The reviewer mentions the battery size and its efficiency in relation to power usage."
+      },
+      "gps_functionality": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "if you get any iPad with cell you can use it in your car as a GPS.",
+        "reason": "The reviewer suggests using the device as a GPS in a car."
+      },
+      "design_uniqueness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it has programing and design uniqueness that makes this a more useful product.",
+        "reason": "The reviewer explicitly mentions programming and design uniqueness as a benefit."
+      },
+      "physical_footprint": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it is so big that you will need to find a place to set it down. it takes up an entire side table",
+        "reason": "The reviewer discusses the large physical size and the need to find space for it."
+      },
+      "comparison_to_other_models": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "i suggest you have a mini and a pro and use them for a unique set of purposes.",
+        "reason": "The reviewer compares the device to other models and suggests owning multiple for different purposes."
+      }
+    }
+  },
+  {
+    "review_id": "96",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the functions are amazing. the sound is astonishing.",
+        "reason": "The reviewer expresses high satisfaction with the device's functions and sound quality."
+      },
+      "data_transfer": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "i have a lightning USB that i can use to pull photos and movies off my phone and move them to other Apple devices or a computer.",
+        "reason": "The reviewer describes using a lightning USB to move photos and movies between devices."
+      },
+      "ecosystem_compatibility": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "move them to other Apple devices or a computer",
+        "reason": "The reviewer mentions moving data between the device, an iPhone, and a computer, indicating integration."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the functions are amazing.",
+        "reason": "The reviewer indicates the device functions as expected and performs well."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.95,
+        "evidence_span": "i actually teared up listening to some of my favorite songs because of how good it sounded and what it made me feel.",
+        "reason": "The reviewer shows a strong positive emotional response, even tearing up due to the experience."
+      },
+      "audio_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the sound is astonishing",
+        "reason": "The reviewer explicitly praises the sound quality as astonishing and emotionally moving."
+      },
+      "portability": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it is a reasonable weight for the size, but due to the large size it's not something you can just grab as you are walking off.",
+        "reason": "The reviewer discusses the weight and size, noting it is hard to carry casually."
+      },
+      "battery_life": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "it uses power in a way that does not require a huge battery, so the battery is big but not so big as to make the iPad Pro feel heavy.",
+        "reason": "The reviewer comments on the battery size and power usage."
+      },
+      "screen_software": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the software the powers the screen is slick.",
+        "reason": "The reviewer explicitly mentions the software powering the screen."
+      },
+      "missing_features": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it does not have 3D touch (force touch).",
+        "reason": "The reviewer notes the absence of 3D touch."
+      },
+      "usage_scenarios": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "i will use it for work and pleasure travel",
+        "reason": "The reviewer details specific plans for using the device for work, travel, and media."
+      },
+      "design_uniqueness": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it has programing and design uniqueness that makes this a more useful product",
+        "reason": "The reviewer highlights the programming and design uniqueness of the device."
+      },
+      "touch_sensitivity": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "it does not have 3D touch (force touch).",
+        "reason": "The reviewer discusses the lack of 3D touch functionality."
+      },
+      "media_consumption_experience": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "the experience of this device is so much different that my other iPad.",
+        "reason": "The reviewer contrasts the media experience with their other iPad."
+      },
+      "file_management": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "i fill my phone with photos and then move them to the iPad for viewing and editing.",
+        "reason": "The reviewer describes managing and moving photo files."
+      },
+      "power_efficiency": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it uses power in a way that does not require a huge battery",
+        "reason": "The reviewer highlights the efficient use of power."
+      },
+      "versatile_usage": {
+        "has_feature": true,
+        "feature_score": 0.85,
+        "evidence_span": "i will use it for work and pleasure travel... i will also use it as a media device when i vacation.",
+        "reason": "The reviewer plans to use the device for work, travel, and media."
+      }
+    }
+  },
+  {
+    "review_id": "97",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "still this is a really nice product and i am glad i spent the money on the upgrade.",
+        "reason": "The user explicitly states the product is nice and expresses satisfaction with the purchase."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the new mini loads twice as fast... it was amazing how much faster the new iPad loads games.",
+        "reason": "The user highlights significant improvements in load times and general speed compared to the previous model."
+      },
+      "display_quality": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the retina display is a huge upgrade.",
+        "reason": "The user praises the retina display as a huge upgrade and worth the cost."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 1.0,
+        "evidence_span": "the processor is an even bigger improvement... the new mini loads twice as fast.",
+        "reason": "The user explicitly mentions the processor improvement and faster load times."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the new mini loads twice as fast... it was amazing how much faster the new iPad loads games.",
+        "reason": "The consistent and improved performance described implies the device meets expectations well."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "still this is a really nice product and i am glad i spent the money on the upgrade.",
+        "reason": "The user expresses a positive emotional response and high regard for the upgrade."
+      },
+      "bezel_design": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "the bezel fades out of view when black and i find myself seeing more of what is on the screen.",
+        "reason": "The user compares black and white bezels and explains why the black one improves the viewing experience."
+      },
+      "color_gamut": {
+        "has_feature": true,
+        "feature_score": 0.6,
+        "evidence_span": "i can say that i think that the colors are fine.",
+        "reason": "The user explicitly mentions their opinion on the colors, stating they are fine."
+      },
+      "missing_features": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "i would like to say the iPad mini should have had the fingerprint scanner and all Apple products are overdue for built in wireless charging.",
+        "reason": "The user lists specific features they wish the product had, such as a fingerprint scanner and wireless charging."
+      }
+    }
+  },
+  {
+    "review_id": "98",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "love it already",
+        "reason": "The user explicitly states they love the product, indicating high satisfaction."
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "super fast",
+        "reason": "The phrase 'super fast' directly describes the responsiveness of the device."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "super fast",
+        "reason": "The comment 'super fast' implies the device handles data quickly."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "love it already",
+        "reason": "The expression of love and satisfaction implies the device is functioning as expected."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "love it already",
+        "reason": "The user expresses a positive emotional response by stating they love the product."
+      },
+      "physical_size": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "A bit bigger , but not too big",
+        "reason": "The user explicitly comments on the physical dimensions of the device."
+      },
+      "home_button": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it still has the home button",
+        "reason": "The presence of the home button is specifically noted as a feature."
+      }
+    }
+  },
+  {
+    "review_id": "99",
+    "features": {
+      "product_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "So far so good.",
+        "reason": "The user expresses general approval with the phrase 'So far so good.'"
+      },
+      "performance_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it’s real fast, I love the fact that it’s so smooth and quick",
+        "reason": "The user explicitly praises the device's speed and responsiveness."
+      },
+      "processing_speed": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "it’s real fast, I love the fact that it’s so smooth and quick",
+        "reason": "The user comments on the device's fast processing and quick response."
+      },
+      "performance_reliability": {
+        "has_feature": true,
+        "feature_score": 0.7,
+        "evidence_span": "So far so good.",
+        "reason": "The phrase 'So far so good' indicates the product is meeting expectations."
+      },
+      "customer_satisfaction": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "I love the fact that it’s so smooth and quick",
+        "reason": "The user expresses a strong positive emotional response with 'I love'."
+      },
+      "weight": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "it’s a little lighter than my old one.",
+        "reason": "The user directly compares the weight favorably to the previous model."
+      },
+      "speaker_quality": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "The speakers are very loud",
+        "reason": "The user comments on the volume of the speakers."
+      },
+      "usability": {
+        "has_feature": true,
+        "feature_score": 0.8,
+        "evidence_span": "This iPad is easy to use",
+        "reason": "The user explicitly states the device is easy to use."
+      },
+      "design_change": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "It took me a while to get used to no button. You just have to tap the screen to get it to open.",
+        "reason": "The user discusses the absence of a physical button and the new interaction method."
+      }
+    }
+  }
+]

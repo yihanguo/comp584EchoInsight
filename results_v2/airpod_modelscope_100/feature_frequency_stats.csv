@@ -1,0 +1,47 @@
+feature,origin,frequency,percentage,dynamic_generated_rows
+Overall Satisfaction,initial,72,72.0,0
+Product Quality,initial,52,52.0,0
+Sound Quality,initial,40,40.0,0
+Amazing Sound Quality,initial,34,34.0,0
+Noise Cancellation,initial,27,27.0,0
+Perfect Fit,initial,22,22.0,0
+Battery Life,initial,21,21.0,0
+Durability Over Time,initial,21,21.0,0
+Wear Resistance,initial,21,21.0,0
+Product Affordability,initial,15,15.0,0
+Better Alternative Than Apple,initial,8,8.0,0
+Replacements Do Not Work,initial,7,7.0,0
+Parts Are Stolen,initial,5,5.0,0
+Ambient Noise Crackling,dynamic,1,1.0,1
+Automatic Connectivity,dynamic,1,1.0,0
+Comfort,dynamic,1,1.0,1
+Comfort Fit,dynamic,1,1.0,1
+Connection Stability,dynamic,1,1.0,0
+Dedicated Volume Controls,dynamic,1,1.0,1
+Ergonomic Fit,dynamic,1,1.0,1
+Improper Fit,dynamic,1,1.0,1
+Likelihood to Repurchase,dynamic,1,1.0,1
+Microphone Quality,dynamic,1,1.0,1
+Noise Cancellation Intensity,dynamic,1,1.0,1
+Product Likelihood to Recommend,dynamic,1,1.0,1
+Rechargeable Battery Life,dynamic,1,1.0,1
+Secure Earbud Lock,dynamic,1,1.0,1
+Secure Fit,dynamic,1,1.0,0
+User Feedback,dynamic,1,1.0,1
+airPods_comfort_issues,dynamic,1,1.0,1
+airPods_communication Issue,dynamic,1,1.0,1
+airPods_excessive_noise_cancellation,dynamic,1,1.0,1
+airPods_gross_slimey_feeling,dynamic,1,1.0,1
+airPods_tend_to_fall_out,dynamic,1,1.0,1
+appeal_to_children,dynamic,1,1.0,1
+consistent_volume,dynamic,1,1.0,1
+gift_wrapping_options,dynamic,1,1.0,1
+improved_mic_quality,dynamic,1,1.0,1
+logistics_time,dynamic,1,1.0,1
+negative_sound_quality,dynamic,1,1.0,1
+neutral-satisfaction,dynamic,1,1.0,1
+noise_levels,dynamic,1,1.0,1
+positive_flexibility,dynamic,1,1.0,1
+product_quality_consistency,dynamic,1,1.0,1
+reliability_within_a_month,dynamic,1,1.0,1
+super_comfortable,dynamic,1,1.0,1

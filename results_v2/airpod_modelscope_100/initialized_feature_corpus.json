@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Product Affordability",
+    "description": "Great price",
+    "examples": [
+      "Love these Air Pods. Great price."
+    ]
+  },
+  {
+    "name": "Battery Life",
+    "description": "Battery life is so long",
+    "examples": [
+      "The battery life is so long."
+    ]
+  },
+  {
+    "name": "Perfect Fit",
+    "description": "Fits perfect in my pocket",
+    "examples": [
+      "Fits perfect in my pocket to charge."
+    ]
+  },
+  {
+    "name": "Amazing Sound Quality",
+    "description": "They sound amazing",
+    "examples": [
+      "They sound amazing."
+    ]
+  },
+  {
+    "name": "Durability Over Time",
+    "description": "Product has lasted for a year",
+    "examples": [
+      "These has lasted me a year."
+    ]
+  },
+  {
+    "name": "Wear Resistance",
+    "description": "Dropped several times but still work",
+    "examples": [
+      "Dropped them a few times but they still work."
+    ]
+  },
+  {
+    "name": "Overall Satisfaction",
+    "description": "Fantastic, as usual",
+    "examples": [
+      "Fantastic, as usual."
+    ]
+  },
+  {
+    "name": "Noise Cancellation",
+    "description": "The effectiveness of noise cancellation.",
+    "examples": [
+      "Noise cancellation is horrible",
+      "I love everything about the AirPods pro. Living in a noisy city like New York they make everything just that much better."
+    ]
+  },
+  {
+    "name": "Product Quality",
+    "description": "The overall quality and potential issues with the product.",
+    "examples": [
+      "Very troubling as this was a Christmas gift. The box arrived unsealed which I thought was peculiar. When my husband went to pair them with his phone they had already been paired with someone else’s account. They are definitely not new, and possibly counterfeit."
+    ]
+  },
+  {
+    "name": "Sound Quality",
+    "description": "The responsiveness and performance of the sound.",
+    "examples": [
+      "I still appreciate my original AirPods for quiet environments, it has a different bass response than the pros — principally due to the isolation for noise cancellation."
+    ]
+  },
+  {
+    "name": "Replacements Do Not Work",
+    "description": "The product replacements do not function correctly.",
+    "examples": [
+      "Had to order 2 replacements and they still don't work."
+    ]
+  },
+  {
+    "name": "Better Alternative Than Apple",
+    "description": "A better alternative to buying from Apple.",
+    "examples": [
+      "Just buy from Apple or don't get them they are a waste of money."
+    ]
+  },
+  {
+    "name": "Parts Are Stolen",
+    "description": "Parts are stolen from the product.",
+    "examples": [
+      "But someone stole mines out my car"
+    ]
+  }
+]

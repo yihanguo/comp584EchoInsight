@@ -49,10 +49,13 @@ Return JSON list only."""
         for item in raw:
             if not isinstance(item, dict):
                 continue
-            name = item.get("feature", "")
+            name = str(item.get("feature", "")).strip()
             if not name:
                 continue
-            score = float(item.get("feature_score", 0.0))
+            try:
+                score = float(item.get("feature_score", 0.0))
+            except (TypeError, ValueError):
+                score = 0.0
             score = max(0.0, min(1.0, score))
             has_f = bool(item.get("has_feature", score > 0.5))
             out.append({

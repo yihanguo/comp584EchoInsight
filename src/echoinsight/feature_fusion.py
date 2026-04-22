@@ -11,10 +11,13 @@ class FeatureFusion:
         """Merge new classifier outputs into existing accepted_features map."""
         merged = dict(existing)
         for item in new_outputs:
-            name = item.get("feature", "")
+            name = str(item.get("feature", "")).strip()
             if not name:
                 continue
-            score = item.get("feature_score", 0.0)
+            try:
+                score = float(item.get("feature_score", 0.0))
+            except (TypeError, ValueError):
+                score = 0.0
             has_f = item.get("has_feature", False)
             if name in merged:
                 prev = merged[name]

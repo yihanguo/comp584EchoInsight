@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 from src.echoinsight.v2_pipeline import EchoInsightV2Pipeline
@@ -26,15 +29,48 @@ def list_models() -> None:
         print()
 
 
+def load_profile(model_alias: str | None) -> tuple[str, dict]:
+    data = json.loads(REGISTRY.read_text(encoding="utf-8"))
+    alias = model_alias or data.get("default", "")
+    models = data.get("models", {})
+    if alias not in models:
+        available = ", ".join(models.keys())
+        raise ValueError(f"Unknown model alias {alias!r}. Available: {available}")
+    return alias, models[alias]
+
+
+def infer_run_name(csv_path: str | Path, model_alias: str | None, max_reviews: int) -> str:
+    alias, profile = load_profile(model_alias)
+    stem = Path(csv_path).stem.lower()
+    stem = re.sub(r"(_pipeline)?_input(_\d+)?$", "", stem)
+    stem = re.sub(r"(_reviews?|_data|_dataset)$", "", stem)
+    product = re.sub(r"[^a-z0-9]+", "_", stem).strip("_") or "run"
+
+    model_id = str(profile.get("model", "")).lower()
+    base_url = str(profile.get("base_url", "")).lower()
+    if "glm" in alias.lower() or "glm" in model_id:
+        provider = "glm"
+    elif "modelscope" in base_url:
+        provider = "modelscope"
+    else:
+        provider = re.sub(r"[^a-z0-9]+", "_", alias.lower()).strip("_") or "model"
+
+    return f"{product}_{provider}_{max_reviews}"
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="EchoInsight V2 Pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="Run with --list-models to see all available model profiles.",
     )
-    parser.add_argument("--csv", default=str(ROOT / "data/smoke_input.csv"), help="Input CSV path")
+    parser.add_argument("--csv", default=str(ROOT / "data/ipad.csv"), help="Input CSV path")
     parser.add_argument("--info", default=str(ROOT.parent / "info.md"), help="API credentials file (apikey)")
-    parser.add_argument("--run-name", default="smoke", help="Output run name under results_v2/")
+    parser.add_argument(
+        "--run-name",
+        default=None,
+        help="Output run name under results_v2/. Defaults to <csv>_<provider>_<max-reviews>, e.g. ipad_glm_20.",
+    )
     parser.add_argument("--max-reviews", type=int, default=5, help="Max reviews to process")
     parser.add_argument("--sample-size", type=int, default=10, help="Sample size for init")
     parser.add_argument("--max-features", type=int, default=40, help="Max features in catalog (caps classify prompt size)")
@@ -60,10 +96,13 @@ def main():
         list_models()
         return
 
+    run_name = args.run_name or infer_run_name(args.csv, args.model, args.max_reviews)
+    print(f"[V2] Output run name: {run_name}", flush=True)
+
     pipeline = EchoInsightV2Pipeline(
         info_path=args.info,
         output_root=ROOT / "results_v2",
-        run_name=args.run_name,
+        run_name=run_name,
         sample_size_init=args.sample_size,
         max_reviews=args.max_reviews,
         max_features=args.max_features,
@@ -76,9 +115,22 @@ def main():
     )
     summary = pipeline.run(args.csv)
 
-    print("\n=== V2 Summary ===")
+    stats_script = ROOT / "scripts" / "summarize_results.py"
+    if stats_script.exists():
+        sys.stdout.flush()
+        subprocess.run(
+            [
+                sys.executable,
+                str(stats_script),
+                "--results-dir",
+                str(ROOT / "results_v2" / run_name),
+            ],
+            check=True,
+        )
+
+    print("\n=== V2 Summary ===", flush=True)
     for k, v in summary.items():
-        print(f"  {k}: {v}")
+        print(f"  {k}: {v}", flush=True)
 
 
 if __name__ == "__main__":

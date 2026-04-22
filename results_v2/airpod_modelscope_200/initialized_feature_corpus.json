@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Battery Life",
+    "description": "Short battery life",
+    "examples": [
+      "That power charge only last about 4 hours."
+    ]
+  },
+  {
+    "name": "User Satisfaction",
+    "description": "Positive user experience",
+    "examples": [
+      "Love, love love it"
+    ]
+  },
+  {
+    "name": "Physical Design",
+    "description": "Good physical design",
+    "examples": [
+      "The case (which is smaller than I anticipated, +++) is very clever and well-working."
+    ]
+  },
+  {
+    "name": "Call Quality",
+    "description": "Sporadic connection drops",
+    "examples": [
+      "There's 0% risk of them falling out by accident. Great physical design. - Sporadic dropping of connection for about 5-10s at a time (on average 1-3 times per call). Not OK."
+    ]
+  },
+  {
+    "name": "Sound Quality",
+    "description": "White noise hissing and glitching",
+    "examples": [
+      "The sound quality is weird. You can hear white noise hissing sound when people on the other end are talking, which is not present with any other speaker / headphone system. The sound also glitches quite often."
+    ]
+  },
+  {
+    "name": "Siri Functionality",
+    "description": "Rigid and useless controls",
+    "examples": [
+      "Siri-based controlling is just plain trash. It's a rigid, useless way of even handling the most basic of controls that it's just not worth it."
+    ]
+  },
+  {
+    "name": "Kids Dislike",
+    "description": "Kids don't like it",
+    "examples": [
+      "There’s only one thing wrong...I have to hide them from my kids."
+    ]
+  },
+  {
+    "name": "Seamless Integration",
+    "description": "The headphones work well with other devices.",
+    "examples": [
+      "They work seamlessly with all my Apple gear.",
+      "The AirPods box having stains on it.",
+      "The battery life when I am listening ongoing is not bad but I can still hear other sounds when the sound is not turned up high."
+    ]
+  },
+  {
+    "name": "Comfort",
+    "description": "The ease of wearing the headphones for extended periods.",
+    "examples": [
+      "The problem is that after about an hour, they get very uncomfortable on my head.",
+      "Being an engineer, I have to wonder if it’s the weight, or the tension holding them against my head, or the material in the ear cups, or all of the above.",
+      "Ears hurting"
+    ]
+  },
+  {
+    "name": "Aesthetics",
+    "description": "The visual appeal of the product.",
+    "examples": [
+      "They are just beautiful to look at.",
+      "I’m willing to give them another try, especially since everything else about them is so great."
+    ]
+  },
+  {
+    "name": "Packaging Quality",
+    "description": "The condition and appearance of the packaging.",
+    "examples": [
+      "I open the box to the AirPods box having stains on it.",
+      "The product missing the charging cable and only comes with 1 pair of bud tips when it should be 3 (small, medium, large)."
+    ]
+  },
+  {
+    "name": "Missing Components",
+    "description": "Whether all necessary parts are included.",
+    "examples": [
+      "It’s missing the charging cable and only comes with 1 pair of bud tips when it should be 3 (small, medium, large).",
+      "I wish I’d kept the regular. These continually fall out of my ears"
+    ]
+  },
+  {
+    "name": "Charging Cable Availability",
+    "description": "The presence and quantity of the charging cable.",
+    "examples": [
+      "It’s missing the charging cable and only comes with 1 pair of bud tips when it should be 3 (small, medium, large).",
+      "Just gonna order some through Apple like I should’ve did in the first place"
+    ]
+  },
+  {
+    "name": "Noise Cancellation",
+    "description": "The effectiveness of noise-canceling features.",
+    "examples": [
+      "I like the noise canceling sound.",
+      "Upgrade to the Pro version, but prefer the regular version because the noise-canceling feature causes them to fall out."
+    ]
+  },
+  {
+    "name": "Comfort in Use",
+    "description": "The comfort while wearing the product.",
+    "examples": [
+      "The problem is that after about an hour, they get very uncomfortable on my head.",
+      "I wish I’d kept the regular. These continually fall out of my ears."
+    ]
+  },
+  {
+    "name": "Product Design",
+    "description": "The design and build quality of the product.",
+    "examples": [
+      "They are just beautiful to look at.",
+      "I’m willing to give them another try, especially since everything else about them is so great."
+    ]
+  },
+  {
+    "name": "Noise Canceling",
+    "description": "The effectiveness of noise-canceling features.",
+    "examples": [
+      "I like the noise canceling sound.",
+      "Upgrade to the Pro version, but prefer the regular version because the noise-canceling feature causes them to fall out."
+    ]
+  },
+  {
+    "name": "Background Noise",
+    "description": "Unwanted noise when listening.",
+    "examples": [
+      "I cannot keep them in for long as it makes my ears hurt.",
+      "Background noise when the sound is not turned up high."
+    ]
+  },
+  {
+    "name": "sound_quality",
+    "description": "Great sound quality with active noise cancellation and pass through settings working well.",
+    "examples": [
+      "The active noice cancellation is great",
+      "The pass through setting works great!"
+    ]
+  },
+  {
+    "name": "noise_cancellation",
+    "description": "Effective noise cancellation, especially in active mode.",
+    "examples": [
+      "The active noice cancellation is great"
+    ]
+  },
+  {
+    "name": "overall_satisfaction",
+    "description": "Overall positive experience with the product.",
+    "examples": [
+      "I love these!!"
+    ]
+  },
+  {
+    "name": "product fit issues",
+    "description": "Issues related to the product's physical fit and comfort.",
+    "examples": [
+      "I decided to return and get the AirPods Pro which have eartips helping to create a better fit.",
+      "I can’t get them to stay in my ears"
+    ]
+  },
+  {
+    "name": "noise cancelling feature",
+    "description": "The ability of the product to cancel background noise.",
+    "examples": [
+      "I really like that it has noise cancelling and the sound is great as well."
+    ]
+  },
+  {
+    "name": "better product fit with specific model",
+    "description": "Better fit and comfort with a specific product model.",
+    "examples": [
+      "Upgrading from AirPods 2, which fit my ear fine, to AirPods 3–the part that sits in your ear is shaped differently and is a bit larger."
+    ]
+  },
+  {
+    "name": "seamless_integration",
+    "description": "Seamlessly integrates with devices in the Apple ecosystem",
+    "examples": "I found it funny to see so many people walking around with AirPods in their ears. After we got my son a pair for Christmas and I tried them, I ended up getting a pair for myself. They work seamlessly with my iPhone and are awesome to use with my Apple TV as well."
+  },
+  {
+    "name": "suitability_for_exercise",
+    "description": "Suitable for exercise",
+    "examples": "I use them for running and weightlifting without any issues so far."
+  },
+  {
+    "name": "spatial_audio",
+    "description": "Spatial audio",
+    "examples": "The audio is rich with strong bass and midrange. Although more expensive than a lot of similar products, Apple wins hands-down with design and integration with their products."
+  },
+  {
+    "name": "audio_quality",
+    "description": "Rich audio with strong bass and midrange",
+    "examples": "The audio is rich with strong bass and midrange."
+  },
+  {
+    "name": "general_perfection",
+    "description": "General perfection",
+    "examples": "Perfect"
+  }
+]

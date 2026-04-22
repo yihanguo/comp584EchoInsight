@@ -1,0 +1,101 @@
+review_id,rating,validation_pass,iterations_used,dynamic_features_added,review_preview,Amazing Sound Quality,Overall Satisfaction,Product Quality,Sound Quality,Battery Life,Perfect Fit,Noise Cancellation,Durability Over Time,Replacements Do Not Work,appeal_to_children,Product Affordability,Rechargeable Battery Life,neutral-satisfaction,improved_mic_quality,consistent_volume,Wear Resistance,Better Alternative Than Apple,product_quality_consistency,Product Likelihood to Recommend,Likelihood to Repurchase,Comfort Fit,Ergonomic Fit,super_comfortable,gift_wrapping_options,positive_flexibility,negative_sound_quality,Parts Are Stolen,Automatic Connectivity,noise_levels,logistics_time,User Feedback,Secure Fit,Connection Stability,Improper Fit,Dedicated Volume Controls,Secure Earbud Lock,Comfort,Microphone Quality,Noise Cancellation Intensity,Ambient Noise Crackling,airPods_tend_to_fall_out,airPods_excessive_noise_cancellation,airPods_communication Issue,airPods_comfort_issues,airPods_gross_slimey_feeling,reliability_within_a_month
+0,4.0,1,2,Product Quality Enhancement|Design Improvement|Durability Upgrades|Customer Support Satisfaction|Price Competitiveness,These are so amazing I will proble buy another pair.,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,5.0,1,1,,"The sound quality is amazing. I love the noise cancellation, and I also like tha",1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,5.0,1,1,,Good and works really well and stays in the ears well,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,4.0,1,1,,I love the sound quality. The bass comes across very clear as if you’re in a roo,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,1.0,1,1,,These Airpods were clearly used. I didn't pay for refurbished Airpods and even i,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,5.0,1,1,,Great just hard to keep in my ear sometimes,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,5.0,1,1,,My sister was staying with me for 6 hours. I got these to keep her entertained w,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,5.0,1,1,,Perfect earbuds for granddaughter and her work!,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,5.0,1,1,,i was against these forever. My daughter got them and used them sparingly. My wi,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,5.0,1,2,comfort_during_long_use|appeal_to_children|durability_for_young_children,My granddaughter loves this,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,2.0,1,2,Rechargeable Battery Life|Call Quality|Customizable Noise Cancellation,This earbuds is definitely overpriced. The sound quality isn’t any better than o,1,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,3.0,1,1,,I actually prefer the regular AirPods. With the pros there is almost too much no,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,5.0,1,1,,I got these for my granddaughter. She loves them and uses them with all her devi,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,5.0,1,1,,I lost my first pair and had to have another pair. I love these AirPods Pro!!!,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,5.0,1,1,,Ok no other earphones are like the apple buds. they just work and no stress. Hap,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,1.0,1,1,,This newer version of the Airpods hurt my ears. I simply cannot wear them becaus,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,5.0,1,1,,These are so much better then the wired ones. Worth the costs!,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,5.0,1,1,,I was skeptical about ordering these after reading some of the bad reviews on he,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,5.0,0,3,user_interface_experience|product_performance|product_security|customer_support_availability|durability_assurance|user_friendly|customer_support_available|aesthetic_design|functional_design|longevity,Love then,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,5.0,1,2,Customer Support Responsiveness|Product Features Intuitive|Usability Navigation,My people say it’s all good they like everything about them,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,5.0,1,1,,Can't imagine music without the noise cancelling and transparence option and las,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,5.0,0,3,Task Processing Efficiency|Customizable Support Packages|Aesthetic Customization|Extended Warranty Options|Pricing Transparency|neutral-satisfaction|mixed-feedback,Ok,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,3.0,1,2,improved_mic_quality|consistent_volume,This product is almost perfect and probably could be if they fixed two issues. T,0,1,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,5.0,1,1,,"The Apple AirPods Pro are a definite step up from the regular AirPods, stay in y",1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,5.0,1,1,,"I’ve had these for almost a year now, love them! Use them daily, all the time. (",0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,5.0,1,1,,"So, first off…LOVE! I have all the other Apple Products and these are absolutely",1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,5.0,1,2,product_quality_consistency,Excelente producto Estoy feliz con la calidad,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,5.0,1,2,Product Likelihood to Recommend|Likelihood to Repurchase,would recommend & buy again,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,4.0,1,1,,They do get a little sore in my ears after a while. I wish the battery lasted ju,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,5.0,1,1,,This is an absolutely crucial purchase if you work in a shared space (crowded co,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,5.0,1,1,,"Fits is like the 1st edition, so I love that they stay in my ears. The 3rd didn'",0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,5.0,1,1,,Awesome product. Love how amazon sells apple products and other for a bit cheape,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,5.0,1,2,Comfort Fit|Balanced Sound|Ergonomic Fit|Durable Sound Quality,"This one fits me so well, Great sound!!!",1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,5.0,1,1,,Form and fit,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,5.0,1,1,,Love them. They are easy to connect to my device. Nice for when you are moving a,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,5.0,1,2,super_comfortable,"Super comfortable, incredible quality; very happy with these",1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,2.0,1,1,,"It's so disappointing to pay extra for the ""newer"" version of something only to ",0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,5.0,1,1,,"It’s an Apple item, and the quality is outstanding! Spend a little bit more mone",1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,4.0,1,3,Aesthetic Appeal|Comfortable Design|Intuitive Controls|Stylish Look|gift_wrapping_options|choice_of_wrapping_material|personalized_ribbon_design|custom_gift_box_design|eco_friendly packagin_options,Purchased as Christmas gift. They highly enjoyed the features.,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,4.0,1,3,ergonomic-design|adjustable-fit|balanced-sound|positive_flexibility|negative_sound_quality,Awesome flex but only ok sound,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,5.0,1,1,,Works great,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,5.0,1,1,,They are real; I even checked with apple!😁,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,3.0,1,1,,Sound is great but the fit of the earplugs sucks . I simply cannot get the left ,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,5.0,1,1,,I love my new AirPod pro it’s worth it,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,3.0,1,2,Customization Options|Expandable Features|Durability for Children|Packaging and Shipping Experience,Bought 2 sets for my grand daughters. I am sure like them.,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,5.0,1,1,,"Just mad I lost one, so I’ve only been using the other one every since",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,5.0,1,1,,Best price,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,5.0,1,1,,"Works like they should, battery life is 24 hours, what else could you ask for",0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,5.0,1,1,,"The design is certainly very Apple, as long as you enjoy their product. Four hou",0,1,1,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,5.0,1,2,product_value_proposition|price_sensitivity|ease_of_use|customer_support_availability,Worth it,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,5.0,0,3,customer_service_response_time|product_description_accuracy|dynamic_pricing_alert_system|order_tracking_and_status_updates,Ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,5.0,1,1,,I was kinda nervous getting something electronic on amazon but as always my expe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,5.0,1,1,,I'm a specs guys. Found it really difficult to spend any money on something like,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,5.0,1,1,,Wireless charging is the way to go. Not concerned with any requests to move to “,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,5.0,1,1,,I’m Apple fan. Like it!,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,5.0,1,1,,Very good!!!!,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,3.0,1,2,Battery Life Extension|Multiple Earpiece Sizes|Precise Ear Impressions|Ear Comfort Feedback|Improved Pairing Reliability,"I thought I'd be so excited, but there is less battery life than the original Ai",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,5.0,1,1,,"Great product, sound quality is okay",0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,5.0,1,1,,It works the way it’s supposed to.,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,4.0,1,2,noise_levels|logistics_time,The price is very affordable. The earphone feels a little noisy when it is used.,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,5.0,1,2,User Feedback,If you like the shape of Apple headphones you will love these. I can wear them f,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,5.0,1,1,,I have no complaints about these! They work great and the same as the pair I bou,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,5.0,1,1,,Since finding they have been used daily.,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,5.0,1,1,,just what i wanted,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+64,5.0,1,1,,I was a little scared after I ordered and read the reviews about people not gett,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,2.0,1,1,,"Huge buds, didn't fit in my ears constantly falling out , hurt to wear for long ",0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,5.0,1,1,,Long story short I lost my airpod pros. Saw these on major discount ($90 for Bla,1,1,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,2.0,1,1,,Not sure if I received a bad pair but the right pod’s battery drained really fas,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+68,5.0,1,1,,"My wife wanted overpriced apple earbuds..pardon me airpods, and these were a tol",1,1,1,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,4.0,1,2,secure_fit,I am trying to get the hang of them. It keeps falling out my ear!,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,4.0,1,1,,If you plan on being very active you should definitely think about investing in ,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,5.0,1,1,,So far all pros. They worked like promised and sound amazing. It was strange get,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,4.0,1,1,,I see people raving up and down about the perfection and wonderfulness of these ,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,5.0,1,1,,I am in my 60s. This is my first time using earbuds while walking or going to th,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,5.0,1,1,,Finally gave in and bought these- where have they been all my life. Way more con,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,3.0,1,1,,"The sound is average, nothing special, I was expecting more. The noise cancellin",0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,1.0,1,2,Improper Fit|Fit in Noisy Environments,"Fit poorly and without proper fit, no noise cancellation. Can’t get a greenlight",0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+77,5.0,1,1,,Bought these for my wife just before the next generation was announced. #applePr,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,4.0,1,1,,Good sound quality,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,5.0,1,1,,It took me a while to decide buying this because of the price ticket. So I waite,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,5.0,1,1,,"Really good, much better noise cancellation than I anticipated. Very comfortable",1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,5.0,1,2,volume_control,"I hear absolutely nothing when these are in; they cancel out all other noise, an",1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+82,5.0,1,1,,"Sounds really good, compact, fits in ears nicely however, it came with a chargin",1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,5.0,1,1,,"They’re Apple, so they’re pricey, but worth it. Comfortable to wear, turn on and",1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+84,5.0,1,1,,Pre Black Friday special for less than $160,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,5.0,1,1,,"Great product, long battery life and great sound quality and noise cancelling ab",1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,5.0,1,1,,I love my Airpods Pro 1 that I purchased in early 2020. They were worlds better ,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,3.0,1,2,Dedicated Volume Controls|Magnetic Earbud Closure|Battery Life Enhancer|Sound Quality Comparison Tool|Secure Earbud Lock,"I don't like the fact that I have to keep using the iPhone to change the volume,",1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+88,5.0,1,1,,These are a great upgrade to the AirPods I had. The noise cancellation has great,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+89,5.0,1,1,,Apple AirPods with Wireless Charging have excellent sound quality. Noise cancell,1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,5.0,1,1,,"I tried low end earbuds ~$40 and I wasn’t happy with the muffled sound. However,",1,0,0,1,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,5.0,1,1,,...and at the end of the day that is all that really matters. She says they fit ,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,5.0,1,1,,Was a bit worried abort not buying form apple but saved $15 and they work just t,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+93,3.0,1,3,Comfort|Microphone Quality|Noise Cancellation Intensity|Ambient Noise Crackling|airPods_tend_to_fall_out|airPods_excessive_noise_cancellation|airPods_communication Issue|airPods_comfort_issues|airPods_gross_slimey_feeling|airPods_part_suspected_to_be_stolen,Meh. I got my first AirPods recently. I was thrilled with them. So much better t,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0
+94,5.0,1,1,,They work great so far!,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,5.0,1,1,,Purchased these for my son as a Christmas present last year. These are still goi,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,5.0,1,2,reliability_within_a_month,"Works great! Had them for a month now, no problems",0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+97,5.0,1,2,sound_quality,"Wonderful sound quality, love them",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,5.0,1,1,,Makes working from home easy as it blocks out surrounding sound.,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+99,5.0,1,1,,"Just got, left one doesn't work. Called Apple…..their advise, go to the store or",1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

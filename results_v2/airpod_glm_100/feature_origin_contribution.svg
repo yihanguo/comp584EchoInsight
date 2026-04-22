@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="310" viewBox="0 0 820 310">
+<style>.title{font:700 18px Arial, sans-serif;fill:#1f2933}.subtitle{font:12px Arial, sans-serif;fill:#52616b}.axis{font:11px Arial, sans-serif;fill:#52616b}.label{font:12px Arial, sans-serif;fill:#1f2933}.small{font:10px Arial, sans-serif;fill:#52616b}.grid{stroke:#e5e7eb;stroke-width:1}.rule{stroke:#9aa5b1;stroke-width:1}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="34" class="title">Feature-Origin Contribution</text>
+<text x="40" y="56" class="subtitle">Total positive feature assignments grouped by source.</text>
+<line x1="95.0" y1="64" x2="95.0" y2="188" class="grid"/>
+<text x="95.0" y="274" text-anchor="middle" class="axis">0</text>
+<line x1="219.0" y1="64" x2="219.0" y2="188" class="grid"/>
+<text x="219.0" y="274" text-anchor="middle" class="axis">56</text>
+<line x1="343.0" y1="64" x2="343.0" y2="188" class="grid"/>
+<text x="343.0" y="274" text-anchor="middle" class="axis">112</text>
+<line x1="467.0" y1="64" x2="467.0" y2="188" class="grid"/>
+<text x="467.0" y="274" text-anchor="middle" class="axis">168</text>
+<line x1="591.0" y1="64" x2="591.0" y2="188" class="grid"/>
+<text x="591.0" y="274" text-anchor="middle" class="axis">224</text>
+<line x1="715.0" y1="64" x2="715.0" y2="188" class="grid"/>
+<text x="715.0" y="274" text-anchor="middle" class="axis">280</text>
+<text x="81" y="103" text-anchor="end" class="label">initial</text>
+<rect x="95" y="80" width="620.0" height="28" rx="2" fill="#2f6f9f"/>
+<text x="725.0" y="99" class="small">280 assignments, 9/9 active features</text>
+<text x="81" y="157" text-anchor="end" class="label">dynamic</text>
+<rect x="95" y="134" width="245.8" height="28" rx="2" fill="#6f8f2f"/>
+<text x="350.8" y="153" class="small">111 assignments, 86/86 active features</text>
+</svg>

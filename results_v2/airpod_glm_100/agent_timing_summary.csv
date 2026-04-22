@@ -1,0 +1,5 @@
+agent,calls,avg_seconds,total_seconds,max_seconds
+ClassifyAgent,142,11.45,1625.53,28.81
+ValidationAgent,142,3.16,449.14,25.23
+MasterAgent dynamic,42,4.36,183.13,9.49
+Review total,100,22.58,2257.87,85.62

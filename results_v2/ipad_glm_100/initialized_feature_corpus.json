@@ -1,0 +1,109 @@
+[
+  {
+    "name": "delivery_speed",
+    "description": "Refers to how fast the product was shipped or arrived.",
+    "examples": [
+      "Quick delivery."
+    ]
+  },
+  {
+    "name": "product_satisfaction",
+    "description": "General expression of happiness or approval with the product.",
+    "examples": [
+      "Awesome product.",
+      "My daughter is thoroughly happy with this."
+    ]
+  },
+  {
+    "name": "performance_speed",
+    "description": "Refers to the processing speed or responsiveness of the device.",
+    "examples": [
+      "The new M1 chip is blazing fast"
+    ]
+  },
+  {
+    "name": "data_transfer",
+    "description": "Ease of moving data from an old device to the new one.",
+    "examples": [
+      "It was easy to move all my data to the new device"
+    ]
+  },
+  {
+    "name": "device_usage_frequency",
+    "description": "How often the product is used or handled.",
+    "examples": [
+      "it's pretty much never not in my hand"
+    ]
+  },
+  {
+    "name": "ecosystem_compatibility",
+    "description": "How well the product integrates with other devices or systems.",
+    "examples": [
+      "Very useful and flexible with my other Mac products."
+    ]
+  },
+  {
+    "name": "device_syncing",
+    "description": "Ability to synchronize data with other devices.",
+    "examples": [
+      "It syncs to my MacBook Pro and iPhone 6+."
+    ]
+  },
+  {
+    "name": "multitasking_capability",
+    "description": "Ability to run multiple applications simultaneously.",
+    "examples": [
+      "its best at multitasking i mean come on netflix and study ill take it"
+    ]
+  },
+  {
+    "name": "display_quality",
+    "description": "Visual quality of the screen.",
+    "examples": [
+      "The display is great"
+    ]
+  },
+  {
+    "name": "internet_connection_speed",
+    "description": "Speed of the network connection.",
+    "examples": [
+      "the connection to the internet is fast"
+    ]
+  },
+  {
+    "name": "processing_speed",
+    "description": "Speed at which the device handles data.",
+    "examples": [
+      "the M1 chip processes data extremely fast"
+    ]
+  },
+  {
+    "name": "charging_functionality",
+    "description": "Ability to charge the battery.",
+    "examples": [
+      "didn't charge"
+    ]
+  },
+  {
+    "name": "performance_reliability",
+    "description": "Indicates that the product is functioning correctly or meeting expectations.",
+    "examples": [
+      "working great"
+    ]
+  },
+  {
+    "name": "price_competitiveness",
+    "description": "Refers to the cost of the product relative to similar items on the market.",
+    "examples": [
+      "Reasonably priced compared to competitors"
+    ]
+  },
+  {
+    "name": "customer_satisfaction",
+    "description": "Expresses a positive emotional response or high regard for the product.",
+    "examples": [
+      "I’m so excited couldn’t wait for it to get here",
+      "its a great item"
+    ]
+  }
+]

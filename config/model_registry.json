@@ -70,7 +70,7 @@
       "rpm": 60,
       "request_delay": 1.0,
       "timeout": 120.0,
-      "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/info_volcengine.md. Verified reachable."
+      "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/info_glm.md."
     }
   },
   "default": "deepseek-r1-7b"

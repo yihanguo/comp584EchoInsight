@@ -1,0 +1,13 @@
+[
+  {
+    "review_id": "0",
+    "features": {
+      "Screen Quality": {
+        "has_feature": true,
+        "feature_score": 0.9,
+        "evidence_span": "a specific area on my screen that does not respond well anymore. I have to tap firmly several times before it finally responds.",
+        "reason": "The customer clearly mentions issues with screen responsiveness."
+      }
+    }
+  }
+]

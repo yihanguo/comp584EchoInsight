@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "input_csv": "data/ipad.csv",
+    "max_reviews": 1,
+    "sample_size_init": 1,
+    "max_dynamic_iterations": 0,
+    "min_feature_score_to_keep": 0.5,
+    "classification_temperature": 0.1,
+    "validation_temperature": 0.0,
+    "dynamic_temperature": 0.2,
+    "timestamp": "2026-04-21T14:32:39"
+  },
+  "initial_catalog": [],
+  "events": [
+    {
+      "event_type": "run_start",
+      "input_csv": "data/ipad.csv",
+      "total_reviews_in_file": 25624,
+      "max_reviews": 1,
+      "sample_size_init": 1,
+      "max_dynamic_iterations": 0,
+      "min_feature_score_to_keep": 0.5
+    },
+    {
+      "event_type": "init_sample_selected",
+      "sampled_ids": [
+        "24359"
+      ]
+    },
+    {
+      "event_type": "init_catalog_built",
+      "feature_count": 0,
+      "features": []
+    },
+    {
+      "event_type": "review_processed",
+      "review_id": "0",
+      "iterations_used": 1,
+      "validation_pass": true,
+      "dynamic_features_added": [],
+      "iteration_detail": [
+        {
+          "iteration": 1,
+          "features_classified": 4,
+          "positive_features": [
+            "Screen Quality"
+          ],
+          "validation_pass": true,
+          "validation_reason": "The feature bundle includes 'Screen Quality' which directly addresses the touch screen responsiveness issues described in the review.",
+          "validation_confidence": 0.9,
+          "missing_features": []
+        }
+      ]
+    },
+    {
+      "event_type": "run_complete",
+      "elapsed_seconds": 19.0,
+      "reviews_processed": 1
+    }
+  ]
+}
