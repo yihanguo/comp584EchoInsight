@@ -76,8 +76,6 @@ def main():
     parser.add_argument("--max-features", type=int, default=40, help="Max features in catalog (caps classify prompt size)")
     parser.add_argument("--chunk-max-reviews", type=int, default=4, help="Max reviews per init chunk sent to LLM")
     parser.add_argument("--chunk-max-chars", type=int, default=6000, help="Max chars per init chunk (0 = unlimited)")
-    parser.add_argument("--max-iters", type=int, default=2, help="Max dynamic expansion iterations")
-    parser.add_argument("--min-score", type=float, default=0.5, help="Min score to keep feature")
     parser.add_argument(
         "--model",
         default=None,
@@ -108,8 +106,6 @@ def main():
         max_features=args.max_features,
         chunk_max_reviews=args.chunk_max_reviews,
         chunk_max_chars=args.chunk_max_chars,
-        max_dynamic_iterations=args.max_iters,
-        min_feature_score_to_keep=args.min_score,
         model_alias=args.model,
         registry_path=REGISTRY,
     )

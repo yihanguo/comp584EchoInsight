@@ -1,8 +1,7 @@
-"""ClassifyAgent: one-shot multi-feature LLM classification for one review."""
+"""ClassifyAgent: per-pair review-feature classification with sentiment score."""
 
 from __future__ import annotations
 
-import json
 from typing import Any
 
 from .qwen_api import QwenClient
@@ -13,56 +12,89 @@ class ClassifyAgent:
         self.client = client
         self.temperature = temperature
 
-    def classify(self, payload: dict) -> list[dict]:
-        review_text = payload.get("review_text", "")
-        features = payload.get("default_fixed_features", [])
+    def classify_one(self, review: dict, feature: dict) -> dict:
+        """Classify one (review, feature) pair.
 
-        features_str = json.dumps(features, ensure_ascii=False, indent=2)
+        Returns:
+            {
+              "feature": str,
+              "is_relevant": bool,
+              "score": float in [-1.0, 1.0],
+              "evidence_span": str,
+              "reason": str,
+            }
+        """
+        review_text = review.get("review_text", "")
+        feature_name = str(feature.get("name", "")).strip()
+        feature_desc = feature.get("description", "")
+
         prompt = f"""You are the feature classification agent in EchoInsight.
-Given one customer review and a list of feature definitions, decide for each feature:
-1. whether the feature is present (has_feature: true/false)
-2. how strongly it is expressed (feature_score: float in [0,1])
-3. a short evidence_span from the review text (or "" if absent)
-4. a one-sentence reason
+You are given ONE customer review and ONE feature.
+Decide whether the review discusses this feature, and if so, whether the sentiment is positive, negative, or neutral.
 
-Rules:
+Output JSON only (a single object) with these keys:
+- feature: string, must equal the feature name provided
+- is_relevant: true if the review talks about this feature, false otherwise
+- score: float in [-1.0, 1.0]
+    * positive value -> positive sentiment about this feature
+    * negative value -> negative sentiment about this feature
+    * 0.0 -> neutral mention, OR not relevant
+- evidence_span: a verbatim substring from the review text that supports the judgment ("" if not relevant)
+- reason: one short sentence explaining the decision
+
+Rules (must be followed strictly):
+- If is_relevant == false, then score MUST be 0.0 and evidence_span MUST be "".
+- If the review mentions the feature but shows no clear positive or negative attitude, set is_relevant=true and score=0.0.
 - Judge semantic meaning, not exact word overlap.
-- Mark has_feature true only if the feature is clearly discussed.
-- Give feature_score = 0.0 when has_feature is false.
-- Return JSON only: a list, one object per feature.
-- Each object must have: feature, has_feature, feature_score, evidence_span, reason.
+- evidence_span must be copied verbatim from the review.
+
+Feature name: {feature_name}
+Feature description: {feature_desc}
 
 Review: {review_text}
 
-Features:
-{features_str}
+Return JSON object only."""
 
-Return JSON list only."""
         result = self.client.chat_json(prompt, temperature=self.temperature)
-        if isinstance(result, list):
-            return self._normalize(result, features)
-        return []
+        return self._normalize(result, feature_name)
 
-    def _normalize(self, raw: list[dict], features: list[dict]) -> list[dict]:
-        feature_names = {f["name"] for f in features}
-        out = []
-        for item in raw:
-            if not isinstance(item, dict):
-                continue
-            name = str(item.get("feature", "")).strip()
-            if not name:
-                continue
-            try:
-                score = float(item.get("feature_score", 0.0))
-            except (TypeError, ValueError):
-                score = 0.0
-            score = max(0.0, min(1.0, score))
-            has_f = bool(item.get("has_feature", score > 0.5))
-            out.append({
-                "feature": name,
-                "has_feature": has_f,
-                "feature_score": score,
-                "evidence_span": item.get("evidence_span", ""),
-                "reason": item.get("reason", ""),
-            })
-        return out
+    def _normalize(self, raw: Any, feature_name: str) -> dict:
+        if isinstance(raw, list) and raw:
+            raw = raw[0]
+        if not isinstance(raw, dict):
+            return self._empty(feature_name)
+
+        is_relevant = bool(raw.get("is_relevant", False))
+        try:
+            score = float(raw.get("score", 0.0))
+        except (TypeError, ValueError):
+            score = 0.0
+        if score > 1.0:
+            score = 1.0
+        elif score < -1.0:
+            score = -1.0
+
+        evidence = str(raw.get("evidence_span", "") or "")
+        reason = str(raw.get("reason", "") or "")
+
+        if not is_relevant:
+            score = 0.0
+            evidence = ""
+
+        return {
+            "feature": feature_name,
+            "is_relevant": is_relevant,
+            "score": score,
+            "evidence_span": evidence,
+            "reason": reason,
+        }
+
+    @staticmethod
+    def _empty(feature_name: str) -> dict:
+        return {
+            "feature": feature_name,
+            "is_relevant": False,
+            "score": 0.0,
+            "evidence_span": "",
+            "reason": "",
+        }

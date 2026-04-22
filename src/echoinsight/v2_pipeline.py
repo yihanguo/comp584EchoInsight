@@ -1,4 +1,4 @@
-"""EchoInsightV2Pipeline: orchestrates the full V2 workflow."""
+"""EchoInsightV2Pipeline: per-feature classify flow (phase 1)."""
 
 from __future__ import annotations
 
@@ -12,8 +12,6 @@ from typing import Any
 from .qwen_api import QwenClient
 from .master_agent import MasterAgent
 from .classify_agent import ClassifyAgent
-from .validation_agent import ValidationAgent
-from .feature_fusion import FeatureFusion
 
 _DEFAULT_REGISTRY = Path(__file__).parent.parent.parent / "config" / "model_registry.json"
 
@@ -72,11 +70,8 @@ class EchoInsightV2Pipeline:
         max_features: int = 40,
         chunk_max_reviews: int = 4,
         chunk_max_chars: int = 6000,
-        max_dynamic_iterations: int = 3,
         classification_temperature: float = 0.1,
-        validation_temperature: float = 0.0,
         dynamic_temperature: float = 0.2,
-        min_feature_score_to_keep: float = 0.5,
         csv_path: str | Path = "",
         model_alias: str | None = None,
         registry_path: str | Path | None = None,
@@ -114,16 +109,11 @@ class EchoInsightV2Pipeline:
             chunk_max_chars=chunk_max_chars,
         )
         self.classifier = ClassifyAgent(self.client, temperature=classification_temperature)
-        self.validator = ValidationAgent(self.client, temperature=validation_temperature)
-        self.fusion = FeatureFusion(min_score_to_keep=min_feature_score_to_keep)
 
         self.sample_size_init = sample_size_init
         self.max_reviews = max_reviews
         self.max_features = max_features
-        self.max_dynamic_iterations = max_dynamic_iterations
-        self.min_feature_score_to_keep = min_feature_score_to_keep
         self.classification_temperature = classification_temperature
-        self.validation_temperature = validation_temperature
         self.dynamic_temperature = dynamic_temperature
         self._csv_path = str(csv_path)
 
@@ -148,8 +138,6 @@ class EchoInsightV2Pipeline:
             "total_reviews_in_file": len(reviews),
             "max_reviews": self.max_reviews,
             "sample_size_init": self.sample_size_init,
-            "max_dynamic_iterations": self.max_dynamic_iterations,
-            "min_feature_score_to_keep": self.min_feature_score_to_keep,
         })
 
         self._progress(f"Loaded {len(reviews)} reviews. MasterAgent init sample_size={self.sample_size_init}")
@@ -183,22 +171,23 @@ class EchoInsightV2Pipeline:
         for index, review in enumerate(batch, start=1):
             rid = review["review_id"]
             self._progress(f"Review {index}/{total_batch} id={rid} start: {review['review_text'][:60]}...")
-            record = self._process_review(review)
+            record = self._process_review(review, feature_catalog)
             review_records.append(record)
-            active = sum(1 for v in record["accepted_features"].values() if v["has_feature"])
+            diag = record["diagnostics"]
             self._progress(
                 f"Review {index}/{total_batch} id={rid} done in {record['elapsed_seconds']}s "
-                f"| pass={record['validation_pass']} | active={active} features | iters={record['iterations_used']}"
+                f"| relevant={diag['relevant_features']} "
+                f"| pos={diag['positive_features']} neg={diag['negative_features']} neu={diag['neutral_features']}"
             )
 
-            # flush this record immediately
+            # flush diagnostics for this review immediately
             with diag_path.open("a", encoding="utf-8") as f:
-                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+                f.write(json.dumps(diag, ensure_ascii=False) + "\n")
 
-            # refresh feature_map and summary after every record
-            self._export_feature_map(review_records)
+            # refresh outputs after every record
+            self._export_feature_map(review_records, feature_catalog)
             self._save_json("feature_scores_detail.json", [
-                {"review_id": r["review_id"], "features": r["accepted_features"]}
+                {"review_id": r["review_id"], "features": r["features"]}
                 for r in review_records
             ])
             elapsed_so_far = round(time.time() - t0, 1)
@@ -218,131 +207,101 @@ class EchoInsightV2Pipeline:
 
     # ── per-review processing ─────────────────────────────────────────────
 
-    def _process_review(self, review: dict) -> dict:
+    def _process_review(self, review: dict, feature_catalog: list[dict]) -> dict:
+        """Loop over every feature in the catalog; one classify_one() call per pair."""
         review_t0 = time.perf_counter()
-        payload = self.master.route_review(review)
-        all_features = list(self.master.feature_catalog)
+        rid = review["review_id"]
+        features_result: dict[str, dict] = {}
+        per_feature_seconds: list[float] = []
 
-        accepted: dict = {}
-        dynamic_added: list[str] = []
-        iterations_used = 0
-        validation_pass = False
-        iter_log: list[dict] = []
-
-        for iteration in range(1 + self.max_dynamic_iterations):
-            iterations_used = iteration + 1
-            iter_t0 = time.perf_counter()
-
-            payload["default_fixed_features"] = [
-                {"name": f["name"], "description": f.get("description", "")}
-                for f in all_features
-            ]
-            self._progress(
-                f"  Review {review['review_id']} iter {iteration + 1}: "
-                f"ClassifyAgent start ({len(all_features)} features)"
-            )
-            classify_t0 = time.perf_counter()
-            outputs = self.classifier.classify(payload)
-            classify_seconds = round(time.perf_counter() - classify_t0, 2)
-            self._progress(
-                f"  Review {review['review_id']} iter {iteration + 1}: "
-                f"ClassifyAgent done in {classify_seconds}s ({len(outputs)} outputs)"
-            )
-            accepted = self.fusion.fuse(accepted, outputs)
-
-            positive_bundle = self.fusion.filter_positive(accepted)
-            self._progress(
-                f"  Review {review['review_id']} iter {iteration + 1}: "
-                f"ValidationAgent start ({len(positive_bundle)} positive features)"
-            )
-            validate_t0 = time.perf_counter()
-            val_result = self.validator.validate(review["review_text"], positive_bundle)
-            validate_seconds = round(time.perf_counter() - validate_t0, 2)
-            self._progress(
-                f"  Review {review['review_id']} iter {iteration + 1}: "
-                f"ValidationAgent done in {validate_seconds}s (pass={val_result['pass']})"
-            )
-
-            iter_entry = {
-                "iteration": iteration + 1,
-                "features_classified": len(outputs),
-                "positive_features": list(positive_bundle.keys()),
-                "validation_pass": val_result["pass"],
-                "validation_reason": val_result.get("reason", ""),
-                "validation_confidence": val_result.get("confidence", 1.0),
-                "missing_features": val_result.get("missing_features", []),
-                "timing_seconds": {
-                    "classify_agent": classify_seconds,
-                    "validation_agent": validate_seconds,
-                },
+        for feat in feature_catalog:
+            fname = str(feat.get("name", "")).strip()
+            if not fname:
+                continue
+            t_feat = time.perf_counter()
+            try:
+                result = self.classifier.classify_one(review, feat)
+            except Exception as exc:
+                self._progress(f"  Review {rid} feature={fname} ERROR: {exc}")
+                result = {
+                    "feature": fname,
+                    "is_relevant": False,
+                    "score": 0.0,
+                    "evidence_span": "",
+                    "reason": f"error: {exc}",
+                }
+            dt = round(time.perf_counter() - t_feat, 2)
+            per_feature_seconds.append(dt)
+            # Store under the catalog feature name (authoritative), not whatever the model echoed.
+            features_result[fname] = {
+                "is_relevant": bool(result.get("is_relevant", False)),
+                "score": float(result.get("score", 0.0)),
+                "evidence_span": result.get("evidence_span", ""),
+                "reason": result.get("reason", ""),
             }
-            iter_log.append(iter_entry)
-
-            if val_result["pass"]:
-                validation_pass = True
-                iter_entry["elapsed_seconds"] = round(time.perf_counter() - iter_t0, 2)
-                break
-
-            if iteration >= self.max_dynamic_iterations:
-                iter_entry["elapsed_seconds"] = round(time.perf_counter() - iter_t0, 2)
-                break
-
-            self._progress(f"  Review {review['review_id']} iter {iteration + 1}: MasterAgent dynamic start")
-            dynamic_t0 = time.perf_counter()
-            new_features = self.master.generate_dynamic_features(review, val_result, all_features)
-            dynamic_seconds = round(time.perf_counter() - dynamic_t0, 2)
-            for nf in new_features:
-                if nf.get("name") and nf["name"] not in {f["name"] for f in all_features}:
-                    all_features.append(nf)
-                    dynamic_added.append(nf["name"])
-            iter_entry["dynamic_features_generated"] = [nf.get("name") for nf in new_features]
-            iter_entry["timing_seconds"]["master_agent_dynamic"] = dynamic_seconds
-            iter_entry["elapsed_seconds"] = round(time.perf_counter() - iter_t0, 2)
-            self._progress(
-                f"  Review {review['review_id']} iter {iteration + 1}: "
-                f"MasterAgent dynamic done in {dynamic_seconds}s ({len(new_features)} candidates)"
-            )
 
         review_seconds = round(time.perf_counter() - review_t0, 2)
 
+        relevant = [n for n, v in features_result.items() if v["is_relevant"]]
+        positive = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] > 0]
+        negative = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] < 0]
+        neutral = [n for n, v in features_result.items() if v["is_relevant"] and v["score"] == 0.0]
+
+        avg_feat = round(sum(per_feature_seconds) / max(len(per_feature_seconds), 1), 3)
+        diagnostics = {
+            "review_id": rid,
+            "features_classified": len(features_result),
+            "relevant_features": relevant,
+            "positive_features": positive,
+            "negative_features": negative,
+            "neutral_features": neutral,
+            "new_feature_candidates": [],  # phase 1: discovery deferred
+            "elapsed_seconds": review_seconds,
+            "agent_timing": {
+                "classify_agent_total_seconds": round(sum(per_feature_seconds), 2),
+                "classify_agent_avg_seconds_per_feature": avg_feat,
+            },
+        }
+
         self._log("review_processed", {
-            "review_id": review["review_id"],
-            "iterations_used": iterations_used,
-            "validation_pass": validation_pass,
-            "dynamic_features_added": dynamic_added,
-            "iteration_detail": iter_log,
+            "review_id": rid,
+            "features_classified": len(features_result),
+            "relevant_count": len(relevant),
+            "positive_count": len(positive),
+            "negative_count": len(negative),
+            "neutral_count": len(neutral),
             "elapsed_seconds": review_seconds,
         })
 
         return {
-            "review_id": review["review_id"],
+            "review_id": rid,
             "review_text": review["review_text"],
             "rating": review.get("rating"),
-            "accepted_features": self.fusion.filter_positive(accepted),
-            "validation_pass": validation_pass,
-            "dynamic_features_added": dynamic_added,
-            "iterations_used": iterations_used,
-            "iteration_detail": iter_log,
+            "features": features_result,
             "elapsed_seconds": review_seconds,
+            "diagnostics": diagnostics,
         }
 
     # ── output: single CSV ────────────────────────────────────────────────
 
-    def _export_feature_map(self, records: list[dict]) -> None:
-        """Single CSV: review metadata + binary feature columns."""
+    def _export_feature_map(self, records: list[dict], feature_catalog: list[dict]) -> None:
+        """CSV: review metadata + per-feature continuous score column (-1..1)."""
         all_names: list[str] = []
         seen: set[str] = set()
+        for f in feature_catalog:
+            name = str(f.get("name", "")).strip()
+            if name and name not in seen:
+                seen.add(name)
+                all_names.append(name)
+        # Also include any extra feature names that showed up in records (defensive).
         for r in records:
-            for raw_name in r["accepted_features"]:
+            for raw_name in r["features"]:
                 name = str(raw_name).strip()
-                if not name:
-                    continue
-                if name not in seen:
+                if name and name not in seen:
                     seen.add(name)
                     all_names.append(name)
 
-        meta_cols = ["review_id", "rating", "validation_pass", "iterations_used",
-                     "dynamic_features_added", "review_preview"]
+        meta_cols = ["review_id", "rating", "review_preview"]
         fieldnames = meta_cols + all_names
 
         rows = []
@@ -350,14 +309,13 @@ class EchoInsightV2Pipeline:
             row: dict = {
                 "review_id": r["review_id"],
                 "rating": r.get("rating", ""),
-                "validation_pass": int(r["validation_pass"]),
-                "iterations_used": r["iterations_used"],
-                "dynamic_features_added": "|".join(str(name) for name in r["dynamic_features_added"]),
                 "review_preview": r["review_text"][:80].replace("\n", " "),
             }
             for name in all_names:
-                feat = self._feature_lookup(r["accepted_features"], name)
-                row[name] = int(feat.get("has_feature", False))
+                feat = r["features"].get(name, {})
+                score = float(feat.get("score", 0.0))
+                # stored rounded to keep CSV clean but still continuous
+                row[name] = round(score, 3)
             rows.append(row)
 
         self._save_csv("feature_map.csv", rows, fieldnames)
@@ -370,10 +328,7 @@ class EchoInsightV2Pipeline:
                 "input_csv": self._csv_path,
                 "max_reviews": self.max_reviews,
                 "sample_size_init": self.sample_size_init,
-                "max_dynamic_iterations": self.max_dynamic_iterations,
-                "min_feature_score_to_keep": self.min_feature_score_to_keep,
                 "classification_temperature": self.classification_temperature,
-                "validation_temperature": self.validation_temperature,
                 "dynamic_temperature": self.dynamic_temperature,
                 "timestamp": datetime.now().isoformat(timespec="seconds"),
             },
@@ -386,15 +341,59 @@ class EchoInsightV2Pipeline:
         lines.append("# EchoInsight V2 Report")
         lines.append("")
         lines.append(f"- **Reviews processed:** {summary['total_reviews']}")
-        lines.append(f"- **Validation pass rate:** {summary['validation_pass_rate']:.1%}")
-        lines.append(f"- **Avg iterations per review:** {summary['avg_iterations']}")
         lines.append(f"- **Initial catalog size:** {summary['initial_catalog_size']}")
+        lines.append(f"- **Avg relevant features per review:** {summary['avg_relevant_features_per_review']}")
+        lines.append(f"- **Positive assignments:** {summary['positive_assignment_count']}")
+        lines.append(f"- **Negative assignments:** {summary['negative_assignment_count']}")
+        lines.append(f"- **Neutral assignments:** {summary['neutral_assignment_count']}")
+        lines.append(f"- **Avg classify time per review:** {summary['avg_classify_seconds_per_review']}s")
+        lines.append(f"- **Avg classify time per feature:** {summary['avg_classify_seconds_per_feature']}s")
         lines.append(f"- **Elapsed:** {summary.get('elapsed_seconds', '?')}s")
         lines.append("")
 
-        lines.append("## Initial Feature Catalog")
+        # Top positive / negative / most relevant features
+        pos_totals: dict[str, float] = {}
+        neg_totals: dict[str, float] = {}
+        rel_counts: dict[str, int] = {}
+        for r in records:
+            for name, data in r["features"].items():
+                if not data["is_relevant"]:
+                    continue
+                rel_counts[name] = rel_counts.get(name, 0) + 1
+                s = float(data.get("score", 0.0))
+                if s > 0:
+                    pos_totals[name] = pos_totals.get(name, 0.0) + s
+                elif s < 0:
+                    neg_totals[name] = neg_totals.get(name, 0.0) + s
+
+        def _top(d: dict, reverse: bool, n: int = 10) -> list[tuple[str, float]]:
+            return sorted(d.items(), key=lambda kv: kv[1], reverse=reverse)[:n]
+
+        lines.append("## Top Positive Features")
         lines.append("")
-        lines.append("Each feature includes verbatim quotes from sampled reviews as evidence.")
+        for name, score in _top(pos_totals, reverse=True):
+            lines.append(f"- `{name}`: +{score:.2f} total")
+        if not pos_totals:
+            lines.append("- (none)")
+        lines.append("")
+
+        lines.append("## Top Negative Features")
+        lines.append("")
+        for name, score in _top(neg_totals, reverse=False):
+            lines.append(f"- `{name}`: {score:.2f} total")
+        if not neg_totals:
+            lines.append("- (none)")
+        lines.append("")
+
+        lines.append("## Most Frequently Relevant Features")
+        lines.append("")
+        for name, count in sorted(rel_counts.items(), key=lambda kv: -kv[1])[:10]:
+            lines.append(f"- `{name}`: relevant in {count} reviews")
+        if not rel_counts:
+            lines.append("- (none)")
+        lines.append("")
+
+        lines.append("## Initial Feature Catalog")
         lines.append("")
         for f in catalog:
             lines.append(f"### `{f['name']}`")
@@ -407,33 +406,30 @@ class EchoInsightV2Pipeline:
                     lines.append(f'- "{ex}"')
             lines.append("")
 
-        dynamic_all: list[str] = sorted({
-            name for r in records for name in r["dynamic_features_added"]
-        })
-        if dynamic_all:
-            lines.append("## Dynamically Discovered Features")
-            lines.append("")
-            for name in dynamic_all:
-                lines.append(f"- {name}")
-            lines.append("")
-
         lines.append("## Per-Review Summary")
         lines.append("")
         for r in records:
-            active_feats = [str(k) for k, v in r["accepted_features"].items() if v["has_feature"]]
+            diag = r["diagnostics"]
             lines.append(f"### Review {r['review_id']} (rating: {r.get('rating', '?')})")
             lines.append(f"- **Text:** {r['review_text'][:120]}{'...' if len(r['review_text']) > 120 else ''}")
-            lines.append(f"- **Validation pass:** {r['validation_pass']}")
-            lines.append(f"- **Iterations used:** {r['iterations_used']}")
-            if r["dynamic_features_added"]:
-                lines.append(f"- **Dynamic features added:** {', '.join(str(name) for name in r['dynamic_features_added'])}")
-            lines.append(f"- **Active features ({len(active_feats)}):** {', '.join(active_feats) if active_feats else 'none'}")
-            # top scored
-            top = sorted(r["accepted_features"].items(), key=lambda x: -x[1].get("feature_score", 0))[:3]
-            if top:
+            lines.append(
+                f"- **Relevant:** {len(diag['relevant_features'])} "
+                f"(pos={len(diag['positive_features'])}, "
+                f"neg={len(diag['negative_features'])}, "
+                f"neu={len(diag['neutral_features'])})"
+            )
+            # top 3 strongest (by |score|)
+            scored = [
+                (n, d) for n, d in r["features"].items() if d["is_relevant"]
+            ]
+            scored.sort(key=lambda kv: -abs(float(kv[1].get("score", 0.0))))
+            if scored:
                 lines.append("- **Top scored:**")
-                for name, data in top:
-                    lines.append(f"  - `{name}` score={data.get('feature_score', 0):.2f} | {data.get('evidence_span', '')[:60]}")
+                for name, data in scored[:3]:
+                    lines.append(
+                        f"  - `{name}` score={data.get('score', 0.0):+.2f} "
+                        f"| {data.get('evidence_span', '')[:60]}"
+                    )
             lines.append("")
 
         path = self.out_dir / "report.md"
@@ -444,31 +440,48 @@ class EchoInsightV2Pipeline:
 
     def _build_summary(self, catalog: list[dict], records: list[dict], elapsed: float) -> dict:
         total = len(records)
-        passed = sum(1 for r in records if r["validation_pass"])
-        avg_iters = sum(r["iterations_used"] for r in records) / max(total, 1)
-        dynamic_names: set[str] = set()
+        relevant_counts: list[int] = []
+        pos_count = 0
+        neg_count = 0
+        neu_count = 0
+        classify_totals: list[float] = []
+        feature_seconds: list[float] = []
         for r in records:
-            dynamic_names.update(r["dynamic_features_added"])
+            diag = r["diagnostics"]
+            relevant_counts.append(len(diag["relevant_features"]))
+            pos_count += len(diag["positive_features"])
+            neg_count += len(diag["negative_features"])
+            neu_count += len(diag["neutral_features"])
+            classify_totals.append(float(r.get("elapsed_seconds") or 0.0))
+            per_feat = diag.get("agent_timing", {}).get("classify_agent_avg_seconds_per_feature", 0.0)
+            if per_feat:
+                feature_seconds.append(float(per_feat))
+
+        avg_relevant = round(sum(relevant_counts) / max(total, 1), 2)
+        avg_classify = round(sum(classify_totals) / max(total, 1), 2)
+        avg_per_feature = round(sum(feature_seconds) / max(len(feature_seconds), 1), 3)
+
+        dynamic_candidates: set[str] = set()
+        for r in records:
+            for c in r["diagnostics"].get("new_feature_candidates", []) or []:
+                dynamic_candidates.add(c)
+
         return {
             "total_reviews": total,
-            "validation_pass_rate": round(passed / max(total, 1), 3),
-            "avg_iterations": round(avg_iters, 2),
             "initial_catalog_size": len(catalog),
-            "dynamic_features_discovered": sorted(dynamic_names),
+            "dynamic_new_feature_candidates_count": len(dynamic_candidates),
+            "dynamic_new_feature_candidates": sorted(dynamic_candidates),
+            "avg_relevant_features_per_review": avg_relevant,
+            "positive_assignment_count": pos_count,
+            "negative_assignment_count": neg_count,
+            "neutral_assignment_count": neu_count,
+            "avg_classify_seconds_per_review": avg_classify,
+            "avg_classify_seconds_per_feature": avg_per_feature,
             "elapsed_seconds": elapsed,
         }
 
     def _log(self, event_type: str, data: dict) -> None:
         self._log_events.append({"event_type": event_type, **data})
-
-    @staticmethod
-    def _feature_lookup(features: dict, target: str) -> dict:
-        if target in features:
-            return features[target]
-        for key, value in features.items():
-            if str(key).strip() == target:
-                return value
-        return {}
 
     def _progress(self, message: str) -> None:
         timestamp = datetime.now().strftime("%H:%M:%S")

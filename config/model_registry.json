@@ -71,6 +71,16 @@
       "request_delay": 1.0,
       "timeout": 120.0,
       "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/info_glm.md."
+    },
+    "glm-4.7-zhipu": {
+      "model": "glm-4.7",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "disable_thinking": true,
+      "extra_body": {},
+      "rpm": 30,
+      "request_delay": 1.0,
+      "timeout": 120.0,
+      "notes": "Zhipu BigModel GLM-4.7. Use --info api/infor_zhipu.md."
     }
   },
   "default": "deepseek-r1-7b"
