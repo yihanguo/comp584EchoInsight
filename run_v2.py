@@ -88,6 +88,19 @@ def main():
         action="store_true",
         help="Print all available model profiles and exit.",
     )
+    parser.add_argument(
+        "--classify-workers",
+        type=int,
+        default=1,
+        help="Number of concurrent feature classifications per review. "
+             "1 = serial (default). Keep low (<=5) for hosted APIs to avoid rate limits.",
+    )
+    parser.add_argument(
+        "--max-validation-iters",
+        type=int,
+        default=2,
+        help="Maximum validation passes per review. Validation is always enabled; failed validation triggers dynamic feature generation.",
+    )
     args = parser.parse_args()
 
     if args.list_models:
@@ -108,6 +121,8 @@ def main():
         chunk_max_chars=args.chunk_max_chars,
         model_alias=args.model,
         registry_path=REGISTRY,
+        classify_workers=args.classify_workers,
+        max_validation_iters=args.max_validation_iters,
     )
     summary = pipeline.run(args.csv)
 

@@ -8,7 +8,7 @@
   - 实际模型：`glm-4-7-251222`
   - 服务：Volcengine Ark OpenAI-compatible endpoint
   - 配置：`config/model_registry.json`
-  - 本地凭据文件：`api/info_glm.md`，只用于运行，不应提交密钥
+  - 本地凭据文件：`api/infor_tt.md`，只用于运行，不应提交密钥
 - 备选路线：`deepseek-r1-7b`
   - 实际模型：`deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`
   - 服务：ModelScope OpenAI-compatible endpoint

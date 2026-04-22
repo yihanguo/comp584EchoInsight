@@ -58,6 +58,14 @@ def load_new_feature_counts(diagnostics: list[dict]) -> dict[str, int]:
     return counts
 
 
+def load_dynamic_added_counts(diagnostics: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for record in diagnostics:
+        for name in record.get("dynamic_features_added", []) or []:
+            counts[name] = counts.get(name, 0) + 1
+    return counts
+
+
 def load_feature_map(path: Path) -> tuple[list[str], list[dict[str, str]]]:
     if not path.exists():
         raise FileNotFoundError(f"Missing feature map: {path}")
@@ -158,6 +166,45 @@ def write_top_feature_svg(results_dir: Path, stats_rows: list[dict], top_n: int)
     return filename
 
 
+def write_simple_bar_svg(
+    results_dir: Path,
+    filename: str,
+    title: str,
+    subtitle: str,
+    rows: list[tuple[str, int]],
+    color: str = "#3b82a0",
+) -> str | None:
+    rows = [(label, int(value)) for label, value in rows if int(value) > 0]
+    if not rows:
+        content = "\n".join([
+            f'<text x="40" y="34" class="title">{svg_text(title)}</text>',
+            f'<text x="40" y="56" class="subtitle">{svg_text(subtitle)}</text>',
+            '<text x="40" y="96" class="label">No data for this run.</text>',
+        ])
+        write_svg(results_dir / filename, content, 900, 140)
+        return filename
+    width = 900
+    row_h = 30
+    top = 78
+    left = 230
+    right = 80
+    chart_w = width - left - right
+    height = top + row_h * len(rows) + 54
+    max_value = max(value for _, value in rows) or 1
+    parts = [
+        f'<text x="40" y="34" class="title">{svg_text(title)}</text>',
+        f'<text x="40" y="56" class="subtitle">{svg_text(subtitle)}</text>',
+    ]
+    for idx, (label, value) in enumerate(rows):
+        y = top + idx * row_h
+        bar_w = chart_w * value / max_value
+        parts.append(f'<text x="{left - 14}" y="{y + 16}" text-anchor="end" class="label">{svg_text(label)}</text>')
+        parts.append(f'<rect x="{left}" y="{y}" width="{bar_w:.1f}" height="18" rx="2" fill="{color}"/>')
+        parts.append(f'<text x="{left + bar_w + 8:.1f}" y="{y + 14}" class="small">{value}</text>')
+    write_svg(results_dir / filename, "\n".join(parts), width, height)
+    return filename
+
+
 def timing_summary(records: list[dict]) -> list[dict]:
     classify_totals: list[float] = []
     per_feature: list[float] = []
@@ -166,7 +213,7 @@ def timing_summary(records: list[dict]) -> list[dict]:
         if "elapsed_seconds" in record:
             review_totals.append(float(record.get("elapsed_seconds") or 0.0))
         timing = record.get("agent_timing", {}) or {}
-        t_total = timing.get("classify_agent_total_seconds")
+        t_total = timing.get("classify_total")
         if t_total is not None:
             classify_totals.append(float(t_total))
         t_avg = timing.get("classify_agent_avg_seconds_per_feature")
@@ -184,11 +231,90 @@ def timing_summary(records: list[dict]) -> list[dict]:
             "max_seconds": round(max(values), 2),
         }
 
+    validation = [float((r.get("agent_timing", {}) or {}).get("validation_agent", 0.0) or 0.0) for r in records]
+    master_dynamic = [float((r.get("agent_timing", {}) or {}).get("master_agent_dynamic", 0.0) or 0.0) for r in records]
+
     return [
         _row("Review total", review_totals),
         _row("ClassifyAgent total per review", classify_totals),
         _row("ClassifyAgent per feature", per_feature),
+        _row("ValidationAgent per review", validation),
+        _row("MasterAgent dynamic per review", master_dynamic),
     ]
+
+
+def validation_summary(records: list[dict]) -> dict:
+    values = [record.get("validation_pass") for record in records if record.get("validation_pass") is not None]
+    pass_count = sum(1 for value in values if bool(value))
+    fail_count = sum(1 for value in values if not bool(value))
+    iterations = [int(record.get("validation_iterations_used", 0) or 0) for record in records]
+    seconds = [float((record.get("agent_timing", {}) or {}).get("validation_agent", 0.0) or 0.0) for record in records]
+    return {
+        "enabled_records": len(values),
+        "pass_count": pass_count,
+        "fail_count": fail_count,
+        "pass_rate": round(pass_count / max(len(values), 1), 3),
+        "avg_iterations": round(sum(iterations) / max(len(records), 1), 2),
+        "avg_seconds": round(sum(seconds) / max(len(records), 1), 2),
+    }
+
+
+def write_dashboard(
+    results_dir: Path,
+    total_reviews: int,
+    stats_rows: list[dict],
+    validation: dict,
+    svg_files: list[str],
+) -> None:
+    top_features = stats_rows[:10]
+    links = "\n".join(
+        f'<section><h2>{html.escape(name)}</h2><img src="{html.escape(name)}" alt="{html.escape(name)}"></section>'
+        for name in svg_files
+        if name
+    )
+    feature_rows = "\n".join(
+        "<tr>"
+        f"<td>{html.escape(str(row['feature']))}</td>"
+        f"<td>{row['origin']}</td>"
+        f"<td>{row['relevant_count']}</td>"
+        f"<td>{row['avg_score_when_relevant']:+.3f}</td>"
+        "</tr>"
+        for row in top_features
+    )
+    page = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EchoInsight Visual Dashboard</title>
+<style>
+body{{font-family:Arial,sans-serif;margin:32px;color:#1f2933;background:#f7f8fa}}
+.metrics{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px}}
+.metric{{background:#fff;border:1px solid #d9e2ec;border-radius:8px;padding:14px}}
+.metric b{{display:block;font-size:24px;margin-top:8px}}
+section{{background:#fff;border:1px solid #d9e2ec;border-radius:8px;padding:18px;margin:16px 0}}
+img{{max-width:100%;height:auto}}
+table{{border-collapse:collapse;width:100%;background:#fff}}
+th,td{{border-bottom:1px solid #e5e7eb;text-align:left;padding:8px}}
+</style>
+</head>
+<body>
+<h1>EchoInsight Visual Dashboard</h1>
+<div class="metrics">
+<div class="metric">Reviews<b>{total_reviews}</b></div>
+<div class="metric">Validation pass rate<b>{validation['pass_rate']}</b></div>
+<div class="metric">Validation failed<b>{validation['fail_count']}</b></div>
+<div class="metric">Avg validation iterations<b>{validation['avg_iterations']}</b></div>
+<div class="metric">Avg validation seconds<b>{validation['avg_seconds']}s</b></div>
+</div>
+{links}
+<section>
+<h2>Top Relevant Features</h2>
+<table><thead><tr><th>Feature</th><th>Origin</th><th>Relevant</th><th>Avg Score</th></tr></thead><tbody>{feature_rows}</tbody></table>
+</section>
+</body>
+</html>
+"""
+    (results_dir / "visual_dashboard.html").write_text(page, encoding="utf-8")
 
 
 def main() -> int:
@@ -207,6 +333,7 @@ def main() -> int:
     }
     diagnostics = load_diagnostics(results_dir)
     new_feature_counts = load_new_feature_counts(diagnostics)
+    dynamic_added_counts = load_dynamic_added_counts(diagnostics)
 
     # per-feature relevance stats from diagnostics
     relevant_counts: dict[str, int] = {}
@@ -280,6 +407,53 @@ def main() -> int:
     )
 
     top_svg = write_top_feature_svg(results_dir, stats_rows, args.top_n)
+    validation = validation_summary(diagnostics)
+    validation_svg = write_simple_bar_svg(
+        results_dir,
+        "validation_distribution.svg",
+        "Validation Pass/Fail Distribution",
+        "Coverage validation result across processed reviews.",
+        [("pass", validation["pass_count"]), ("fail", validation["fail_count"])],
+        "#427f4a",
+    )
+    iteration_counts: dict[str, int] = {}
+    for record in diagnostics:
+        key = str(record.get("validation_iterations_used", 0) or 0)
+        iteration_counts[key] = iteration_counts.get(key, 0) + 1
+    iteration_svg = write_simple_bar_svg(
+        results_dir,
+        "validation_iteration_distribution.svg",
+        "Validation Iteration Distribution",
+        "How many validation passes each review needed.",
+        sorted(iteration_counts.items(), key=lambda kv: int(kv[0])),
+        "#7c6f2b",
+    )
+    candidates_svg = write_simple_bar_svg(
+        results_dir,
+        "new_feature_candidate_frequency.svg",
+        "New Feature Candidate Frequency",
+        "MasterAgent candidates proposed after validation failure.",
+        sorted(new_feature_counts.items(), key=lambda kv: (-kv[1], kv[0]))[: args.top_n],
+        "#8b5a2b",
+    )
+    dynamic_svg = write_simple_bar_svg(
+        results_dir,
+        "dynamic_feature_added_frequency.svg",
+        "Dynamic Feature Added Frequency",
+        "Accepted dynamic features classified for current reviews.",
+        sorted(dynamic_added_counts.items(), key=lambda kv: (-kv[1], kv[0]))[: args.top_n],
+        "#7b4aa0",
+    )
+    latency_svg = write_simple_bar_svg(
+        results_dir,
+        "agent_latency_summary.svg",
+        "Agent Latency Summary",
+        "Total seconds by agent role.",
+        [(row["agent"], int(round(float(row["total_seconds"])))) for row in timing_rows],
+        "#4f7898",
+    )
+    svg_files = [top_svg, validation_svg, iteration_svg, latency_svg, candidates_svg, dynamic_svg]
+    write_dashboard(results_dir, total_reviews, stats_rows, validation, [f for f in svg_files if f])
 
     lines = [
         f"# Feature Statistics: {results_dir.name}",
@@ -287,6 +461,10 @@ def main() -> int:
         f"- Reviews processed: {total_reviews}",
         f"- Initial features: {len(initial_names)}",
         f"- New feature candidates observed: {len(new_feature_counts)}",
+        f"- Dynamic features added: {len(dynamic_added_counts)}",
+        f"- Validation pass rate: {validation['pass_rate']}",
+        f"- Validation failed reviews: {validation['fail_count']}",
+        f"- Avg validation iterations: {validation['avg_iterations']}",
         f"- Features present in feature_map: {len(feature_names)}",
     ]
     if top_svg:
@@ -302,6 +480,14 @@ def main() -> int:
             f"| {row['agent']} | {row['calls']} | {row['avg_seconds']} | "
             f"{row['total_seconds']} | {row['max_seconds']} |"
         )
+    lines.extend([
+        "",
+        "## Validation Visualizations",
+        "",
+    ])
+    for svg in [validation_svg, iteration_svg, latency_svg, candidates_svg, dynamic_svg]:
+        if svg:
+            lines.extend([f"![{svg}]({svg})", ""])
     lines.extend([
         "",
         "## Top Features by Relevance",

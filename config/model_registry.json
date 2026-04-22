@@ -70,7 +70,7 @@
       "rpm": 60,
       "request_delay": 1.0,
       "timeout": 120.0,
-      "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/info_glm.md."
+      "notes": "Volcengine Ark OpenAI-compatible GLM-4.7 endpoint. Use --info api/infor_tt.md."
     },
     "glm-4.7-zhipu": {
       "model": "glm-4.7",
