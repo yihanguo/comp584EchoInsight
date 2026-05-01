@@ -11,13 +11,6 @@ At a high level, the pipeline does this:
 5. If validation fails, ask the master agent for a reusable dynamic feature, classify it for the current review, and validate again.
 6. Export feature maps, diagnostics, reports, and summary statistics.
 
-The latest development branch is:
-
-- `llm-driven-v2-root`
-- https://github.com/yihanguo/comp584EchoInsight/tree/llm-driven-v2-root
-
-This branch is also intended to become the effective `main` code line.
-
 ## What The Project Produces
 
 For each run, EchoInsight V2 writes:
